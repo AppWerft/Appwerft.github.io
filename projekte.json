@@ -219,7 +219,7 @@
 		}, {
 			"projekt": "Ticketmaster",
 			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"c": [
 				{
