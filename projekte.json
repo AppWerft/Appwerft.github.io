@@ -170,9 +170,8 @@
 		},  {
 			"projekt": "WiFi-Manager",
 			"inhalt": "native Plugins zur Kommunikation mit einer Kamera über WiFi",
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"rolle": "Umsetzung",
-			"plattformen": ["Android"],
 			"auftraggeber": "Firma in Montréal (NDA)"
 		}, {
 			"projekt": "Leica Distance",
