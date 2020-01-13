@@ -206,7 +206,7 @@
 		}, {
 			"projekt": "Philips lifeline",
 			"inhalt": "native Plugin für die Realisierung eines XMPP-ChatClients",
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in USA (NDA)"
 		}, {
