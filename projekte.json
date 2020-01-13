@@ -3,7 +3,7 @@
 	"items": [
 		{
 			"projekt": "Vladi Private Islands",
-			"technik": "phonegap, iOS, Android",
+			"technik": "cordova, iOS, Android",
 			"inhalt": ["Darstellung aktueller Immobilien", "redaktionelle Seiten", "Karte"],
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
