@@ -17,7 +17,9 @@ function renderItem(item,ndx) {
 	if (item.technik.indexOf('cordova')>-1) 
 		$('#icons_'+ndx).append('<img src="assets/cordova.png" height="30"/>')
 	if (item.technik.indexOf('titanium')>-1) 
-		$('#icons_'+ndx).append('<img src="assets/titanium.png" height="30"/>')	
+		$('#icons_'+ndx).append('<img src="assets/titanium.png" height="30"/>')
+	if (item.technik.indexOf('android')>-1) 
+		$('#icons_'+ndx).append('<img src="assets/android.png" height="30"/>')		
 }
 
 $(document).ready(onReady);
