@@ -4,15 +4,16 @@ function onReady() {
 	$.getJSON('./projekte.json',function(json){
 		document.title = json.title;
 		$('h1').text(json.title);
-		json.items.forEach(renderItem)
-	});
-	var icons = {
+		var icons = {
       header: "ui-icon-circle-arrow-e",
       activeHeader: "ui-icon-circle-arrow-s"
     };
      $( "#accordion" ).accordion({
        icons: icons
     });
+		json.items.forEach(renderItem)
+	});
+	
 
 };
 
