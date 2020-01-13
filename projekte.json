@@ -59,9 +59,9 @@
 			"auftraggeber": "Werbefirma aus Winterhude (NDA)"
 		}, {
 			"projekt": "DLFmediathek",
-			"plattformen": ["Android"],
+			
 			"inhalt": ["Mediathek der DLF-Inhalte", "Live-Radio mit Schlummerfunktion", "Audio-Archiv", "Suche"],
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
 			"herausforderungen": [
