@@ -130,7 +130,7 @@
 		}, {
 			"projekt": "PorscheIntra",
 			"inhalt": "mobile Version eines auf Jive basierenden Intranets",
-			"technik": "cordova, JSP",
+			"technik": "cordova, JSP, iOS, Android",
 			"layoutdesign": "Eigenentwicklung nach Vorgaben",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
@@ -145,7 +145,6 @@
 					"s": "Geduld"
 				}
 			],
-			"plattformen": ["iOS, Android"],
 			"auftraggeber": "Porsche AG"
 		}, {
 			"projekt": "Audiotools",
