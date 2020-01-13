@@ -170,13 +170,13 @@
 		},  {
 			"projekt": "WiFi-Manager",
 			"inhalt": "native Plugins zur Kommunikation mit einer Kamera über WiFi",
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in Montréal (NDA)"
 		}, {
 			"projekt": "Leica Distance",
 			"inhalt": "native Plugin zur Kommunikation mit Leica Laser-Distanzmesser (Bluetooth)",
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
 				{
@@ -188,7 +188,7 @@
 		}, {
 			"projekt": "TicketMaster",
 			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
 				{
