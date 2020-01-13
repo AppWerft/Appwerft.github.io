@@ -118,8 +118,7 @@
 			"auftraggeber": "OS"
 		}, {
 			"projekt": "Homebanking für „Australia and New Zealand Banking Group“",
-			"technik": "cordova/phonegap",
-			"plattformen": ["iOS, Android"],
+			"technik": "cordova/phonegap, iOS, Android",
 			"rolle": "Beratung",
 			"herausforderungen": [
 				{
