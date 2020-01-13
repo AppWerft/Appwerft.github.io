@@ -210,9 +210,8 @@
 		}, {
 			"projekt": "Philips lifeline",
 			"inhalt": "native Plugin für die Realisierung eines XMPP-ChatClients",
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"rolle": "Umsetzung",
-			"plattformen": ["Android"],
 			"auftraggeber": "Firma in USA (NDA)"
 		}, {
 			"projekt": "Gerätebrowser miele@home",
