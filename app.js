@@ -15,9 +15,9 @@ function onReady() {
 function renderItem(item,ndx) {
 	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div id="slot_'+ndx+'">'+ JSON.stringify(item)+'</div>');
 	if (item.technik.indexOf('cordova')>-1) 
-		$('#icons'+ndx).append('<img src="assets/cordova.png" height="30"/>')
+		$('#icons_'+ndx).append('<img src="assets/cordova.png" height="30"/>')
 	if (item.technik.indexOf('titanium')>-1) 
-		$('#icons'+ndx).append('<img src="assets/titanium.png" height="30"/>')	
+		$('#icons_'+ndx).append('<img src="assets/titanium.png" height="30"/>')	
 }
 
 $(document).ready(onReady);
