@@ -19,7 +19,9 @@ function renderItem(item,ndx) {
 	if (item.technik.indexOf('Titanium')>-1) 
 		$('#icons_'+ndx).append('<img src="assets/titanium.png" height="30"/>')
 	if (item.technik.indexOf('Android')>-1) 
-		$('#icons_'+ndx).append('<img src="assets/android.png" height="30"/>')		
+		$('#icons_'+ndx).append('<img src="assets/android.png" height="30"/>')	
+	if (item.technik.indexOf('iOS')>-1) 
+		$('#icons_'+ndx).append('<img src="assets/ios.png" height="30"/>')			
 }
 
 $(document).ready(onReady);
