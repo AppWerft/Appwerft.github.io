@@ -149,7 +149,7 @@
 		}, {
 			"projekt": "Audiotools",
 			"inhalt": "native Plugins zur Abfrage der Headsettasten und zur Anzeige des aktuellen Stückes als Widget auf dem Sperrbildschirms",
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"plattformen": ["Android"],
 			"auftraggeber": "Firma in Schweden (NDA)"
