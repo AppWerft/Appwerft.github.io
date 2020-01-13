@@ -45,8 +45,7 @@
 			"auftraggeber": "Ausgründung der FU Berlin (NDA)"
 		}, {
 			"projekt": "Promotion Elbphilharmonie",
-			"technik": "native Android App",
-			"plattformen": ["Android"],
+			"technik": "native Android App, Java",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Kundenvorgabe",
 			"inhalt": ["VR-App zeigt Elbphilharmonie in Cardbox (3D, Stereo, kopfneigungsabhängig)"],
