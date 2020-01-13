@@ -17,7 +17,7 @@ function onReady() {
 };
 
 function renderItem(item) {
-		console.log(item);
+		
 		$('#accordion').append('<h3>'+item.projekt+'</h3>'+ JSON.stringify(item));
 
 }
