@@ -1,12 +1,7 @@
 $(document).ready(onReady);
 
 function onReady() {
-	var icons = {
-           header: "ui-icon-circle-arrow-e",
-           activeHeader: "ui-icon-circle-arrow-s"
-        };
         $("#accordion").accordion({
-          
            active: 1,
            collapsible: true
         });
