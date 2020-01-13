@@ -190,7 +190,7 @@
 		}, {
 			"projekt": "TicketMaster",
 			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
 				{
@@ -198,7 +198,6 @@
 					"s": "Reverse engineering"
 				}
 			],
-			"plattformen": ["Android"],
 			"auftraggeber": "FANHERO in Austin, Texas"
 		}, {
 			"projekt": "Flic",
