@@ -6,7 +6,8 @@ function onReady() {
            activeHeader: "ui-icon-circle-arrow-s"
         };
         $("#accordion").accordion({
-           icons: icons
+           icons: icons,
+           active: 1
         });
 	$.getJSON('./projekte.json',function(json){
 		document.title = json.title;
