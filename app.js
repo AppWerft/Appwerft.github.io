@@ -12,7 +12,7 @@ function onReady() {
 };
 
 function renderItem(item,ndx) {
-	$('#accordion').append('<h3>'+item.projekt+'</h3><div id="slot_"'+ndx+'>'+ JSON.stringify(item)+'</div>');
+	$('#accordion').append('<h3>'+item.projekt+'</h3><div id="slot_'+ndx+'">'+ JSON.stringify(item)+'</div>');
 
 }
 
