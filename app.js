@@ -18,6 +18,6 @@ function onReady() {
 
 function renderItem(item) {
 		console.log(item);
-		$('body').append('<article><h2>'+item.projekt+'</h2></article>');
+		$('#accordion').append('<h3>'+item.projekt+'</h3>');
 
 }
