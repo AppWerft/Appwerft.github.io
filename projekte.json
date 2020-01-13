@@ -237,7 +237,7 @@
 		}, {
 			"projekt": "Eppendorf",
 			"inhalt": ["Katalog", "Vertriebsnetz", "Tools", "YoutubeChannel", "Augmented Reality", "360°-Bilder"],
-			"technik": "Titanium",
+			"technik": "Titanium, iOS, Android",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
 			"herausforderungen": [
@@ -252,8 +252,8 @@
 					"s": "Programmierung nativer Komponenten für iOS und Android"
 				}
 			],
-			"auftraggeber": "eppendorf AG",
-			"plattformen": ["iOS, Android"]
+			"auftraggeber": "eppendorf AG"
+			
 		}, {
 			"projekt": "Ventra Chicago",
 			"inhalt": "TicketApp für den ÖPNV in Chicago",
