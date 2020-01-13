@@ -18,6 +18,6 @@ function onReady() {
 
 function renderItem(item) {
 		
-		$('#accordion').append('<h3>'+item.projekt+'</h3>'+ JSON.stringify(item));
+		$('#accordion').append('<h3>'+item.projekt+'</h3><div>'+ JSON.stringify(item)+'</div>');
 
 }
