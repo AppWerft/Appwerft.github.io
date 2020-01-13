@@ -6,10 +6,9 @@ function onReady() {
            collapsible: true
     });
 	$.getJSON('./projekte.json',function(model){
+		model.items.map(renderItem);
 		document.title = model.title;
 		$('h1').text(model.title);
-		
-		model.items.map(renderItem);
 	});
 };
 
