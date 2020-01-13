@@ -203,9 +203,8 @@
 		}, {
 			"projekt": "Flic",
 			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen",
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"rolle": "Umsetzung",
-			"plattformen": ["Android"],
 			"auftraggeber": "Firma in den Niederlanden (NDA)"
 		}, {
 			"projekt": "Philips lifeline",
