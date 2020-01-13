@@ -1,20 +1,19 @@
 $(document).ready(onReady);
 
 function onReady() {
+	var icons = {
+           header: "ui-icon-circle-arrow-e",
+           activeHeader: "ui-icon-circle-arrow-s"
+        };
+        $("#accordion").accordion({
+           icons: icons
+        });
 	$.getJSON('./projekte.json',function(json){
 		document.title = json.title;
 		$('h1').text(json.title);
-		var icons = {
-      header: "ui-icon-circle-arrow-e",
-      activeHeader: "ui-icon-circle-arrow-s"
-    };
-     $( "#accordion" ).accordion({
-       icons: icons
-    });
+		
 		json.items.forEach(renderItem)
 	});
-	
-
 };
 
 function renderItem(item) {
