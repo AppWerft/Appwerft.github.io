@@ -275,7 +275,7 @@
 			"projekt": "Finanzassistent",
 			"inhalt": "Homebanking- und CRM-App",
 			"layoutdesign": "Beratung des Kunden",
-			"technik": "Titanium",
+			"technik": "Titanium, iOS, Android",
 			"rolle": "Workshop mit dem Team aus Köln, danach Beratung und Modulentwicklung",
 			"herausforderungen": [
 				{
@@ -288,12 +288,12 @@
 					"s": "Schaffung einnes PDF-Plugins in Javascript"
 				}
 			],
-			"auftraggeber": "Größter deutscher Finanzdienstleister (NDA)",
-			"plattformen": ["iOS, Android"]
+			"auftraggeber": "Größter deutscher Finanzdienstleister (NDA)"
+			
 		}, {
 			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol",
-			"technik": "Titanium",
+			"technik": "Titanium, iOS, Android",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
 			"herausforderungen": [
@@ -314,8 +314,8 @@
 					"s": "Downloadmanager"
 				}
 			],
-			"auftraggeber": "Realer Bruneck (Südtirol)",
-			"plattformen": ["iOS, Android"]
+			"auftraggeber": "Realer Bruneck (Südtirol)"
+			
 		}
 	]
 }
