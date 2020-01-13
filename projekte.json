@@ -217,9 +217,9 @@
 		}, {
 			"projekt": "Gerätebrowser miele@home",
 			"inhalt": "native Plugin für das Suchen nach IoT-Geräten (Bonjour)",
-			"technik": "Titanium",
+			"technik": "Titanium, Android, iOS",
 			"rolle": "Umsetzung",
-			"plattformen": ["Android", "iOS"],
+			
 			"auftraggeber": "Großer deutsche Weißwarenhersteller (NDA)"
 		}, {
 			"projekt": "",
