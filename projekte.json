@@ -177,7 +177,7 @@
 		}, {
 			"projekt": "Leica Distance",
 			"inhalt": "native Plugin zur Kommunikation mit Leica Laser-Distanzmesser (Bluetooth)",
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
 				{
@@ -185,7 +185,6 @@
 					"s": "Reverse engineering"
 				}
 			],
-			"plattformen": ["Android"],
 			"auftraggeber": "Firma in Manchester (NDA)"
 		}, {
 			"projekt": "TicketMaster",
