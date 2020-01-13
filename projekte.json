@@ -217,7 +217,7 @@
 			
 			"auftraggeber": "Großer deutsche Weißwarenhersteller (NDA)"
 		}, {
-			"projekt": "",
+			"projekt": "Ticketmaster",
 			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
 			"technik": "Titanium, Android",
 			"rolle": "Umsetzung",
