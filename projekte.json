@@ -224,7 +224,7 @@
 		}, {
 			"projekt": "",
 			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"rolle": "Umsetzung",
 			"c": [
 				{
@@ -232,7 +232,6 @@
 					"s": "Reverse engineering"
 				}
 			],
-			"plattformen": ["Android"],
 			"auftraggeber": "Firma in Manchester (NDA)"
 		}, {
 			"projekt": "Eppendorf",
