@@ -156,7 +156,7 @@
 		},{
 			"projekt": "Tierstimmenarchiv",
 			"inhalt": ["Katalog aller 25000 Tierstimmen","Bebilderung aus Wikibeständen","Sonogramm aller Stimmen","Stimme als Klingelton"],
-			"technik": "Titanium",
+			"technik": "Titanium, Android",
 			"rolle": "Konzeptiom, Umsetzung",
 			"herausforderungen": [
 				{
@@ -165,7 +165,7 @@
 					"c": "natives Plugin"
 				}
 			],
-			"plattformen": ["Android"],
+			
 			"auftraggeber": "OpenSource in Zusammenarbeit mit dem Museum für Naturkunde Berlin"
 		},  {
 			"projekt": "WiFi-Manager",
