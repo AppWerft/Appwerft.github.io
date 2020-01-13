@@ -6,4 +6,4 @@ function onReady() {
 		console.log(json);
 	});
 
-});
+};
