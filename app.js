@@ -4,6 +4,7 @@ function onReady() {
 	$.getJSON('./projekte.json',function(json){
 		document.title = json.title;
 		$('h1').text(json.title);
+		json.items.forEach(renderItem)
 	});
 	var icons = {
       header: "ui-icon-circle-arrow-e",
