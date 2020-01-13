@@ -7,7 +7,8 @@ function onReady() {
         };
         $("#accordion").accordion({
            icons: icons,
-           active: 1
+           active: 1,
+           collapsible: true
         });
 	$.getJSON('./projekte.json',function(json){
 		document.title = json.title;
