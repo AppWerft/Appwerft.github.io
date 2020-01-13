@@ -1,8 +1,8 @@
 $(document).ready(onReady);
 
 function onReady() {
-	console.log('mmmm');
 	$.getJSON('./projekte.json',function(json){
+		document.title = json.title;
 		$('h1').text(json.title);
 	});
 	var icons = {
@@ -10,7 +10,7 @@ function onReady() {
       activeHeader: "ui-icon-circle-arrow-s"
     };
      $( "#accordion" ).accordion({
-      icons: icons
+       icons: icons
     });
 
 };
