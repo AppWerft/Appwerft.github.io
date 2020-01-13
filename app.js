@@ -1,13 +1,15 @@
 function onReady() {
+
+	
     $("#accordion").accordion({
            active: 1,
            collapsible: true
     });
-	$.getJSON('./projekte.json',function(json){
-		document.title = json.title;
-		$('h1').text(json.title);
+	$.getJSON('./projekte.json',function(model){
+		document.title = model.title;
+		$('h1').text(model.title);
 		
-		json.items.forEach(renderItem)
+		model.items.map(renderItem);
 	});
 };
 
