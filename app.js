@@ -1,14 +1,13 @@
 function onReady() {
-    
+    $("#accordion").accordion({
+           active: 1,
+           collapsible: true
+    });
 	$.getJSON('./projekte.json',function(json){
 		document.title = json.title;
 		$('h1').text(json.title);
 		
 		json.items.forEach(renderItem)
-		$("#accordion").accordion({
-           active: 1,
-           collapsible: true
-    });
 	});
 };
 
