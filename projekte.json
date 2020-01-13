@@ -86,7 +86,7 @@
 		}, {
 			"projekt": "Professional training for Hospitals",
 			"inhalt": ["Umbau einer phonegap-App nach Titanium", "Silent PushNotification zur Updateverwaltung, Offlinefunktion", "White labeling"],
-			"technik": "phonegap, Titanium, Android, iOS",
+			"technik": "cordova, Titanium, Android, iOS",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
