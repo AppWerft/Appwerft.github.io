@@ -155,7 +155,7 @@
 		},{
 			"projekt": "Tierstimmenarchiv",
 			"inhalt": ["Katalog aller 25000 Tierstimmen","Bebilderung aus Wikibeständen","Sonogramm aller Stimmen","Stimme als Klingelton"],
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Java",
 			"rolle": "Konzeptiom, Umsetzung",
 			"herausforderungen": [
 				{
@@ -286,7 +286,7 @@
 		}, {
 			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol",
-			"technik": "Titanium, iOS, Android, Java, ObjectiveC",
+			"technik": "Titanium, iOS, Android, Java",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
 			"herausforderungen": [
