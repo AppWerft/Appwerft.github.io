@@ -9,7 +9,7 @@ function onReady() {
       header: "ui-icon-circle-arrow-e",
       activeHeader: "ui-icon-circle-arrow-s"
     };
-        $( "#accordion" ).accordion({
+     $( "#accordion" ).accordion({
       icons: icons
     });
 
