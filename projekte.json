@@ -286,7 +286,7 @@
 		}, {
 			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol",
-			"technik": "Titanium, iOS, Android, Java",
+			"technik": "Titanium, iOS, Android, Java, ObjectiveC",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
 			"herausforderungen": [
