@@ -6,7 +6,7 @@ function onReady() {
            activeHeader: "ui-icon-circle-arrow-s"
         };
         $("#accordion").accordion({
-           icons: icons,
+          
            active: 1,
            collapsible: true
         });
