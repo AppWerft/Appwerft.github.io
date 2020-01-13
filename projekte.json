@@ -3,8 +3,7 @@
 	"items": [
 		{
 			"projekt": "Vladi Private Islands",
-			"technik": "cordova/phonegap",
-			"plattformen": ["iOS, Android"],
+			"technik": "phonegap, iOS, Android",
 			"inhalt": ["Darstellung aktueller Immobilien", "redaktionelle Seiten", "Karte"],
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
@@ -20,8 +19,7 @@
 			"auftraggeber": "Vladi Private Islands"
 		}, {
 			"projekt": "Scoupy",
-			"technik": "cordova/phonegap",
-			"plattformen": ["iOS, Android"],
+			"technik": "cordova/phonegap,Android,iOS",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
 			"inhalt": ["Couponsystem", "geobasierte Liste der Mandanten", "Einlösung der Coupons"],
