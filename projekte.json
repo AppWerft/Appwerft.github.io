@@ -268,7 +268,7 @@
 			"projekt": "Finanzassistent",
 			"inhalt": "Homebanking- und CRM-App",
 			"layoutdesign": "Beratung des Kunden",
-			"technik": "Titanium, iOS, Android, Java, ObjectiveC",
+			"technik": "Titanium, iOS, Android, Java, ObjectiveC", Javascript,
 			"rolle": "Workshop mit dem Team aus Köln, danach Beratung und Modulentwicklung",
 			"herausforderungen": [
 				{
@@ -286,7 +286,7 @@
 		}, {
 			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol",
-			"technik": "Titanium, iOS, Android, Java",
+			"technik": "Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
 			"herausforderungen": [
