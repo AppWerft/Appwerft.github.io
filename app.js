@@ -1,7 +1,7 @@
 function onReady() {
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
-		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.image+'" />');
+		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		model.items.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false});
 	});
