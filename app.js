@@ -3,7 +3,7 @@ function onReady() {
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		model.items.map(renderItem);
-		$("#accordion").accordion({collapsible: true, active: false});
+		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 	});
 };
 
