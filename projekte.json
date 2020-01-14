@@ -198,6 +198,13 @@
 			"plattformen": ["Android"],
 			"auftraggeber": "Firma in Schweden (NDA)"
 		},{
+			"projekt": "CreditCard scanner",
+			"inhalt": "native Plugins zum automatischen Einlesen von Kreditkarten",
+			"technik": "OpenCV, Titanium, Android, Java",
+			"rolle": "Umsetzung",
+			"plattformen": ["Android"],
+			"auftraggeber": "Agentur aus London (NDA)"
+		},{
 			"projekt": "Tierstimmenarchiv",
 			"inhalt": "Katalog aller 25000 Tierstimmen, Bebilderung aus Wikibeständen, Sonogramm aller Stimmen, Stimme als Klingelton",
 			"technik": "Titanium, Android, Java, Javascript",
