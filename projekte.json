@@ -73,7 +73,7 @@
 			"inhalt": "Werbeagentur verschickt Pixel-Smartphones mit VR-Brille. VirtualRealityApp zeigt Elbphilharmonie in VR-Brille(3D, Stereo, kopfneigungsabhängig)",
 			"herausforderungen": [
 				{
-					"c": "Abspielen eines 360°-Panorama-Videos > 1 GB",
+					"c": "Abspielen eines 360°-Panorama-Videos > 1 GB (Kompilerbeschränkung)",
 					"s": "Download aus Cloud im Onboardingprozess"
 				}
 			],
@@ -145,7 +145,7 @@
 					"s": "Downloadmanager"
 				}
 			],
-			"shots" : ["pic1.png","pic2.png","pic3.png","pic4.png"],
+			"shots" : ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg"],
 			"auftraggeber": "Realer Bruneck (Südtirol)"
 			
 		}, {
