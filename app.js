@@ -1,5 +1,4 @@
 function onReady() {
-	console.log("onReady")
 	$.getJSON('./projekte.json',function(model){
 		model.items.map(renderItem);
 		document.title = model.title;
