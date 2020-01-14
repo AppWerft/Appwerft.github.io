@@ -17,7 +17,7 @@
 					"s": "Sanitizing der Daten, Cache"
 				}
 			],
-			"shots" : ["vladi1.png","vladi2.png","vladi3.png","vladi3.png","vladi4.png"],
+			"shots" : ["vladi1.png","vladi2.png","vladi3.png","vladi4.png"],
 			"auftraggeber": "Vladi Private Islands"
 		}, {
 			"projekt": "Scoupy",
@@ -313,6 +313,7 @@
 					"s": "Programmierung nativer Komponenten für iOS und Android"
 				}
 			],
+			"shots" : ["epp.png","epp2.png","epp3.png","epp4.png"],
 			"auftraggeber": "eppendorf AG"
 			
 		}, {
