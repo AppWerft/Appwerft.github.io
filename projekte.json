@@ -117,7 +117,7 @@
 			"auftraggeber": "OS"
 		}, {
 			"projekt": "Homebanking für „Australia and New Zealand Banking Group“",
-			"technik": "cordova/phonegap, iOS, Android",
+			"technik": "Cordova, iOS, Android, Javascript",
 			"rolle": "Beratung",
 			"herausforderungen": [
 				{
@@ -129,7 +129,7 @@
 		}, {
 			"projekt": "PorscheIntra",
 			"inhalt": "mobile Version eines auf Jive basierenden Intranets",
-			"technik": "cordova, JSP, iOS, Android",
+			"technik": "Cordova, JSP, iOS, Android, Javascript",
 			"layoutdesign": "Eigenentwicklung nach Vorgaben",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
@@ -155,7 +155,7 @@
 		},{
 			"projekt": "Tierstimmenarchiv",
 			"inhalt": ["Katalog aller 25000 Tierstimmen","Bebilderung aus Wikibeständen","Sonogramm aller Stimmen","Stimme als Klingelton"],
-			"technik": "Titanium, Android, Java",
+			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Konzeptiom, Umsetzung",
 			"herausforderungen": [
 				{
@@ -169,7 +169,7 @@
 		},  {
 			"projekt": "WiFi-Manager",
 			"inhalt": "native Plugins zur Kommunikation mit einer Kamera über WiFi",
-			"technik": "Titanium, Android, Java",
+			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in Montréal (NDA)"
 		}, {
@@ -187,7 +187,7 @@
 		}, {
 			"projekt": "TicketMaster",
 			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
-			"technik": "Titanium, Android, Java",
+			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
 				{
