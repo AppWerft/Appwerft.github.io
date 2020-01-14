@@ -235,7 +235,7 @@
 					"s": "Konvertierung des XML nach SQLite und Downloading der Datenbank im Onboardingprozess"
 				}
 			],
-			"shots" : ["baum1.jpg","baum2.jpg","baum3.jpg","baum4.jpg"]
+			"shots" : ["baum1.jpg","baum2.jpg","baum3.jpg","baum4.jpg"],
 			"auftraggeber": "OpenSource"
 		}, {
 			"projekt": "WiFi-Manager",
