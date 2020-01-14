@@ -257,13 +257,13 @@
 			"inhalt": "TicketApp für den ÖPNV in Chicago",
 			"technik": "React, iOS, Android, ES6",
 			"layoutdesign": "Kundenvorgabe",
-			"rolle": "Teil eines Scrumteams. Cardmanager, Tripplanner, Transittracker",
+			"rolle": "Teil eines Scrumteams. Verantwortliche Teilbereiche: Cardmanager, Tripplanner, Transittracker",
 			"herausforderungen": [
 				{
 					"c": "Internationales Team (Hamburg, Texas, Indien)",
 					"s": "Videokonferenzen"
 				}, {
-					"c": "rascher Versionswechsel bei ReaktNative",
+					"c": "rascher Versionswechsel bei ReactNative",
 					"s": "smarte Versionspolitik"
 				}
 			],
