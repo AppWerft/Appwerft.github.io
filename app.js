@@ -1,7 +1,7 @@
 function onReady() {
 	console.log("onReady")
 	$.getJSON('./projekte.json',function(model){
-		model.items.map(renderItem);
+		//model.items.map(renderItem);
 		document.title = model.title;
 		$('h1').text(model.title);
 		$("#accordion").accordion();
