@@ -121,10 +121,10 @@
 			"projekt": "A.N.Z.",
 			"inhalt" : "HomebankingApp eines südostasiatischen Finanzdienstleisters",
 			"technik": "Cordova, iOS, Android, Javascript",
-			"rolle": "Beratung",
+			"rolle": "Beratung, Erstellung von Userstories",
 			"herausforderungen": [
 				{
-					"c": "Performanz und Layoutprobleme",
+					"c": "Performanz und Layoutprobleme, Aufwands- und Risikomanagment",
 					"s": "Outsourcing"
 				}
 			],
