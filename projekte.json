@@ -215,8 +215,8 @@
 			"auftraggeber": "FANHERO in Austin, Texas"
 		}, {
 			"projekt": "Flic",
-			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen, die dann Funktione im Smartphone steuern",
-			"technik": "Titanium, Android, Java",
+			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen, die dann Funktionen im Smartphone steuern",
+			"technik": "Titanium, Android, Java, Bluetooth",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in den Niederlanden (NDA)"
 		}, {
@@ -227,7 +227,7 @@
 			"auftraggeber": "Firma in USA (NDA)"
 		}, {
 			"projekt": "Gerätebrowser",
-			"inhalt": "Native Plugin für das Suchen nach IoT-Geräten (Bonjour). Bislang wurden die 254 Adressen des (C-) Netzen stumpf nach der REST-API abgefragt. Mit dem Plugin melden sich die verfügbaren Küchengeräte sofort",
+			"inhalt": "Native Plugin für das Suchen nach IoT-Geräten (Bonjour). Bislang wurden die 254 Adressen des (C-) Netzen „stumpf“ nach der REST-API abgefragt. Mit dem Plugin melden sich die verfügbaren Küchengeräte sofort",
 			"technik": "Titanium, Android, iOS, ObjectiveC",
 			"rolle": "Umsetzung",
 			
@@ -246,7 +246,7 @@
 					"c": "komplexes Layout und Gerätevielfalt",
 					"s": "spezieller Rendering-Algorithmus"
 				}, {
-					"c": "Blätterlayout",
+					"c": "Blätterlayout, Augmented Reality",
 					"s": "Programmierung nativer Komponenten für iOS und Android"
 				}
 			],
@@ -255,7 +255,7 @@
 		}, {
 			"projekt": "Ventra Chicago",
 			"inhalt": "TicketApp für den ÖPNV in Chicago",
-			"technik": "React, iOS, Android, ES6",
+			"technik": "ReactNative, iOS, Android, ES6",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Teil eines Scrumteams. Verantwortliche Teilbereiche: Cardmanager, Tripplanner, Transittracker",
 			"herausforderungen": [
@@ -290,7 +290,7 @@
 			
 		}, {
 			"projekt": "Timetrip Pics",
-			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol",
+			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol. 360°-VR-View zum Simulation des Kameraviews, wenn der Tourist noch auf dem Sofa ist. Augmentierung des Kameraviewws/VR-Views mit historischen Stadtphotographien und Audioaufnahmen.",
 			"technik": "Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
