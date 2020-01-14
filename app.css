@@ -1,4 +1,4 @@
-body {
+body,h1,h3 {
       font-family: 'Roboto', sans-serif;
 }
 #accordion,body {margin:0;padding:0}
