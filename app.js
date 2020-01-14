@@ -4,7 +4,7 @@ function onReady() {
 		document.title = model.title;
 		$('h1').text(model.title);
 		$("#accordion").accordion({
-	           collapsible: true
+	           collapsible: false
     	});
 	});
 };
