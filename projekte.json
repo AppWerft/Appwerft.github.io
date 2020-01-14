@@ -4,7 +4,7 @@
 		{
 			"projekt": "Vladi Private Islands",
 			"technik": "Cordova, iOS, Android, Javascript",
-			"inhalt": ["Darstellung aktueller Immobilien", "redaktionelle Seiten", "Karte"],
+			"inhalt": ["Darstellung aktueller Pacht- und Verkaufsimmobilien, redaktionelle Seiten, interaktive Karte aller Objekte"],
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
 			"herausforderungen": [
