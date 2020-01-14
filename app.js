@@ -4,6 +4,7 @@ function onReady() {
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		model.items.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
+		$('[title!=""]').qtip();
 	});
 };
 
