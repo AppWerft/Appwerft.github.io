@@ -188,7 +188,7 @@
 			"auftraggeber": "Firma in Manchester (NDA)"
 		}, {
 			"projekt": "TicketMaster",
-			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
+			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp (Football)",
 			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
