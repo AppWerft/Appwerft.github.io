@@ -5,6 +5,12 @@ function onReady() {
 		model.items.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({
+		position: {
+        my: 'top right', 
+        at: 'bottom right' 
+        
+    	},
+		
 		style: { classes: 'qtip-dark qtip-shadow'}});
 	});
 };
