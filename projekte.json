@@ -213,7 +213,7 @@
 				{
 					"c": "Übertragung der Tierstimme als Klingelton"
 				}, {
-					"c": "natives Plugin"
+					"s": "natives Plugin"
 				}
 			],
 			
@@ -341,7 +341,7 @@
 					"c": "Personalexpertise",
 					"s": "Schulung und Workshop vor Ort"
 				}, {
-					"c": "Hohe Sicherheitsstandards"
+					"c": "Hohe Sicherheitsstandards","s":""
 				}, {
 					"c": "lokale Generierung von PDFs auf dem Gerät",
 					"s": "Schaffung einnes PDF-Plugins in Javascript"
