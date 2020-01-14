@@ -14,7 +14,6 @@ function renderArticle(item,ndx) {
 }
   
 function renderItem(item,ndx) {
-	console.log("renderItem " + ndx);
 	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div>' +renderArticle(item,ndx)+'</div>');
 	const langs = item.technik.split(/,\s+/);
 	['Cordova','JSP','Java','ES6','ObjectiveC','Titanium','Android','iOS','ReactNative','Javascript'].forEach(function(k){
