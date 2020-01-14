@@ -32,7 +32,7 @@
 			"auftraggeber": "Scoupy Nederland"
 		}, {
 			"projekt": "Begehbares Hörbuch",
-			"technik": "cordova/phonegap,Android,iOS",
+			"technik": "Cordova, Android, iOS",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Kundenvorgabe",
 			"inhalt": ["Geobasiertes Abspielen von Audioinhalten"],
