@@ -172,6 +172,7 @@
 					"s": "Outsourcing"
 				}
 			],
+			"shots" : ["anz1.png","anz2.png","anz3.png"],
 			"auftraggeber": "Australia and New Zealand Banking Group, SAP"
 		}, {
 			"projekt": "PorscheIntra",
