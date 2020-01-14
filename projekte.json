@@ -250,7 +250,7 @@
 		}, {
 			"projekt": "Ventra Chicago",
 			"inhalt": "TicketApp für den ÖPNV in Chicago",
-			"technik": "ReactNative, iOS, Android, ES6",
+			"technik": "React, iOS, Android, ES6",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Teil eines Scrumteams. Cardmanager, Tripplanner, Transittracker",
 			"herausforderungen": [
