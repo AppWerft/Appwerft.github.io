@@ -218,20 +218,8 @@
 			
 			"auftraggeber": "Großer deutsche Weißwarenhersteller (NDA)"
 		}, {
-			"projekt": "Ticketmaster",
-			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp",
-			"technik": "Titanium, Android, Java",
-			"rolle": "Umsetzung",
-			"c": [
-				{
-					"c": "nichtdokumentierte Closedsource-Bibliothek (jar)",
-					"s": "Reverse engineering"
-				}
-			],
-			"auftraggeber": "Firma in Manchester (NDA)"
-		}, {
 			"projekt": "Eppendorf",
-			"inhalt": ["Katalog", "Vertriebsnetz", "Tools", "YoutubeChannel", "Augmented Reality", "360°-Bilder"],
+			"inhalt": "Produktkatalog, Vertriebsnetz, Labortools, Labortimer, YoutubeChannel, Augmented Reality zur Darstellung von 3d-Modellen, 360°-Bilder, Kontaktaufnahme, marktabhängiger Newsfeed",
 			"technik": "Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
