@@ -199,7 +199,7 @@
 			"auftraggeber": "Firma in Schweden (NDA)"
 		},{
 			"projekt": "Tierstimmenarchiv",
-			"inhalt": ["Katalog aller 25000 Tierstimmen","Bebilderung aus Wikibeständen","Sonogramm aller Stimmen","Stimme als Klingelton"],
+			"inhalt": "Katalog aller 25000 Tierstimmen","Bebilderung aus Wikibeständen, Sonogramm aller Stimmen, Stimme als Klingelton",
 			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Konzeptiom, Umsetzung",
 			"herausforderungen": [
@@ -211,7 +211,21 @@
 			],
 			
 			"auftraggeber": "OpenSource in Zusammenarbeit mit dem Museum für Naturkunde Berlin"
-		},  {
+		},{
+			"projekt": "Baumkataster",
+			"inhalt": "Interaktive Anzeige der Straßenbaumbestände Hamburgs. Umkreissuche, interaktive Karte, AugmentedReality, Baumkatalog"],
+			"technik": "Titanium, Android, Java, Javascript",
+			"rolle": "Konzeptiom, Umsetzung",
+			"herausforderungen": [
+				{
+					"c": "Übertragung der Tierstimme als Klingelton"
+				}, {
+					"c": "natives Plugin"
+				}
+			],
+			
+			"auftraggeber": "OpenSource"
+		}, {
 			"projekt": "WiFi-Manager",
 			"inhalt": "native Plugins zur Kommunikation mit einer Kamera über WiFi",
 			"technik": "Bluetooth, Titanium, Android, Java, Javascript",
