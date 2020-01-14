@@ -3,16 +3,18 @@ function onReady() {
 		model.items.map(renderItem);
 		document.title = model.title;
 		$('h1').text(model.title);
-		$("#accordion").accordion({
-	           collapsible: false
-    	});
+		$("#accordion").accordion();
 	});
 };
+
+
+function renderArticle(item,ndx) {
+	return '<article><dl><dt>Projekt</dt><dd>'+item.projekt+'</dd></dl></article>';
+}
   
 function renderItem(item,ndx) {
-	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div id="slot_'+ndx+'">'+ JSON.stringify(item)+'</div>');
+	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3>' +renderArticle(item,ndx));
 	const langs = item.technik.split(/,\s+/);
-	console.log(langs);
 	['Cordova','JSP','Java','ES6','ObjectiveC','Titanium','Android','iOS','ReactNative','Javascript'].forEach(function(k){
 		if (langs.indexOf(k)>-1) 
 		$('#icons_'+ndx).append('<img src="assets/'+k.toLowerCase()+'.png" height="24"/>')
