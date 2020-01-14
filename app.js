@@ -1,12 +1,8 @@
 function onReady() {
-	
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
 		$('h1').text(model.title);
-
-		
 		model.items.map(renderItem);
-		
 		$("#accordion").accordion();
 	});
 };
