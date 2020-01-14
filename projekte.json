@@ -106,9 +106,9 @@
 			"rolle": "Umsetzung",
 			"herausforderungen": [
 				{
-					"c": "vorhandenen Code verstehen"
+					"c": "vorhandenen Code verstehen","s":"Geduld"
 				}, {
-					"c": "Zeitzone"
+					"c": "Zeitzone","s":"Wecker stellen"
 				}
 			],
 			"auftraggeber": "Agentur in Sydney"
