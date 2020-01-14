@@ -13,7 +13,7 @@ function renderArticle(item,ndx) {
 }
   
 function renderItem(item,ndx) {
-	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3>' );
+	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3>' +renderArticle(item,ndx));
 	const langs = item.technik.split(/,\s+/);
 	['Cordova','JSP','Java','ES6','ObjectiveC','Titanium','Android','iOS','ReactNative','Javascript'].forEach(function(k){
 		if (langs.indexOf(k)>-1) 
