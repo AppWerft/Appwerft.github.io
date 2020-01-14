@@ -3,7 +3,7 @@ function onReady() {
 		document.title = model.title;
 		$('h1').text(model.title);
 		model.items.map(renderItem);
-		$("#accordion").accordion();
+		$("#accordion").accordion({collapsible: true, active: false});
 	});
 };
 
