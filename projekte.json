@@ -44,6 +44,10 @@
 				{
 					"c": "lauffähig auf Windows-Notebook und iPad",
 					"s": "HybridApp, deren HTML-Anteil mit ServerToGo zu einer Windows-Exe kompiliert wird"
+				},
+				{
+					"c": "Generierung eines PDF-Protokolls auf dem iPad",
+					"s": "Einsatz einer speziellen PDF-Library für Javascript"
 				}
 			],
 			"auftraggeber": "Versicherungskonzern (NDA)"
