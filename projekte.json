@@ -3,7 +3,7 @@
 	"items": [
 		{
 			"projekt": "Vladi Private Islands",
-			"technik": "Cordova, iOS, Android",
+			"technik": "Cordova, iOS, Android, Javascript",
 			"inhalt": ["Darstellung aktueller Immobilien", "redaktionelle Seiten", "Karte"],
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
@@ -19,7 +19,7 @@
 			"auftraggeber": "Vladi Private Islands"
 		}, {
 			"projekt": "Scoupy",
-			"technik": "Cordova,Android,iOS",
+			"technik": "Cordova, Android, iOS, Javascript",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
 			"inhalt": ["Couponsystem", "geobasierte Liste der Mandanten", "Einlösung der Coupons"],
@@ -32,7 +32,7 @@
 			"auftraggeber": "Scoupy Nederland"
 		}, {
 			"projekt": "Begehbares Hörbuch",
-			"technik": "Cordova, Android, iOS",
+			"technik": "Cordova, Android, iOS, Javascript",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Kundenvorgabe",
 			"inhalt": ["Geobasiertes Abspielen von Audioinhalten"],
@@ -60,7 +60,7 @@
 			"projekt": "DLFmediathek",
 			
 			"inhalt": ["Mediathek der DLF-Inhalte", "Live-Radio mit Schlummerfunktion", "Audio-Archiv", "Suche"],
-			"technik": "Titanium, Android",
+			"technik": "Titanium, Android, Javascript",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
 			"herausforderungen": [
@@ -85,7 +85,7 @@
 		}, {
 			"projekt": "Professional training for Hospitals",
 			"inhalt": ["Umbau einer phonegap-App nach Titanium", "Silent PushNotification zur Updateverwaltung, Offlinefunktion", "White labeling"],
-			"technik": "cordova, Titanium, Android, iOS",
+			"technik": "Cordova, Titanium, Android, iOS, Javascript",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Umsetzung",
 			"herausforderungen": [
