@@ -118,7 +118,7 @@
 			],
 			"auftraggeber": "OS"
 		}, {
-			"projekt": "Australia and New Zealand Banking Group",
+			"projekt": "ANZ",
 			"inhalt" : "HomebankingApp",
 			"technik": "Cordova, iOS, Android, Javascript",
 			"rolle": "Beratung",
@@ -128,7 +128,7 @@
 					"s": "Outsourcing"
 				}
 			],
-			"auftraggeber": "SAP"
+			"auftraggeber": "Australia and New Zealand Banking Group, SAP"
 		}, {
 			"projekt": "PorscheIntra",
 			"inhalt": "mobile Version eines auf Jive basierenden Intranets",
