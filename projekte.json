@@ -230,7 +230,7 @@
 		}, {
 			"projekt": "Eppendorf",
 			"inhalt": ["Katalog", "Vertriebsnetz", "Tools", "YoutubeChannel", "Augmented Reality", "360°-Bilder"],
-			"technik": "Titanium, iOS, Android, Java",
+			"technik": "Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
 			"herausforderungen": [
