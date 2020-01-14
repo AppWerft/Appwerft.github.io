@@ -9,7 +9,7 @@ function onReady() {
 
 
 function renderArticle(item,ndx) {
-	return '<dl><dt>Projekt</dt><dd>'+item.projekt+'</dd></dl>';
+	return '<dl><dt>Projekt</dt><dd>'+item.inhalt+'</dd></dl>';
 }
   
 function renderItem(item,ndx) {
