@@ -85,8 +85,8 @@
 			],
 			"auftraggeber": "OpenSource in Absprache mit DLF Köln"
 		}, {
-			"projekt": "Professional training for Hospitals",
-			"inhalt": "Umbau einer phonegap-App nach Titanium, Silent PushNotification zur Updateverwaltung, Offlinefunktion, White labeling",
+			"projekt": "eLearningsportal",
+			"inhalt": "Professional training for Hospitals: Umbau einer phonegap-App nach Titanium, Silent PushNotification zur Updateverwaltung, Offlinefunktion, White labeling",
 			"technik": "Cordova, Titanium, Android, iOS, Javascript",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Umsetzung",
