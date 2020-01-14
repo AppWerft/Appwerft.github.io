@@ -21,4 +21,5 @@
 		});
 	}
 	$(document).ready(onReady);
+	console.log("onReady");
 })();
