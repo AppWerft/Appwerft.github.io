@@ -269,7 +269,7 @@
 			],
 			"auftraggeber": "FANHERO in Austin, Texas"
 		}, {
-			"projekt": "Firebase SMA",
+			"projekt": "Firebase SMS",
 			"inhalt": "native Plugin zur Realisierung einer Identitätsbestätigung über SMS",
 			"technik": "Firebase, Titanium, Android, Java,",
 			"rolle": "Umsetzung",
