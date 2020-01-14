@@ -7,8 +7,8 @@ function onReady() {
 		$('[title!=""]').qtip({
 		position: {
         my: 'top right', 
-        at: 'bottom right', 
-        target: $('.selector') 
+        at: 'bottom right' 
+        
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
