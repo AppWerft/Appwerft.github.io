@@ -76,7 +76,7 @@
 			"projekt": "DLFmediathek",
 			
 			"inhalt": "Mediathek der DLF-Inhalte, Live-Radio mit Schlummerfunktion, Audio-Archiv, Suche",
-			"technik": "Titanium, Android, Javascript",
+			"technik": "Titanium, Android, Javascript, FFmpeg",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
 			"herausforderungen": [
