@@ -200,7 +200,7 @@
 			"auftraggeber": "FANHERO in Austin, Texas"
 		}, {
 			"projekt": "Flic",
-			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen",
+			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen, die dann Funktione im Smartphone steuern",
 			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in den Niederlanden (NDA)"
