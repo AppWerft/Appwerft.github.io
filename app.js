@@ -1,4 +1,4 @@
-function(){function onReady() {
+(function(){function onReady() {
 	console.log("onReady")
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
