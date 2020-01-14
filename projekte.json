@@ -193,7 +193,7 @@
 		}, {
 			"projekt": "Audiotools",
 			"inhalt": "native Plugins zur Abfrage der Headsettasten und zur Anzeige des aktuellen Stückes als Widget auf dem Sperrbildschirms",
-			"technik": "Titanium, Android, Java",
+			"technik": "Bluetooth, Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"plattformen": ["Android"],
 			"auftraggeber": "Firma in Schweden (NDA)"
@@ -244,7 +244,7 @@
 		}, {
 			"projekt": "Flic",
 			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen, die dann Funktionen im Smartphone steuern",
-			"technik": "Titanium, Android, Java, Bluetooth",
+			"technik": "Bluetooth, Titanium, Android, Java, Bluetooth",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in den Niederlanden (NDA)"
 		}, {
