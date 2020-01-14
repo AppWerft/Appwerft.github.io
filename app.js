@@ -16,14 +16,27 @@ function onReady() {
 };
 
 
+function renderChallanges(challange) {
+     const table = '<table>';
+     challange.forEach(function(c){
+     	table += ('<tr><td>'+c.c+'</td><td>'+c.s+'</td></tr>');
+     });
+     table += '</table>';
+	 return table;	
+
+
+}
+
 function renderArticle(item,ndx) {
 	return '<dl>'
 		+ '<dt>Projekt:</dt><dd>'+item.inhalt+'</dd>'
 	 	+ '<dt>Rolle:</dt><dd>'+item.rolle+'</dd>'
 	  	+ (item.layoutdesign ? '<dt>Layout/Design:</dt><dd>'+item.layoutdesign+'</dd>':'')
+	  	+ (item.herausforderungen ? '<dt>Herausforderung(en):</dt><dd>'+renderChallenges(item.herausforderungen)+'</dd>':'')
 	  	+ '<dt>Auftraggeber:</dt><dd>'+item.auftraggeber+'</dd>'
 	  	+ '</dl>';
 }
+
   
 function renderItem(item,ndx) {
 	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div>' +renderArticle(item,ndx)+'</div>');
