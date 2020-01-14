@@ -211,7 +211,7 @@
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in USA (NDA)"
 		}, {
-			"projekt": "Gerätebrowser miele@home",
+			"projekt": "Gerätebrowser Haushaltsgerätehersteller",
 			"inhalt": "Native Plugin für das Suchen nach IoT-Geräten (Bonjour). Bislang wurden die 254 Adressen des (C-) Netzen stumpf nach der REST-API abgefragt. Mit dem Plugin melden sich die verfügbaren Küchengeräte sofort",
 			"technik": "Titanium, Android, iOS, ObjectiveC",
 			"rolle": "Umsetzung",
