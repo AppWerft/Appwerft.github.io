@@ -85,7 +85,7 @@
 			"auftraggeber": "OpenSource in Absprache mit DLF Köln"
 		}, {
 			"projekt": "Professional training for Hospitals",
-			"inhalt": ["Umbau einer phonegap-App nach Titanium", "Silent PushNotification zur Updateverwaltung, Offlinefunktion", "White labeling"],
+			"inhalt": "Umbau einer phonegap-App nach Titanium, Silent PushNotification zur Updateverwaltung, Offlinefunktion, White labeling",
 			"technik": "Cordova, Titanium, Android, iOS, Javascript",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Umsetzung",
@@ -99,7 +99,7 @@
 			"auftraggeber": "Agentur in Sydney"
 		}, {
 			"projekt": "Hördat",
-			"inhalt": ["Hörspielkalender mit Erinnerungsfunktion", "Verwaltungstool für Hörspiele  aus DACH, Offlinefunktion", "konfigurierbares Live-Radio", "Bund Freier Radios"],
+			"inhalt": "Hörspielkalender mit Erinnerungsfunktion, Verwaltungstool für Hörspiele aus DACH, Offlinefunktion, konfigurierbares Live-Radio, Zugriff auf den Bestand des Bundes Freier Radios",
 			"technik": "Titanium, Android",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
