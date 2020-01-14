@@ -117,7 +117,8 @@
 			],
 			"auftraggeber": "OS"
 		}, {
-			"projekt": "Homebanking für „Australia and New Zealand Banking Group“",
+			"projekt": "Australia and New Zealand Banking Group",
+			"inhalt" : "HomebankingApp",
 			"technik": "Cordova, iOS, Android, Javascript",
 			"rolle": "Beratung",
 			"herausforderungen": [
