@@ -213,7 +213,7 @@
 			"auftraggeber": "OpenSource in Zusammenarbeit mit dem Museum für Naturkunde Berlin"
 		},{
 			"projekt": "Baumkataster",
-			"inhalt": "Interaktive Anzeige der Straßenbaumbestände Hamburgs. Umkreissuche, interaktive Karte, AugmentedReality, Baumkatalog"],
+			"inhalt": "Interaktive Anzeige der Straßenbaumbestände Hamburgs. Umkreissuche, interaktive Karte, AugmentedReality, Baumkatalog",
 			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Konzeptiom, Umsetzung",
 			"herausforderungen": [
