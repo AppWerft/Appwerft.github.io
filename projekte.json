@@ -49,7 +49,7 @@
 			"technik": "Android, Java",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Kundenvorgabe",
-			"inhalt": ["VR-App zeigt Elbphilharmonie in Cardbox (3D, Stereo, kopfneigungsabhängig)"],
+			"inhalt": "Werbeagentur verschickt Pixel-Smartphones mit VR-Brille. VirtualRealityApp zeigt Elbphilharmonie in VR-Brille(3D, Stereo, kopfneigungsabhängig)",
 			"herausforderungen": [
 				{
 					"c": "Abspielen eines 360°-Panorama-Videos > 1 GB",
