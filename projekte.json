@@ -215,6 +215,7 @@
 			"projekt": "Baumkataster",
 			"inhalt": "Interaktive Anzeige der Straßenbaumbestände Hamburgs. Umkreissuche, interaktive Karte, AugmentedReality, Baumkatalog",
 			"technik": "Titanium, Android, Java, Javascript",
+			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeptiom und Umsetzung",
 			"herausforderungen": [
 				{

@@ -20,7 +20,7 @@ function renderArticle(item,ndx) {
 	return '<dl>'
 		+ '<dt>Projekt:</dt><dd>'+item.inhalt+'</dd>'
 	 	+ '<dt>Rolle:</dt><dd>'+item.rolle+'</dd>'
-	  	+ '<dt>Layout/Design:</dt><dd>'+item.layoutdesign+'</dd>'
+	  	+ (item.layoutdesign ? '<dt>Layout/Design:</dt><dd>'+item.layoutdesign+'</dd>':'')
 	  	+ '<dt>Auftraggeber:</dt><dd>'+item.auftraggeber+'</dd>'
 	  	+ '</dl>';
 }
