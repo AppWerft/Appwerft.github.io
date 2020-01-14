@@ -1,7 +1,7 @@
 (function(){
 	function onReady() {
 		$.getJSON('./projekte.json',function(model){
-			console.log(model);
+			
 			document.title = model.title;
 			$('h1').text(model.title);
 			$("#accordion").accordion();
