@@ -211,9 +211,7 @@
 			"rolle": "Konzeptiom, Umsetzung",
 			"herausforderungen": [
 				{
-					"c": "Übertragung der Tierstimme als Klingelton"
-				}, {
-					"s": "natives Plugin"
+					"c": "Übertragung der Tierstimme als Klingelton","s": "natives Plugin"
 				}
 			],
 			
