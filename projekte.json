@@ -119,7 +119,7 @@
 			"auftraggeber": "OS"
 		}, {
 			"projekt": "ANZ",
-			"inhalt" : "HomebankingApp",
+			"inhalt" : "HomebankingApp eines südostasiatischen Finanzdienstleisters",
 			"technik": "Cordova, iOS, Android, Javascript",
 			"rolle": "Beratung",
 			"herausforderungen": [
