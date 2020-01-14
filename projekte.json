@@ -218,7 +218,7 @@
 			"shots" : ["ts1.png","ts2.png","ts3.png","ts4.png","ts5.png","ts6.png"],
 			"herausforderungen": [
 				{
-					"c": "Übertragung der Tierstimme als Klingelton","s": "natives Plugin"
+					"c": "Übertragung der Tierstimme als Klingelton","s": "natives Plugin zur Abspeicherung im System und Umschaltung auf neuen Defaultklingelton (benötigt spezielle Berechtigung)"
 				}
 			],
 			
