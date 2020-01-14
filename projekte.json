@@ -30,7 +30,8 @@
 					"s": "Umgestaltung der Listennavigation"
 				}
 			],
-			"auftraggeber": "Scoupy Nederland"
+			"auftraggeber": "Scoupy Nederland",
+			"shots" : ['scoupy1.png','scoupy2.png','scoupy3.png','scoupy4.png','scoupy5.png']
 		},{
 			"projekt": "Traumpolice",
 			"inhalt": "BeraterApp zur Unterstützung von Versicherungsmaklern. Protokollierung des Gespäches, Gesprächsverlauf kann im Vorwege konfiguriert und individualisiert werden. ",

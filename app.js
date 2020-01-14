@@ -28,13 +28,24 @@ function renderChallenges(challenge) {
 }
 
 function renderArticle(item,ndx) {
-	return '<dl>'
+	var article = '<dl>'
 		+ '<dt>Projekt:</dt><dd>'+item.inhalt+'</dd>'
 	 	+ '<dt>Rolle:</dt><dd>'+item.rolle+'</dd>'
 	  	+ (item.layoutdesign ? '<dt>Layout/Design:</dt><dd>'+item.layoutdesign+'</dd>':'')
 	  	+ (item.herausforderungen ? '<dt>Herausforderung(en):</dt><dd>'+renderChallenges(item.herausforderungen)+'</dd>':'')
 	  	+ '<dt>Auftraggeber:</dt><dd>'+item.auftraggeber+'</dd>'
 	  	+ '</dl>';
+	if (item.shots) {
+		article += '<div class="shots">';
+		item.shots.forEach(function(s) {
+			item.shots += '<img title="Screenshot" src="shots/'+s+'" />'
+		});
+		article += '</div>';
+		
+	}
+	  	
+	return article;
+	  	
 }
 
   
