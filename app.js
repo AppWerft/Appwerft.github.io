@@ -17,7 +17,7 @@ function onReady() {
 
 
 function renderChallenges(challenge) {
-     var table = '<table><tr><td>Herausforderung</td><td>Lösung</td></tr>';
+     var table = '<table><tr><th>Herausforderung</th><th>Lösung</th></tr>';
      challenge.forEach(function(c){
      	table += ('<tr><td>'+c.c+'</td><td>'+c.s+'</td></tr>');
      });
