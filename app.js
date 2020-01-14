@@ -6,10 +6,10 @@ function onReady() {
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({
 		position: {
-        my: 'top right',  // Position my top left...
-        at: 'bottom right', // at the bottom right of...
-        target: $('.selector') // my target
-    },
+        my: 'top right', 
+        at: 'bottom right', 
+        target: $('.selector') 
+    	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
 	});
