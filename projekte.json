@@ -176,8 +176,12 @@
 			"shots" : ["anz1.png","anz2.png","anz3.png"],
 			"auftraggeber": "Australia and New Zealand Banking Group, SAP"
 		}, {
-			"projekt": "PorscheIntra",
-			"inhalt": "mobile Version eines auf Jive basierenden Intranets",
+			"projekt": "PM39",
+			"inhalt": "Ein Sportwagenhersteller betreibt in seinem Intranet ein auf Jive Social Business Software basierendes Intranet-Portal zur Abbildung der innerbetrieblichen Kommunikationsprozesse.
+
+Die von der Hamburger AppWerft entwickelte iPhone-App stellt die mobile Anbindung der Mitarbeiter an das Intranet dar, wobei höchste Anforderungen an die Sicherheit gewährleistet werden.
+
+Auf dem iPhone können nun z.B. eine Activity-Wall, Places, Spaces und eine Suchfunktion benutzt werden.",
 			"technik": "Cordova, JSP, iOS, Android, Javascript",
 			"layoutdesign": "Eigenentwicklung nach Vorgaben",
 			"rolle": "Umsetzung",
@@ -193,7 +197,7 @@
 					"s": "Geduld"
 				}
 			],
-			"auftraggeber": "Porsche AG"
+			"auftraggeber": "Großer deutscher Sportwagenhersteller"
 		}, {
 			"projekt": "Audiotools",
 			"inhalt": "native Plugins zur Abfrage der Headsettasten und zur Anzeige des aktuellen Stückes als Widget auf dem Sperrbildschirms",
