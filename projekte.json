@@ -177,11 +177,7 @@
 			"auftraggeber": "Australia and New Zealand Banking Group, SAP"
 		}, {
 			"projekt": "PM39",
-			"inhalt": "Ein Sportwagenhersteller betreibt in seinem Intranet ein auf Jive Social Business Software basierendes Intranet-Portal zur Abbildung der innerbetrieblichen Kommunikationsprozesse.
-
-Die von der Hamburger AppWerft entwickelte iPhone-App stellt die mobile Anbindung der Mitarbeiter an das Intranet dar, wobei höchste Anforderungen an die Sicherheit gewährleistet werden.
-
-Auf dem iPhone können nun z.B. eine Activity-Wall, Places, Spaces und eine Suchfunktion benutzt werden.",
+			"inhalt": "Ein Sportwagenhersteller betreibt in seinem Intranet ein auf Jive Social Business Software basierendes Intranet-Portal zur Abbildung der innerbetrieblichen Kommunikationsprozesse. Die von der Hamburger AppWerft entwickelte iPhone-App stellt die mobile Anbindung der Mitarbeiter an das Intranet dar, wobei höchste Anforderungen an die Sicherheit gewährleistet werden. Auf dem iPhone können nun z.B. eine Activity-Wall, Places, Spaces und eine Suchfunktion benutzt werden.",
 			"technik": "Cordova, JSP, iOS, Android, Javascript",
 			"layoutdesign": "Eigenentwicklung nach Vorgaben",
 			"rolle": "Umsetzung",
