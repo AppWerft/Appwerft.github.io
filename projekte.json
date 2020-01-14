@@ -112,6 +112,31 @@
 				}
 			],
 			"auftraggeber": "Agentur in Sydney"
+		},  {"projekt": "Timetrip Pics",
+			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol. 360°-VR-View zum Simulation des Kameraviews, wenn der Tourist noch auf dem Sofa ist. Augmentierung des Kameraviewws/VR-Views mit historischen Stadtphotographien und Audioaufnahmen.	",
+			"technik": "Titanium, iOS, Android, Java, Javascript",
+			"layoutdesign": "Kundenvorgabe",
+			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
+			"herausforderungen": [
+				{
+					"c": "Backend über Googles Firebase",
+					"s": "Programmierung eines Adapters"
+				}, {
+					"c": "Kameraview als Bestandteil einer View",
+					"s": "Programmierung eines nativen Plugins"
+				}, {
+					"c": "360°-VR-View",
+					"s": "Programmierung eines nativen Plugins mit C++-Bestandteilen"
+				}, {
+					"c": "Kompassview für stilisierten Stadtplan",
+					"s": "Programmierung eines nativen Plugins"
+				}, {
+					"c": "Sehr viele (>500) Assets (Bilder und Audiodateien) und Vorgabe de 100prozentigen Offlinbebetriebes",
+					"s": "Downloadmanager"
+				}
+			],
+			"auftraggeber": "Realer Bruneck (Südtirol)"
+			
 		}, {
 			"projekt": "Hördat",
 			"inhalt": "Hörspielkalender mit Erinnerungsfunktion, Verwaltungstool für Hörspiele aus DACH, Offlinefunktion, konfigurierbares Live-Radio, Zugriff auf den Bestand des Bundes Freier Radios",
@@ -287,32 +312,6 @@
 				}
 			],
 			"auftraggeber": "Größter deutscher Finanzdienstleister (NDA)"
-			
-		}, {
-			"projekt": "Timetrip Pics",
-			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol. 360°-VR-View zum Simulation des Kameraviews, wenn der Tourist noch auf dem Sofa ist. Augmentierung des Kameraviewws/VR-Views mit historischen Stadtphotographien und Audioaufnahmen.",
-			"technik": "Titanium, iOS, Android, Java, Javascript",
-			"layoutdesign": "Kundenvorgabe",
-			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
-			"herausforderungen": [
-				{
-					"c": "Backend über Googles Firebase",
-					"s": "Programmierung eines Adapters"
-				}, {
-					"c": "Kameraview als Bestandteil einer View",
-					"s": "Programmierung eines nativen Plugins"
-				}, {
-					"c": "360°-VR-View",
-					"s": "Programmierung eines nativen Plugins mit C++-Bestandteilen"
-				}, {
-					"c": "Kompassview für stilisierten Stadtplan",
-					"s": "Programmierung eines nativen Plugins"
-				}, {
-					"c": "Sehr viele (>500) Assets (Bilder und Audiodateien) und Vorgabe de 100prozentigen Offlinbebetriebes",
-					"s": "Downloadmanager"
-				}
-			],
-			"auftraggeber": "Realer Bruneck (Südtirol)"
 			
 		}
 	]
