@@ -218,9 +218,14 @@
 			"rolle": "Konzeptiom und Umsetzung",
 			"herausforderungen": [
 				{
-					"c": "Übertragung der Tierstimme als Klingelton"
+					"c": "Straßenbaumoverlay nur als WMS"
 				}, {
-					"c": "natives Plugin"
+					"c": "Erweiterung der Google-Map-API"
+				},
+				{
+					"c": "Datenbestand nur als XML"
+				}, {
+					"c": "Konvertierung des XML nach SQLite und Downloading der Datenbank im Onboardingprozess"
 				}
 			],
 			
