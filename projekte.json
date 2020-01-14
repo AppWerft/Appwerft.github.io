@@ -214,7 +214,7 @@
 		},  {
 			"projekt": "WiFi-Manager",
 			"inhalt": "native Plugins zur Kommunikation mit einer Kamera über WiFi",
-			"technik": "Titanium, Android, Java, Javascript",
+			"technik": "Bluetooth, Titanium, Android, Java, Javascript",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in Montréal (NDA)"
 		}, {
