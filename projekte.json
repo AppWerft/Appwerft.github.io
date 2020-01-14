@@ -112,7 +112,10 @@
 				}
 			],
 			"auftraggeber": "Agentur in Sydney"
-		},  {"projekt": "Timetrip Pics",
+		},{
+		
+			
+			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol. 360°-VR-View zum Simulation des Kameraviews, wenn der Tourist noch auf dem Sofa ist. Augmentierung des Kameraviewws/VR-Views mit historischen Stadtphotographien und Audioaufnahmen.	",
 			"technik": "Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Kundenvorgabe",
