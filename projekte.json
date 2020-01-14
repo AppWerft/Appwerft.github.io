@@ -22,7 +22,7 @@
 			"technik": "Cordova, Android, iOS, Javascript",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
-			"inhalt": ["Couponsystem", "geobasierte Liste der Mandanten", "Einlösung der Coupons"],
+			"inhalt": "Couponsystem mit geobasierte Liste der Mandanten (Umkreissuche), Einlösung der Coupons",
 			"herausforderungen": [
 				{
 					"c": "Performanzprobleme bei langen Listen",
