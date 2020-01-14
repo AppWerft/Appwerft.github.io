@@ -31,6 +31,20 @@
 				}
 			],
 			"auftraggeber": "Scoupy Nederland"
+		},{
+			"projekt": "Traumpolice",
+			"inhalt": "BeraterApp zur Unterstützung von Versicherungsmaklern. Protokollierung des Gespäches, Gesprächsverlauf kann im Vorwege konfiguriert und individualisiert werden. ",
+			"technik": "WindowsXP, Titanium, Javascript, PHP, mySQL",
+			"rolle": "Konzeption und Umsetzung",
+			"layoutdesign": "Kundenvorgabe",
+			
+			"herausforderungen": [
+				{
+					"c": "lauffähig auf Windows-Notebook und iPad",
+					"s": "HybridApp, deren HTML-Anteil mit ServerToGo zu einer Windows-Exe kompiliert wird"
+				}
+			],
+			"auftraggeber": "Versicherungskonzern (NDA)"
 		}, {
 			"projekt": "Begehbares Hörbuch",
 			"inhalt": "Geobasiertes Abspielen von Audioinhalten",
