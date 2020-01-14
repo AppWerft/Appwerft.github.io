@@ -228,12 +228,12 @@
 				{
 					"c": "Straßenbaumoverlay nur als WMS"
 				}, {
-					"c": "Erweiterung der Google-Map-API"
+					"s": "Erweiterung der Google-Map-API"
 				},
 				{
 					"c": "Datenbestand nur als XML"
 				}, {
-					"c": "Konvertierung des XML nach SQLite und Downloading der Datenbank im Onboardingprozess"
+					"s": "Konvertierung des XML nach SQLite und Downloading der Datenbank im Onboardingprozess"
 				}
 			],
 			
