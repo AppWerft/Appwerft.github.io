@@ -206,13 +206,13 @@
 			"auftraggeber": "Firma in den Niederlanden (NDA)"
 		}, {
 			"projekt": "Philips lifeline",
-			"inhalt": "native Plugin für die Realisierung eines XMPP-ChatClients",
+			"inhalt": "native Plugin für die Realisierung eines XMPP-ChatClients (Jabber)",
 			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in USA (NDA)"
 		}, {
 			"projekt": "Gerätebrowser miele@home",
-			"inhalt": "native Plugin für das Suchen nach IoT-Geräten (Bonjour)",
+			"inhalt": "Native Plugin für das Suchen nach IoT-Geräten (Bonjour). Bislang wurden die 254 Adressen des (C-) Netzen stumpf nach der REST-API abgefragt. Mit dem Plugin melden sich die verfügbaren Küchengeräte sofort",
 			"technik": "Titanium, Android, iOS, ObjectiveC",
 			"rolle": "Umsetzung",
 			
