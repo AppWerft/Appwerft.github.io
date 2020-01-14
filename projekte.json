@@ -162,6 +162,7 @@
 					"s": "Programmierung eines nativen Plugins zur Nutzung von JSoup. Damit lässt sich komfortable HTML parsen"
 				}
 			],
+			"shots" : ["hoerdat1.png","hoerdat2.png","hoerdat3.png","hoerdat4.png","hoerdat5.png","hoerdat6.png"],
 			"auftraggeber": "OS"
 		}, {
 			"projekt": "A.N.Z.",
