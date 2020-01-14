@@ -117,7 +117,7 @@
 			
 			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol. 360°-VR-View zum Simulation des Kameraviews, wenn der Tourist noch auf dem Sofa ist. Augmentierung des Kameraviewws/VR-Views mit historischen Stadtphotographien und Audioaufnahmen.",
-			"technik": "Titanium, iOS, Android, Java, Javascript",
+			"technik": "Firebase, Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
 			"herausforderungen": [
@@ -261,6 +261,12 @@
 				}
 			],
 			"auftraggeber": "FANHERO in Austin, Texas"
+		}, {
+			"projekt": "Firebase SMA",
+			"inhalt": "native Plugin zur Realisierung einer Identitätsbestätigung über SMS",
+			"technik": "Firebase, Titanium, Android, Java,",
+			"rolle": "Umsetzung",
+			"auftraggeber": "Agentur aus London (NDA)"
 		}, {
 			"projekt": "Flic",
 			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen, die dann Funktionen im Smartphone steuern",
