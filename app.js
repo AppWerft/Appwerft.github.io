@@ -4,6 +4,7 @@ function onReady() {
 		model.items.map(renderItem);
 		document.title = model.title;
 		$('h1').text(model.title);
+		$("#accordion").accordion();
 		
 	});
 };
