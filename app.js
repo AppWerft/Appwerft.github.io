@@ -1,3 +1,4 @@
+(function(){
 function onReady() {
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
@@ -23,3 +24,4 @@ function renderItem(item,ndx) {
 }
 
 $(document).ready(onReady);
+})();
