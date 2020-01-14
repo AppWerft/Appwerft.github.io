@@ -19,5 +19,4 @@ function renderItem(item,ndx) {
 		if (langs.indexOf(k)>-1) $('#icons_'+ndx).append('<img src="assets/'+k.toLowerCase()+'.png" height="24"/>')
 	});
 }
-
 $(document).ready(onReady);
