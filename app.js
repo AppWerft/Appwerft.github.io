@@ -4,7 +4,14 @@ function onReady() {
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		model.items.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
-		$('[title!=""]').qtip({style: { classes: 'qtip-dark qtip-shadow'}});
+		$('[title!=""]').qtip({
+		position: {
+        my: 'top right',  // Position my top left...
+        at: 'bottom right', // at the bottom right of...
+        target: $('.selector') // my target
+    },
+		
+		style: { classes: 'qtip-dark qtip-shadow'}});
 	});
 };
 
