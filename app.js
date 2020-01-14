@@ -4,13 +4,10 @@ function onReady() {
 		$('h1').text(model.title);
 		$("#accordion").accordion();
 	});
-};
-
-
+}
 function renderArticle(item,ndx) {
 	return '<dl><dt>Projekt</dt><dd>'+item.projekt+'</dd></dl>';
 }
-  
 function renderItem(item,ndx) {
 	console.log("renderItem " + ndx);
 	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div>' +renderArticle(item,ndx)+'</div>');
