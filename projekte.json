@@ -120,6 +120,18 @@
 			],
 			"auftraggeber": "Agentur in Sydney"
 		},{
+			"projekt": "OpenScience",
+			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank",
+			"technik": "Solr, Java, TYPO3, Javascript, PHP",
+			"layoutdesign": "Kundenvorgabe",
+			"rolle": "Umsetzung, Betreuung von Auftragnehmern",
+			"herausforderungen": [
+				{
+					"c": "One-Page-App (React) in TYPO3 einbinden","s":"DOM-Parser"
+				}
+			],
+			"auftraggeber": "Staats- und Universitätsbibliothek Hamburg"
+		},{
 		
 			
 			"projekt": "Timetrip Pics",
