@@ -45,7 +45,7 @@ function renderArticle(item,ndx) {
 	}
 	if (item.Shots) {
 		article += '<div class="shots">';
-		item.shots.forEach(function(s) {
+		item.Shots.forEach(function(s) {
 			article += ('<img class="large" title="Screenshot" src="shots/'+s+'" />');
 		});
 		article += '</div>';
