@@ -133,7 +133,8 @@
 					"c": "DSVGO","s":"Proxy"
 				}
 			],
-			"auftraggeber": "Staats- und Universitätsbibliothek Hamburg"
+			"auftraggeber": "Staats- und Universitätsbibliothek Hamburg",
+			"shots" : ["os0.png","os1.png","os2.png"]
 		},{
 		
 			
