@@ -127,9 +127,9 @@
 			"rolle": "Umsetzung, Betreuung von Auftragnehmern",
 			"herausforderungen": [
 				{
-					"c": "One-Page-App (React) in TYPO3 einbinden","s":"DOM-Parser",
-					"c": "Datenanreicherung","s":"Einbindung von REST-Sewrvices",
-					"c": "Einbindung der Kacheln der Landesbetriebe Hamburg","s":"Cache",
+					"c": "One-Page-App (React) in TYPO3 einbinden","s":"DOM-Parser"},{
+					"c": "Datenanreicherung","s":"Einbindung von REST-Sewrvices"},{
+					"c": "Einbindung der Kacheln der Landesbetriebe Hamburg","s":"Cache"},{
 					"c": "DSVGO","s":"Proxy"
 				}
 			],
