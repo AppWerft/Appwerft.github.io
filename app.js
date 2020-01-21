@@ -12,7 +12,7 @@ function onReady() {
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
-		console.log($.param());
+		console.log(getUrlVars());
 		$(".ui-accordion-content").show();
 		
 	});
@@ -57,7 +57,18 @@ function renderArticle(item,ndx) {
 	return article;
 	  	
 }
-
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
   
 function renderItem(item,ndx) {
 	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div>' +renderArticle(item,ndx)+'</div>');
