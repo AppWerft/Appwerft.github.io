@@ -10,5 +10,5 @@ td {width: 50%;vertical-align:top;background-color:#f8f8f8;padding:2px}
 table {width:100%}
 th {background-color:#eee}
 dt {font-weight:bold}
-.shots img.small {width:160px;margin:0 7px 7px 0;float:left}
-.shots img.large {width:420px;margin:0 7px 7px 0;float:left}
+.shots img.small {width:120px;margin:0 7px 7px 0;float:left}
+.shots img.large {width:320px;margin:0 7px 7px 0;float:left}
