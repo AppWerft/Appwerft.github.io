@@ -1,5 +1,5 @@
 function onReady() {
-	console.log(getUrlVars());
+	console.log(window.location.href.slice(window.location.href.indexOf('?') + 1));
 		
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
