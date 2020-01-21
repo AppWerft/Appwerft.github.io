@@ -13,7 +13,7 @@ function onReady() {
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
-		const p = window.location.href.slice(window.location.href.indexOf('?') + 1)[0];
+		const p = window.location.href.slice(window.location.href.indexOf('?') + 1);
 		console.log("'"+p+"'");
 		switch (p) {
 			case 'full':
