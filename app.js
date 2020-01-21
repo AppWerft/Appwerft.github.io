@@ -13,7 +13,7 @@ function onReady() {
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
 		console.log(getUrlVars());
-		$(".ui-accordion-content").show();
+		//$(".ui-accordion-content").show();
 		
 	});
 };
