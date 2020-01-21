@@ -12,6 +12,9 @@ function onReady() {
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
+		console.log($.param());
+		$(".ui-accordion-content").show();
+		
 	});
 };
 
