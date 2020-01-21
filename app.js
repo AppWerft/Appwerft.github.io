@@ -13,9 +13,11 @@ function onReady() {
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
-		const s = window.location.href.slice(window.location.href.indexOf('?') + 1)[0];
-	if (s=="full") 	$(".ui-accordion-content").show();
-		
+		switch (window.location.href.slice(window.location.href.indexOf('?') + 1)[0]) {
+			case: 'full':
+				$(".ui-accordion-content").show();
+			break;	
+		}
 	});
 };
 
