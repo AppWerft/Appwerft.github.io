@@ -33,7 +33,9 @@
 			],
 			"auftraggeber": "Scoupy Nederland",
 			"shots" : ["scoupy1.png","scoupy2.png","scoupy3.png","scoupy4.png","scoupy5.png"]
-		}, {
+		},
+		
+		 {
 			"projekt": "Wasserzähler",
 			"technik": "Android, Titanium",
 			"rolle": "Konzeption und Umsetzung",
@@ -41,7 +43,9 @@
 			"inhalt": "Plugin zur Nutzung einer Kameraview, die per OCR die Zählerstände ermittelt. Die Lösung verwendet Googles neue Library „Vision“",
 			"auftraggeber": "Firma in Bratislava",
 			"shots" : ["ocr1.png","ocr2.png","ocr3.png","ocr4.png"]
-		},{
+		},
+		
+		{
 			"projekt": "Traumpolice",
 			"inhalt": "BeraterApp zur Unterstützung von Versicherungsmaklern. Protokollierung des Gespäches, Gesprächsverlauf kann im Vorwege konfiguriert und individualisiert werden. ",
 			"technik": "WindowsXP, iOS, Titanium, Javascript, PHP, mySQL",
