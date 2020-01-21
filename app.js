@@ -1,6 +1,5 @@
 function onReady() {
-	console.log(window.location.href.slice(window.location.href.indexOf('?') + 1));
-		
+	
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
@@ -14,7 +13,8 @@ function onReady() {
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
-		//$(".ui-accordion-content").show();
+		const s = window.location.href.slice(window.location.href.indexOf('?') + 1)[0];
+	if (s=="full") 	$(".ui-accordion-content").show();
 		
 	});
 };
