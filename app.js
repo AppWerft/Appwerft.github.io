@@ -14,7 +14,7 @@ function onReady() {
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
 		switch (window.location.href.slice(window.location.href.indexOf('?') + 1)[0]) {
-			case: 'full':
+			case 'full':
 				$(".ui-accordion-content").show();
 			break;	
 		}
