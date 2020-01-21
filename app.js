@@ -1,4 +1,6 @@
 function onReady() {
+	console.log(getUrlVars());
+		
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
@@ -12,7 +14,6 @@ function onReady() {
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
-		console.log(getUrlVars());
 		//$(".ui-accordion-content").show();
 		
 	});
