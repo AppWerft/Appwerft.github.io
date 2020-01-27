@@ -388,6 +388,14 @@
 			],
 			"auftraggeber": "Größter deutscher Finanzdienstleister (NDA)"
 			
+		}, {
+			"projekt": "Visualisierung Tunnelbohrmaschine",
+			"inhalt": "Homebanking- und CRM-App",
+			
+			"technik": "Labwindows, TurboPascal, SPS",
+			"rolle": "Eigenverantwortliche Umsetzung",
+			"auftraggeber": "Herrenknecht AG, Schwanau"
+			
 		}
 	]
 }
