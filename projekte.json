@@ -250,7 +250,7 @@
 		},{
 			"projekt": "CreditCard scanner",
 			"id":15,
-			"inhalt": "native Plugins zum automatischen Einlesen von Kreditkarten",
+			"inhalt": "native Plugins zum automatischen Einlesen von Kreditkarten, nutzt Tesseract und openCV",
 			"technik": "CPP, Tesseract, OpenCV, Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"plattformen": ["Android"],
