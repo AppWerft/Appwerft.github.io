@@ -14,7 +14,7 @@ function onReady() {
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
 		const opts = getOpts();
-		if (opts["full"]) 
+		if (opts["expanded"]) 
 			$(".ui-accordion-content").show();
 	});
 };
