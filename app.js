@@ -5,7 +5,7 @@ function onReady() {
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		if (opts['projects']) {
 			model.items.filter(function(item){
-				return opts['projects'].split(',').include(item.id) ? true : false; 
+				return opts['projects'].split(',').includes(item.id) ? true : false; 
 			});
 		}
 		model.items.forEach(renderItem);
