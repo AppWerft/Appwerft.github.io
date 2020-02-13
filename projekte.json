@@ -251,7 +251,7 @@
 			"projekt": "CreditCard scanner",
 			"id":15,
 			"inhalt": "native Plugins zum automatischen Einlesen von Kreditkarten",
-			"technik": "OpenCV, Titanium, Android, Java",
+			"technik": "CPP, OpenCV, Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"plattformen": ["Android"],
 			"auftraggeber": "Agentur aus London (NDA)"
