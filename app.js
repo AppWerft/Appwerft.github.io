@@ -20,14 +20,19 @@ function onReady() {
 		projects.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({position: {my: 'top right', at: 'bottom right'},style: { classes: 'qtip-dark qtip-shadow'}});
-		
-		if (opts["expand"] && opts["expand"]=='all') 
-			$(".ui-accordion-content").show();
-		if (opts["expand"] && opts["expand"]=='selected') 
-			PIDs.forEach(function(pid,ndx){
-				const id = 2*(ndx+1);
-				$('div#ui-id-'+id).show();	
-			});	
+		if (opts["expand"] {
+			switch (opts["expand"]) {
+				case 'all':
+					$(".ui-accordion-content").show();
+				break;
+				case 'selected':
+					PIDs.forEach(function(pid,ndx){
+						const id = 2*(ndx+1);
+						$('div#ui-id-'+id).show();	
+					});	
+				 break	
+			} 
+		}
 	});
 };
 
