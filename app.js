@@ -20,8 +20,9 @@ function onReady() {
 };
 
 function getOtherProjects(projects,ids) {
-	var res = [];
-	return res;
+	return projects.filter(function(p){
+		
+	});
 }
 
 function getProjectById(projects,id) {
