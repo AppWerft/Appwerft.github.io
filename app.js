@@ -14,6 +14,7 @@ function onReady() {
 			otherprojects.forEach(function(p){
 				projects.push(p);
 			});
+			if (opts["expanded"] && opts["expanded"]=='selected') 
 			PIDs.forEach(function(p,i){
 				$('#ui-id-'+(i+1)).show();	
 			});
