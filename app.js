@@ -79,7 +79,7 @@ function renderItem(item,ndx) {
  		if (langs.indexOf(k)>-1) $('#icons_'+ndx).append('<img title="Eingesetzte Technik:\n'+k+'" src="assets/'+k.toLowerCase()+'.png" />')
 	});
 }
-function getOpt() {
+function getOpts() {
     var vars = [], hash;
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
     for(var i = 0; i < hashes.length; i++)
