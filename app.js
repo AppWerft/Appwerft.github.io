@@ -8,9 +8,6 @@ function onReady() {
 			opts['projects'].split(',').forEach(function(id) {
 				projects.push(getProjectById(model.items,id));		
 			});
-			model.items.filter(function(item){
-				return .includes(item.id) ? true : false; 
-			});
 		} else projects = model.items;
 		projects.forEach(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
