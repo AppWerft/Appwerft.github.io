@@ -40,7 +40,7 @@
 		 {
 			"projekt": "Wasserzählererfassung",
 			"id":3,
-			"technik": "Android, Titanium, Java",
+			"technik": "CPP, Android, Titanium, Java",
 			"rolle": "Konzeption und Umsetzung",
 			
 			"inhalt": "Plugin zur Nutzung einer Kameraview, die per OCR die Zählerstände ermittelt. Die Lösung verwendet Googles neue Library „Vision“",
@@ -85,7 +85,7 @@
 		}, {
 			"projekt": "Promotion Elbphilharmonie",
 			"id":6,
-			"technik": "Android, Java",
+			"technik": "CPP, Android, Java",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Kundenvorgabe",
 			"inhalt": "Werbeagentur verschickt Pixel-Smartphones mit VR-Brille. VirtualRealityApp zeigt Elbphilharmonie in VR-Brille(3D, Stereo, kopfneigungsabhängig)",
@@ -100,7 +100,7 @@
 			"projekt": "DLFmediathek",
 			"id":7,
 			"inhalt": "Mediathek der DLF-Inhalte, Live-Radio mit Schlummerfunktion, Audio-Archiv, Suche",
-			"technik": "Titanium, Android, Javascript, FFmpeg",
+			"technik": "CPP, Titanium, Android, Javascript, FFmpeg",
 			"layoutdesign": "Eigenentwicklung",
 			"rolle": "Konzeption, Umsetzung",
 			"herausforderungen": [
@@ -160,7 +160,7 @@
 			"id":10,
 			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol. 360°-VR-View zum Simulation des Kameraviews, wenn der Tourist noch auf dem Sofa ist. Augmentierung des Kameraviewws/VR-Views mit historischen Stadtphotographien und Audioaufnahmen.",
-			"technik": "Firebase, Titanium, iOS, Android, Java, Javascript",
+			"technik": "CPP, Firebase, Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption, Umsetzung nach Layoutvorgaben",
 			"herausforderungen": [
@@ -398,7 +398,7 @@
 			"projekt": "Finanzassistent",
 			"inhalt": "Homebanking- und CRM-App",
 			"layoutdesign": "Beratung des Kunden",
-			"technik": "Titanium, iOS, Android, Java, ObjectiveC, Javascript",
+			"technik": "CPP, Titanium, iOS, Android, Java, ObjectiveC, Javascript",
 			"rolle": "Workshop mit dem Team aus Köln, danach Beratung und Modulentwicklung",
 			"herausforderungen": [
 				{
