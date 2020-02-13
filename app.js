@@ -11,7 +11,9 @@ function onReady() {
 			});
 			var otherprojects = getOtherProjects(model.items,PIDs);
 			console.log(otherprojects);
-			projects.push(otherprojects);
+			otherprojects.forEach(function(p){
+				projects.push(p);
+			});
 		} else projects = model.items;
 		
 		projects.map(renderItem);
