@@ -13,13 +13,9 @@ function onReady() {
     	},
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
-		const p = window.location.href.slice(window.location.href.indexOf('?') + 1);
-		console.log("'"+p+"'");
-		switch (p) {
-			case 'full':
-				$(".ui-accordion-content").show();
-			break;	
-		}
+		const opts = getOpts();
+		if (opts["full"]) 
+			$(".ui-accordion-content").show();
 	});
 };
 
@@ -81,6 +77,17 @@ function renderItem(item,ndx) {
 	['Solr','TYPO3','Firebase','OpenCV','FFmpeg','HTML5','Bluetooth','WindowsXP','PHP','mySQL','Cordova','JSP','Java','ES6','ObjectiveC','Titanium','Android','iOS','ReactNative','Javascript'].forEach(function(k){
  		if (langs.indexOf(k)>-1) $('#icons_'+ndx).append('<img title="Eingesetzte Technik:\n'+k+'" src="assets/'+k.toLowerCase()+'.png" />')
 	});
+}
+function getOpt() {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
 }
 
 $(document).ready(onReady);
