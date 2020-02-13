@@ -448,8 +448,11 @@
 				}, {
 					"c": "Unterschriftenerfassung",
 					"s": "Erfassung der (vektoriellen) Gesten und Abspeicherung als SVG"
+				},{
+					"c": "Erfassung von Messdaten unter Vermeidung von unhandlicher Bluetoothkopplung",
+					"s": "Nutzung BT-Advertisingmode zur niedrigschwelligen Übertragung"
 				}
-			],
+			]
 			
 		}
 	]
