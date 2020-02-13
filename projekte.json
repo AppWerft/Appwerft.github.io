@@ -434,11 +434,22 @@
 		},{
 			"id":30,
 			"projekt": "ATM Service",
-			"inhalt": "",
+			"inhalt": "„Klemmbrett“-iPad-App zur Unterstützung der Monteure. ",
 			
 			"technik": "iOS",
-			"rolle": "Schulungf und Beratung",
-			"auftraggeber": "Synfis Hannover"
+			"rolle": "Schulung und Beratung",
+			"auftraggeber": "Synfis Hannover",
+			"herausforderungen": [
+				{
+					"c": "Schlechte Netzabdeckung beim Kunden",
+					"s": "Hintergrunddienst, der automatisch bei Netzwiederkehr die Queue in Richtung SAP abarbeitet"
+				}, {
+					"c": "QR-Code","s":"Nutzung einer QR-Library auf Basis ZXing"
+				}, {
+					"c": "Unterschriftenerfassung",
+					"s": "Erfassung der (vektoriellen) Gesten und Abspeicherung als SVG"
+				}
+			],
 			
 		}
 	]
