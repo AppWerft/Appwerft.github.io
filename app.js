@@ -20,9 +20,9 @@ function onReady() {
 };
 
 function getProjectById(projects,id) {
-	return projects.filter(function(p){
+	projects.filter(function(p){
 		return p.id==id ? true: false;
-	});
+	})[0];
 }
 
 function renderChallenges(challenge) {
