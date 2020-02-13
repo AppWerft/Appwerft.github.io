@@ -39,7 +39,7 @@ function onReady() {
 function getOtherProjects(projects,ids) {
 	console.log(ids);
 	return projects.filter(function(p){
-		console.log(id);
+		console.log(p.id);
 		return ids.includes(p.id) ? false : true;
 	});
 }
