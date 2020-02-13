@@ -416,7 +416,7 @@
 		}, {
 			"id":28,
 			"projekt": "Tunnelbohrmaschine",
-			"inhalt": "Visualisierung Spezialmaschinenbau. Turbopascal auf dem Industrie-PC, Fernabfrage der Baustellendaten über Modem, Erstellung von Treibern für Nadeldrucker und SPS-Kommunikation (DOS",
+			"inhalt": "Visualisierung Spezialmaschinenbau. Turbopascal auf dem Industrie-PC, Fernabfrage der Baustellendaten über Modem, Erstellung von Treibern für Nadeldrucker und SPS-Kommunikation (DOS)",
 			
 			"technik": "Labwindows, TurboPascal, SPS",
 			"rolle": "Eigenverantwortliche Umsetzung",
@@ -430,6 +430,15 @@
 			"technik": "Solr, TYPO3",
 			"rolle": "Eigenverantwortliche Umsetzung",
 			"auftraggeber": "OTTO-Tochter Smatch"
+			
+		},{
+			"id":30,
+			"projekt": "ATM Service",
+			"inhalt": "",
+			
+			"technik": "iOS",
+			"rolle": "Schulungf und Beratung",
+			"auftraggeber": "Synfis Hannover"
 			
 		}
 	]
