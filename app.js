@@ -10,7 +10,7 @@ function onReady() {
 				projects.push(getProjectById(model.items,id));		
 			});
 			var otherprojects = getOtherProjects(model.items,PIDs);
-			console.log(otherprojects[0]);
+			console.log(otherprojects);
 			projects.push(otherprojects);
 		} else projects = model.items;
 		
