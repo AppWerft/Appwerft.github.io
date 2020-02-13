@@ -415,8 +415,8 @@
 			
 		}, {
 			"id":28,
-			"projekt": "Visualisierung Tunnelbohrmaschine",
-			"inhalt": "Homebanking- und CRM-App",
+			"projekt": "Tunnelbohrmaschine",
+			"inhalt": "Visualisierung Spezialmaschinenbau. Turbopascal auf dem Industrie-PC, Fernabfrage der Baustellendaten über Modem, Erstellung von Treibern für Nadeldrucker und SPS-Kommunikation (DOS",
 			
 			"technik": "Labwindows, TurboPascal, SPS",
 			"rolle": "Eigenverantwortliche Umsetzung",
