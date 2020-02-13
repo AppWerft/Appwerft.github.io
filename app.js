@@ -16,8 +16,7 @@ function onReady() {
 			if (opts["expand"] && opts["expand"]=='selected') 
 			PIDs.forEach(function(pid,ndx){
 				console.log(pid);
-				console.log('#ui-id-'+(ndx+1));
-				$('#ui-id-'+(ndx+1)).next().show();	
+				console.log('#ui-id-'+(2*(ndx+1))).show();	
 			});
 		} else projects = model.items;
 		
