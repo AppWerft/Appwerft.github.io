@@ -14,6 +14,9 @@ function onReady() {
 			otherprojects.forEach(function(p){
 				projects.push(p);
 			});
+			PIDs.forEach(function(p,i){
+				$('#ui-id-'+(i+1)).show();	
+			});
 		} else projects = model.items;
 		
 		projects.map(renderItem);
