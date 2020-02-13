@@ -5,11 +5,12 @@ function onReady() {
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		var projects = [];
 		if (opts['projects']) {
-			opts['projects'].split(',').forEach(function(id) {
+			const PIDs = opts['projects'].split(',');
+			PIDs.forEach(function(id) {
 				projects.push(getProjectById(model.items,id));		
 			});
-			var otherprojects = getOtherProjects(model.items,opts['projects'].split(','));
-			console.log(otherprojects)[0];
+			var otherprojects = getOtherProjects(model.items,PIDs);
+			console.log(otherprojects[0]);
 			projects.push(otherprojects);
 		} else projects = model.items;
 		
