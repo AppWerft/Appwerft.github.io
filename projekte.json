@@ -424,12 +424,12 @@
 			
 		},{
 			"id":29,
-			"projekt": "Visualisierung Tunnelbohrmaschine",
+			"projekt": "Whitelabel Affiliateportal",
 			"inhalt": "Homebanking- und CRM-App",
 			
-			"technik": "Labwindows, TurboPascal, SPS",
+			"technik": "Solr, TYPO3",
 			"rolle": "Eigenverantwortliche Umsetzung",
-			"auftraggeber": "OTTO-Tochter (Smatch)"
+			"auftraggeber": "OTTO-Tochter Smatch"
 			
 		}
 	]
