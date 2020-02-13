@@ -9,7 +9,7 @@ function onReady() {
 				projects.push(getProjectById(model.items,id));		
 			});
 			var otherprojects = getOtherProjects(model.items,opts['projects'].split(','));
-			console.log(otherprojects)
+			console.log(otherprojects)[0];
 			projects.push(otherprojects);
 		} else projects = model.items;
 		
