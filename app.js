@@ -8,6 +8,7 @@ function onReady() {
 			opts['projects'].split(',').forEach(function(id) {
 				projects.push(getProjectById(model.items,id));		
 			});
+			projects.push(getOtherProjects(model.items,opts['projects'].split(',')));
 		} else projects = model.items;
 		projects.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
@@ -17,6 +18,11 @@ function onReady() {
 			$(".ui-accordion-content").show();
 	});
 };
+
+function getOtherProjects(projects,ids) {
+	var res = [];
+	return res;
+}
 
 function getProjectById(projects,id) {
 	return projects.filter(function(p){
