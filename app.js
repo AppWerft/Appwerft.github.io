@@ -30,14 +30,16 @@ function onReady() {
 						const id = 2*(ndx+1);
 						$('div#ui-id-'+id).show();	
 					});	
-				 break	
+				 break;	
 			} 
 		}
 	});
 };
 
 function getOtherProjects(projects,ids) {
+	console.log(ids);
 	return projects.filter(function(p){
+		console.log(id);
 		return ids.includes(p.id) ? false : true;
 	});
 }
