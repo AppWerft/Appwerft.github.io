@@ -454,6 +454,14 @@
 				}
 			]
 			
+		},{
+			"id":31,
+			"projekt": "Samsungs SPASS Fingerprint",
+			"inhalt": "Erstellung eines Plugins zur Nutzung von Samsungs biometrische Identifizierung",
+			
+			"technik": "Android, Titanium",
+			"rolle": "Entwicklung",
+			"auftraggeber": "OpenSource"
 		}
 	]
 }
