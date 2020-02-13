@@ -9,7 +9,6 @@ function onReady() {
 				projects.push(getProjectById(model.items,id));		
 			});
 		} else projects = model.items;
-		console.log(projects);
 		projects.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({position: {my: 'top right', at: 'bottom right'},style: { classes: 'qtip-dark qtip-shadow'}});
