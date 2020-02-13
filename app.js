@@ -15,7 +15,7 @@ function onReady() {
 			});
 			if (opts["expand"] && opts["expand"]=='selected') 
 			PIDs.forEach(function(p,i){
-				$('#ui-id-'+(i+1)).show();	
+				$('#ui-id-'+(i+1)).next().show();	
 			});
 		} else projects = model.items;
 		
