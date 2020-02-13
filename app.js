@@ -3,15 +3,9 @@ function onReady() {
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
-		model.items.map(renderItem);
+		model.items.forEach(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
-		$('[title!=""]').qtip({
-		position: {
-        my: 'top right', 
-        at: 'bottom right' 
-       },
-		 style: { classes: 'qtip-dark qtip-shadow'}
-	  });
+		$('[title!=""]').qtip({position: {my: 'top right', at: 'bottom right'},style: { classes: 'qtip-dark qtip-shadow'}});
 		
 		if (opts["expanded"]) 
 			$(".ui-accordion-content").show();
@@ -57,19 +51,7 @@ function renderArticle(item,ndx) {
 	return article;
 	  	
 }
-function getUrlVars()
-{
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++)
-    {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = hash[1];
-    }
-    return vars;
-}
-  
+
 function renderItem(item,ndx) {
 	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div>' +renderArticle(item,ndx)+'</div>');
 	const langs = item.technik.split(/,\s+/);
