@@ -1,5 +1,5 @@
 function onReady() {
-	
+	const opts = getOpts();
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
@@ -9,12 +9,10 @@ function onReady() {
 		position: {
         my: 'top right', 
         at: 'bottom right' 
-        
-    	},
+       },
+		 style: { classes: 'qtip-dark qtip-shadow'}
+	  });
 		
-		style: { classes: 'qtip-dark qtip-shadow'}});
-		const opts = getOpts();
-		console.log(opts);
 		if (opts["expanded"]) 
 			$(".ui-accordion-content").show();
 	});
