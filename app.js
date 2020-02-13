@@ -4,8 +4,9 @@ function onReady() {
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		var projects = [];
+		var PIDs= []
 		if (opts['projects']) {
-			const PIDs = opts['projects'].split(',');
+			PIDs = opts['projects'].split(',');
 			PIDs.forEach(function(id) {
 				projects.push(getProjectById(model.items,id));		
 			});
@@ -22,7 +23,7 @@ function onReady() {
 		
 		if (opts["expand"] && opts["expand"]=='all') 
 			$(".ui-accordion-content").show();
-			if (opts["expand"] && opts["expand"]=='selected') 
+		if (opts["expand"] && opts["expand"]=='selected') 
 			PIDs.forEach(function(pid,ndx){
 				const id = 2*(ndx+1);
 				$('div#ui-id-'+id).show();	
