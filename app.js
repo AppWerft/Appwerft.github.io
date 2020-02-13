@@ -70,7 +70,7 @@ function renderArticle(item,ndx) {
 }
 
 function renderItem(item,ndx) {
-	console.log(item); 
+	if (!item) return;
 	$('#accordion').append('<h3>'+item.projekt+'<div style="float:right" id="icons_'+ndx+'"></div></h3><div>' +renderArticle(item,ndx)+'</div>');
 	const langs = item.technik.split(/,\s+/);
 	['CPP','Tesseract','Solr','TYPO3','Firebase','OpenCV','FFmpeg','HTML5','Bluetooth','WindowsXP','PHP','mySQL','Cordova','JSP','Java','ES6','ObjectiveC','Titanium','Android','iOS','ReactNative','Javascript'].forEach(function(k){
