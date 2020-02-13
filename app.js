@@ -5,9 +5,9 @@ function onReady() {
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
 		var projects = [];
 		if (opts['projects']) {
-			opts['projects'].split(',').forEach(id) {
+			opts['projects'].split(',').forEach(function(id) {
 				projects.push(getProjectById(model.items,id));		
-			}
+			});
 			model.items.filter(function(item){
 				return .includes(item.id) ? true : false; 
 			});
