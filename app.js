@@ -13,11 +13,7 @@ function onReady() {
 			otherprojects.forEach(function(p){
 				projects.push(p);
 			});
-			if (opts["expand"] && opts["expand"]=='selected') 
-			PIDs.forEach(function(pid,ndx){
-				const id = 2*(ndx+1);
-				$('div#ui-id-'+id).show();	
-			});
+			
 		} else projects = model.items;
 		
 		projects.map(renderItem);
@@ -26,6 +22,11 @@ function onReady() {
 		
 		if (opts["expand"] && opts["expand"]=='all') 
 			$(".ui-accordion-content").show();
+			if (opts["expand"] && opts["expand"]=='selected') 
+			PIDs.forEach(function(pid,ndx){
+				const id = 2*(ndx+1);
+				$('div#ui-id-'+id).show();	
+			});	
 	});
 };
 
