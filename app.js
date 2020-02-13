@@ -3,6 +3,12 @@ function onReady() {
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
+		if (opts['projects']) {
+			model.items.filter(function(item){
+				const projects = opts['projects'].split(',');
+				return projects.include(item.id) ? true : false; 
+			});
+		}
 		model.items.forEach(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({position: {my: 'top right', at: 'bottom right'},style: { classes: 'qtip-dark qtip-shadow'}});
