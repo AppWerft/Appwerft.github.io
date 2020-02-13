@@ -10,7 +10,6 @@ function onReady() {
 				projects.push(getProjectById(model.items,id));		
 			});
 			var otherprojects = getOtherProjects(model.items,PIDs);
-			console.log(otherprojects);
 			otherprojects.forEach(function(p){
 				projects.push(p);
 			});
