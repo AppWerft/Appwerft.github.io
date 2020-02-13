@@ -14,6 +14,7 @@ function onReady() {
 		
 		style: { classes: 'qtip-dark qtip-shadow'}});
 		const opts = getOpts();
+		console.log(opts);
 		if (opts["expanded"]) 
 			$(".ui-accordion-content").show();
 	});
