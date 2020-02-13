@@ -18,7 +18,7 @@ function onReady() {
 	});
 };
 
-function getProjectbyId(projects,id) {
+function getProjectById(projects,id) {
 	return projects.filter(function(p){
 		return p.id==id ? true: false;
 	});
