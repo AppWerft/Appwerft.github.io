@@ -4,6 +4,7 @@
 	"items": [
 		{
 			"projekt": "Vladi Private Islands",
+			"id":1,
 			"technik": "Cordova, iOS, Android, Javascript",
 			"inhalt": ["Darstellung aktueller Pacht- und Verkaufsimmobilien, redaktionelle Seiten, interaktive Karte aller Objekte"],
 			"rolle": "Konzeption und Umsetzung",
@@ -21,6 +22,7 @@
 			"auftraggeber": "Vladi Private Islands"
 		}, {
 			"projekt": "Scoupy",
+			"id":2,
 			"technik": "Cordova, Android, iOS, Javascript",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Eigenentwicklung",
@@ -37,6 +39,7 @@
 		
 		 {
 			"projekt": "Wasserzählererfassung",
+			"id":3,
 			"technik": "Android, Titanium, Java",
 			"rolle": "Konzeption und Umsetzung",
 			
@@ -47,6 +50,7 @@
 		
 		{
 			"projekt": "Traumpolice",
+			"id":4,
 			"inhalt": "BeraterApp zur Unterstützung von Versicherungsmaklern. Protokollierung des Gespäches, Gesprächsverlauf kann im Vorwege konfiguriert und individualisiert werden. ",
 			"technik": "WindowsXP, iOS, Titanium, Javascript, PHP, mySQL",
 			"rolle": "Konzeption und Umsetzung",
@@ -65,6 +69,7 @@
 			"auftraggeber": "Versicherungskonzern (NDA)"
 		}, {
 			"projekt": "Begehbares Hörbuch",
+			"id":5,
 			"inhalt": "Geobasiertes Abspielen von Audioinhalten",
 			"technik": "Cordova, Android, iOS, Javascript",
 			"rolle": "Konzeption und Umsetzung",
@@ -79,6 +84,7 @@
 			"auftraggeber": "Ausgründung der FU Berlin (NDA)"
 		}, {
 			"projekt": "Promotion Elbphilharmonie",
+			"id":6,
 			"technik": "Android, Java",
 			"rolle": "Konzeption und Umsetzung",
 			"layoutdesign": "Kundenvorgabe",
@@ -92,7 +98,7 @@
 			"auftraggeber": "Werbefirma aus Winterhude (NDA)"
 		}, {
 			"projekt": "DLFmediathek",
-			
+			"id":7,
 			"inhalt": "Mediathek der DLF-Inhalte, Live-Radio mit Schlummerfunktion, Audio-Archiv, Suche",
 			"technik": "Titanium, Android, Javascript, FFmpeg",
 			"layoutdesign": "Eigenentwicklung",
@@ -119,6 +125,7 @@
 			"auftraggeber": "OpenSource in Absprache mit DLF Köln"
 		}, {
 			"projekt": "eLearningsportal",
+			"id":8,
 			"inhalt": "Professional training for Hospitals: Umbau einer phonegap-App nach Titanium, Silent PushNotification zur Updateverwaltung, Offlinefunktion, White labeling",
 			"technik": "Cordova, Titanium, Android, iOS, Javascript",
 			"layoutdesign": "Kundenvorgabe",
@@ -133,6 +140,7 @@
 			"auftraggeber": "Agentur in Sydney"
 		},{
 			"projekt": "OpenScience",
+			"id":9,
 			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank",
 			"technik": "Solr, Java, TYPO3, Javascript, PHP",
 			"layoutdesign": "Kundenvorgabe",
@@ -149,7 +157,7 @@
 			"Shots" : ["os0.png","os1.png","os2.png"]
 		},{
 		
-			
+			"id":10,
 			"projekt": "Timetrip Pics",
 			"inhalt": "EU-geförderte App zur Darstellung historischer Stadtansichten in Tirol. 360°-VR-View zum Simulation des Kameraviews, wenn der Tourist noch auf dem Sofa ist. Augmentierung des Kameraviewws/VR-Views mit historischen Stadtphotographien und Audioaufnahmen.",
 			"technik": "Firebase, Titanium, iOS, Android, Java, Javascript",
@@ -177,6 +185,7 @@
 			"auftraggeber": "Realer Bruneck (Südtirol)"
 			
 		}, {
+			"id":11,
 			"projekt": "Hördat",
 			"inhalt": "Hörspielkalender mit Erinnerungsfunktion, Verwaltungstool für Hörspiele aus DACH, Offlinefunktion, konfigurierbares Live-Radio, Zugriff auf den Bestand des Bundes Freier Radios",
 			"technik": "Titanium, Android, FFmpeg",
@@ -198,6 +207,7 @@
 			"auftraggeber": "OS"
 		}, {
 			"projekt": "A.N.Z.",
+			"id":12,
 			"inhalt" : "HomebankingApp eines südostasiatischen Finanzdienstleisters",
 			"technik": "Cordova, iOS, Android, Javascript",
 			"rolle": "Beratung, Erstellung von Userstories",
@@ -211,6 +221,7 @@
 			"auftraggeber": "Australia and New Zealand Banking Group, SAP"
 		}, {
 			"projekt": "PM39",
+			"id":13,
 			"inhalt": "Ein Sportwagenhersteller betreibt in seinem Intranet ein auf Jive Social Business Software basierendes Intranet-Portal zur Abbildung der innerbetrieblichen Kommunikationsprozesse. Die von der Hamburger AppWerft entwickelte iPhone-App stellt die mobile Anbindung der Mitarbeiter an das Intranet dar, wobei höchste Anforderungen an die Sicherheit gewährleistet werden. Auf dem iPhone können nun z.B. eine Activity-Wall, Places, Spaces und eine Suchfunktion benutzt werden.",
 			"technik": "Cordova, JSP, iOS, Android, Javascript",
 			"layoutdesign": "Eigenentwicklung nach Vorgaben",
@@ -230,6 +241,7 @@
 			"auftraggeber": "Großer deutscher Sportwagenhersteller"
 		}, {
 			"projekt": "Audiotools",
+			"id":14,
 			"inhalt": "native Plugins zur Abfrage der Headsettasten und zur Anzeige des aktuellen Stückes als Widget auf dem Sperrbildschirms",
 			"technik": "Bluetooth, Titanium, Android, Java",
 			"rolle": "Umsetzung",
@@ -237,6 +249,7 @@
 			"auftraggeber": "Firma in Schweden (NDA)"
 		},{
 			"projekt": "CreditCard scanner",
+			"id":15,
 			"inhalt": "native Plugins zum automatischen Einlesen von Kreditkarten",
 			"technik": "OpenCV, Titanium, Android, Java",
 			"rolle": "Umsetzung",
@@ -244,6 +257,7 @@
 			"auftraggeber": "Agentur aus London (NDA)"
 		},{
 			"projekt": "Tierstimmenarchiv",
+			"id":16,
 			"inhalt": "Katalog aller 25000 Tierstimmen, Bebilderung aus Wikibeständen, Sonogramm aller Stimmen, Stimme als Klingelton",
 			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Konzeptiom, Umsetzung",
@@ -257,6 +271,7 @@
 			"auftraggeber": "OpenSource in Zusammenarbeit mit dem Museum für Naturkunde Berlin"
 		},{
 			"projekt": "Baumkataster",
+			"id":17,
 			"inhalt": "Interaktive Anzeige der Straßenbaumbestände Hamburgs. Umkreissuche, interaktive Karte, AugmentedReality, Baumkatalog",
 			"technik": "Titanium, Android, Java, Javascript",
 			"layoutdesign": "Eigenentwicklung",
@@ -277,12 +292,14 @@
 			"auftraggeber": "OpenSource"
 		}, {
 			"projekt": "WiFi-Manager",
+			"id":18,
 			"inhalt": "native Plugins zur Kommunikation mit einer Kamera über WiFi",
 			"technik": "Bluetooth, Titanium, Android, Java, Javascript",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in Montréal (NDA)"
 		}, {
 			"projekt": "Leica Distance",
+			"id":19,
 			"inhalt": "native Plugin zur Kommunikation mit Leica Laser-Distanzmesser (Bluetooth)",
 			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
@@ -295,6 +312,7 @@
 			"auftraggeber": "Firma in Manchester (NDA)"
 		}, {
 			"projekt": "TicketMaster",
+			"id":20,
 			"inhalt": "native Plugin für die Nutzung von Ticketmaster in einer EventApp (Football)",
 			"technik": "Titanium, Android, Java, Javascript",
 			"rolle": "Umsetzung",
@@ -307,24 +325,28 @@
 			"auftraggeber": "FANHERO in Austin, Texas"
 		}, {
 			"projekt": "Firebase SMS",
+			"id":21,
 			"inhalt": "native Plugin zur Realisierung einer Identitätsbestätigung über SMS",
 			"technik": "Firebase, Titanium, Android, Java,",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Agentur aus London (NDA)"
 		}, {
 			"projekt": "Flic",
+			"id":22,
 			"inhalt": "native Plugin für die Kommunikation mit bluetoothbasierenden Knöpfen, die dann Funktionen im Smartphone steuern",
 			"technik": "Bluetooth, Titanium, Android, Java, Bluetooth",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in den Niederlanden (NDA)"
 		}, {
 			"projekt": "Philips lifeline",
+			"id":23,
 			"inhalt": "native Plugin für die Realisierung eines XMPP-ChatClients (Jabber)",
 			"technik": "Titanium, Android, Java",
 			"rolle": "Umsetzung",
 			"auftraggeber": "Firma in USA (NDA)"
 		}, {
 			"projekt": "Gerätebrowser",
+			"id":24,
 			"inhalt": "Native Plugin für das Suchen nach IoT-Geräten (Bonjour). Bislang wurden die 254 Adressen des (C-) Netzen „stumpf“ nach der REST-API abgefragt. Mit dem Plugin melden sich die verfügbaren Küchengeräte sofort",
 			"technik": "Titanium, Android, iOS, ObjectiveC",
 			"rolle": "Umsetzung",
@@ -332,6 +354,7 @@
 			"auftraggeber": "Großer deutsche Weißwarenhersteller (NDA)"
 		}, {
 			"projekt": "Medizintechnikkatalog",
+			"id":25,
 			"inhalt": "Produktkatalog, Vertriebsnetz, Labortools, Labortimer, YoutubeChannel, Augmented Reality zur Darstellung von 3d-Modellen, 360°-Bilder, Kontaktaufnahme, marktabhängiger Newsfeed",
 			"technik": "Titanium, iOS, Android, Java, Javascript",
 			"layoutdesign": "Eigenentwicklung",
@@ -353,6 +376,7 @@
 			
 		}, {
 			"projekt": "Ventra Chicago",
+			"id":26,
 			"inhalt": "TicketApp für den ÖPNV in Chicago",
 			"technik": "ReactNative, iOS, Android, ES6",
 			"layoutdesign": "Kundenvorgabe",
@@ -370,6 +394,7 @@
 			"auftraggeber": "Cubic Transportation GmbH"
 			
 		}, {
+			"id":27,
 			"projekt": "Finanzassistent",
 			"inhalt": "Homebanking- und CRM-App",
 			"layoutdesign": "Beratung des Kunden",
@@ -389,6 +414,7 @@
 			"auftraggeber": "Größter deutscher Finanzdienstleister (NDA)"
 			
 		}, {
+			"id":28,
 			"projekt": "Visualisierung Tunnelbohrmaschine",
 			"inhalt": "Homebanking- und CRM-App",
 			
