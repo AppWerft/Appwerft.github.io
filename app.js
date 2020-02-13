@@ -20,7 +20,7 @@ function onReady() {
 };
 
 function getProjectById(projects,id) {
-	projects.filter(function(p){
+	return projects.filter(function(p){
 		return p.id==id ? true: false;
 	})[0];
 }
