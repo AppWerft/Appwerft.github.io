@@ -436,7 +436,7 @@
 			"projekt": "ATM Service",
 			"inhalt": "„Klemmbrett“-iPad-App zur Unterstützung der Monteure. ",
 			
-			"technik": "iOS",
+			"technik": "CPP, iOS",
 			"rolle": "Schulung und Beratung",
 			"auftraggeber": "Synfis Hannover",
 			"herausforderungen": [
