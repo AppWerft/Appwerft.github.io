@@ -3,12 +3,16 @@ function onReady() {
 	$.getJSON('./projekte.json',function(model){
 		document.title = model.title;
 		$('h1').text(model.title).prepend('<img id="avatar" src="'+model.avatar+'" />');
+		var projects = [];
 		if (opts['projects']) {
+			opts['projects'].split(',').forEach(id) {
+				projects.push(getProjectById(model.items,id));		
+			}
 			model.items.filter(function(item){
-				return opts['projects'].split(',').includes(item.id) ? true : false; 
+				return .includes(item.id) ? true : false; 
 			});
-		}
-		model.items.forEach(renderItem);
+		} else projects = model.items;
+		projects.forEach(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({position: {my: 'top right', at: 'bottom right'},style: { classes: 'qtip-dark qtip-shadow'}});
 		
@@ -17,6 +21,11 @@ function onReady() {
 	});
 };
 
+function getProjectbyId(projects,id) {
+	return projects.filter(function(p){
+		return p.id==id ? true: false;
+	});
+}
 
 function renderChallenges(challenge) {
      var table = '<table><tr><th>Herausforderung</th><th>Lösung</th></tr>';
