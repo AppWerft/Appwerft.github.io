@@ -14,7 +14,7 @@ function onReady() {
 			otherprojects.forEach(function(p){
 				projects.push(p);
 			});
-			if (opts["expanded"] && opts["expanded"]=='selected') 
+			if (opts["expand"] && opts["expand"]=='selected') 
 			PIDs.forEach(function(p,i){
 				$('#ui-id-'+(i+1)).show();	
 			});
@@ -24,7 +24,7 @@ function onReady() {
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({position: {my: 'top right', at: 'bottom right'},style: { classes: 'qtip-dark qtip-shadow'}});
 		
-		if (opts["expanded"] && opts["expanded"]=='all') 
+		if (opts["expand"] && opts["expand"]=='all') 
 			$(".ui-accordion-content").show();
 	});
 };
