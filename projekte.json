@@ -405,7 +405,7 @@
 					"c": "Personalexpertise",
 					"s": "Schulung und Workshop vor Ort"
 				}, {
-					"c": "Hohe Sicherheitsstandards","s":"Nutzung einer nativen Library für die Kommunikation mit dem Bankserver"
+					"c": "Hohe Sicherheitsstandards","s":"Nutzung einer nativen Library für die Kommunikation mit dem Bankserver. Optionale Verwendung des Standardfingerprintsensors"
 				}, {
 					"c": "lokale Generierung von PDFs auf dem Gerät",
 					"s": "Schaffung einnes PDF-Plugins in Javascript"
