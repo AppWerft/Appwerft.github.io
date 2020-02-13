@@ -27,7 +27,7 @@ function onReady() {
 				break;
 				case 'selected':
 					PIDs.forEach(function(pid,ndx){
-						const id = 2*(ndx+1);
+						const id = 2*(ndx-1);
 						$('div#ui-id-'+id).show();	
 					});	
 				 break;	
