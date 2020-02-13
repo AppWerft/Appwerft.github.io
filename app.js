@@ -8,8 +8,11 @@ function onReady() {
 			opts['projects'].split(',').forEach(function(id) {
 				projects.push(getProjectById(model.items,id));		
 			});
-			projects.push(getOtherProjects(model.items,opts['projects'].split(',')));
+			var otherprojects = getOtherProjects(model.items,opts['projects'].split(','));
+			console.log(otherprojects)
+			projects.push(otherprojects);
 		} else projects = model.items;
+		
 		projects.map(renderItem);
 		$("#accordion").accordion({collapsible: true, active: false, heightStyle: "content"});
 		$('[title!=""]').qtip({position: {my: 'top right', at: 'bottom right'},style: { classes: 'qtip-dark qtip-shadow'}});
