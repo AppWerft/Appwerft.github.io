@@ -21,7 +21,7 @@ function onReady() {
 
 function getOtherProjects(projects,ids) {
 	return projects.filter(function(p){
-		
+			return ids.inludes(p.id) ? false : true;
 	});
 }
 
