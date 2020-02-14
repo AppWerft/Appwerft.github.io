@@ -38,13 +38,13 @@
 		},
 		
 		 {
-			"projekt": "Wasserzählererfassung",
+			"projekt": "Erfassung Wasserzähler",
 			"id":3,
 			"technik": "CPP, Android, Titanium, Java",
 			"rolle": "Konzeption und Umsetzung",
 			
-			"inhalt": "Plugin zur Nutzung einer Kameraview, die per OCR die Zählerstände ermittelt. Die Lösung verwendet Googles Library „Vision“",
-			"auftraggeber": "Firma in Bratislava",
+			"inhalt": "Cameraview, die per OCR (KI) die Zählerstände ermittelt. Die Lösung verwendet Googles Library „Vision“",
+			"auftraggeber": "Agentur in Bratislava",
 			"shots" : ["ocr1.png","ocr2.png","ocr3.png","ocr4.png"]
 		},
 		{
@@ -52,7 +52,6 @@
 			"id":32,
 			"technik": "CPP, Android, Titanium, Java",
 			"rolle": "Konzeption und Umsetzung, WiP",
-			
 			"inhalt": "Plugin zur Nutzung Googles Facedetection",
 			"auftraggeber": "OpenSource"
 			
