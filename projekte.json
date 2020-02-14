@@ -479,7 +479,7 @@
 			"rolle": "Entwicklung einer WebApp",
 			"auftraggeber": "Agentur in Bruneck"
 		},{
-			"id":33,
+			"id" : 33,
 			"projekt": "SolarPromotion",
 			"inhalt": "Darstellung eines Kundennetzes, Vorausberechnung des Solarertrages",
 			"technik": "HTML5, Javascript",
