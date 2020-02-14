@@ -515,6 +515,22 @@
 			"inhalt": "Zeitrafferdarstellung der Protestaktion auf einer OSM-Karte mit Heatmap",
 			"auftraggeber": "Aktivistenunterstützung"
 			
+		},{
+			"projekt": "Miba-Piano",
+			"id":39,
+			"technik": "HTML5, Leaflet, Javascript",
+			"rolle": "Konzeption und Umsetzung",
+			"inhalt": "Geofootprint einer Radiostation: Fullscreen-Map-Anwendung holt regelmäßig IP-Nummern detr Clientes vom ICY-Server ab, vollzieht eine lokale Geoauflösung und stellt die aktuellen Zuhörer auf der Karte dar.",
+			"auftraggeber": "Hamburger Privatradio"
+			
+		},{
+			"projekt": "(Schüler-)Herausforderung",
+			"id":40,
+			"technik": "HTML5, TYPO3, Javascript",
+			"rolle": "Konzeption und Umsetzung",
+			"inhalt": "Zeitrafferdarstellung der Protestaktion auf einer OSM-Karte mit Heatmap",
+			"auftraggeber": "Reformschule in Winterhude"
+			
 		}
 	]
 }
