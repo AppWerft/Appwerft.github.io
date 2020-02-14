@@ -479,7 +479,7 @@
 		},{
 			"id":34,
 			"projekt": "CarVita",
-			"inhalt": "Telematik-Intranetlösung: Echtzeitmonitoring der Fahrzeugflotte, optionaler Aufruf der Historie der Fahrzeugbewegungen, Alerts bei kritischen Betriebszuständen	",
+			"inhalt": "Telematik-Intranetlösung: Echtzeitmonitoring der Fahrzeugflotte, optionaler Aufruf der Historie der Fahrzeugbewegungen, Alerts bei kritischen Betriebszuständen.",
 			"technik": "HTML5, Javascript",
 			"rolle": "Entwicklung einer WebApp",
 			"auftraggeber": "Prozess Control GmbH"
