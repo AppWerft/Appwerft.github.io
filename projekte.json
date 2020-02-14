@@ -494,7 +494,7 @@
 		},{
 			"projekt": "Ti.MapPlus",
 			"id":36,
-			"technik": "Java, Android, Titanium",
+			"technik": "Java, Android, GoogleMaps, Titanium",
 			"rolle": "Konzeption und Umsetzung",
 			"inhalt": "Erweiterung von Google Maps zur Darstellung professioneller Karten aus WMS-Server, Darstellung von Heatmaps",
 			"auftraggeber": "Agentur aus Lyon"
@@ -526,7 +526,7 @@
 		},{
 			"projekt": "GeoBlog",
 			"id":40,
-			"technik": "HTML5, TYPO3, Javascript",
+			"technik": "HTML5, TYPO3, GoogleMaps, Javascript",
 			"rolle": "Konzeption und Umsetzung",
 			"inhalt": "Während eines „Wandertages“ mit Fahrrädern von Dresden nach Hamburg sollen die Schüler Punkte, Routen, Bilder, Audioaufnahmen usw. redaktionell in die Fullscreenkartenwebseite einpflegen. Dazu wurden verschiedene TYPO3-Extensions geschaffen. Routendaten von GARMIN- und Magellangeräten können direkt importiert werden.",
 			"auftraggeber": "Reformschule in Winterhude"
