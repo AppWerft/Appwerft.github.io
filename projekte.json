@@ -278,13 +278,13 @@
 			"rolle": "Konzeptiom und Umsetzung",
 			"herausforderungen": [
 				{
-					"c": "Straßenbaumoverlay nur als WMS"
-				}, {
+					"c": "Straßenbaumoverlay nur als WMS",
+				
 					"s": "Erweiterung der Google-Map-API"
 				},
 				{
-					"c": "Datenbestand nur als XML"
-				}, {
+					"c": "Datenbestand nur als XML",
+				
 					"s": "Konvertierung des XML nach SQLite und Downloading der Datenbank im Onboardingprozess"
 				}
 			],
