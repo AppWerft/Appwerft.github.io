@@ -474,7 +474,7 @@
 			"projekt": "SolarPromotion",
 			"inhalt": "Darstellung eines Kundennetzes, Vorausberechnung des Solarertrages",
 			"technik": "HTML5, Javascript",
-			"rolle": "Entwicklung einer WebApp (sonnen.de)",
+			"rolle": "Entwicklung einer WebApp (sonnen.de	)",
 			"auftraggeber": "Solarfirma in Augsburg"
 		},{
 			"id":34,
@@ -498,6 +498,14 @@
 			"rolle": "Konzeption und Umsetzung",
 			"inhalt": "Erweiterung von Google Maps zur Darstellung professioneller Karten aus WMS-Server, Darstellung von Heatmaps",
 			"auftraggeber": "Agentur aus Lyon"
+			
+		},{
+			"projekt": "VisuelleKonzepte",
+			"id":37,
+			"technik": "HTML5, Leaflet, Javasscript",
+			"rolle": "Konzeption und Umsetzung",
+			"inhalt": "Darstellung von 360°-VR-Views in einer Karte",
+			"auftraggeber": "Künstlerunterstützung"
 			
 		}
 	]
