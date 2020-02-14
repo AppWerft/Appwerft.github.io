@@ -47,15 +47,7 @@
 			"auftraggeber": "Agentur in Bratislava",
 			"shots" : ["ocr1.png","ocr2.png","ocr3.png","ocr4.png"]
 		},
-		{
-			"projekt": "Gesichtserkennung",
-			"id":32,
-			"technik": "CPP, Android, Titanium, Java",
-			"rolle": "Konzeption und Umsetzung, WiP",
-			"inhalt": "Plugin zur Nutzung Googles Facedetection",
-			"auftraggeber": "OpenSource"
-			
-		},
+		
 		
 		{
 			"projekt": "Traumpolice",
@@ -492,6 +484,14 @@
 			"technik": "HTML5, Javascript",
 			"rolle": "Entwicklung einer WebApp",
 			"auftraggeber": "Logistikfirma in Harburg"
+		},{
+			"projekt": "Gesichtserkennung",
+			"id":35,
+			"technik": "CPP, Android, Titanium, Java",
+			"rolle": "Konzeption und Umsetzung, WiP",
+			"inhalt": "Plugin zur Nutzung Googles Facedetection",
+			"auftraggeber": "OpenSource"
+			
 		}
 	]
 }
