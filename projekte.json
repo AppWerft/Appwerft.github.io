@@ -478,6 +478,27 @@
 			"technik": "HTML5, Javascript",
 			"rolle": "Entwicklung einer WebApp",
 			"auftraggeber": "Agentur in Bruneck"
+		},{
+			"id":33,
+			"projekt": "SolarPromotion",
+			"inhalt": "Darstellung eines Kundennetzes, Vorausberechnung des Solarertrages",
+			"technik": "HTML5, Javascript",
+			"rolle": "Entwicklung einer WebApp",
+			"auftraggeber": "Solarfirma in Augsburg"
+		},{
+			"id":33,
+			"projekt": "SolarPromotion",
+			"inhalt": "Darstellung eines Kundennetzes, Vorausberechnung des Solarertrages",
+			"technik": "HTML5, Javascript",
+			"rolle": "Entwicklung einer WebApp",
+			"auftraggeber": "Solarfirma in Augsburg"
+		},{
+			"id":34,
+			"projekt": "CargoMonitor",
+			"inhalt": "Darstellung eines Kundennetzes, Vorausberechnung des Solarertrages",
+			"technik": "HTML5, Javascript",
+			"rolle": "Entwicklung einer WebApp",
+			"auftraggeber": "Logistikfirma in Harburg"
 		}
 	]
 }
