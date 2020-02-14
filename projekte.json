@@ -41,7 +41,7 @@
 			"projekt": "Erfassung Wasserzähler",
 			"id":3,
 			"technik": "CPP, Android, Titanium, Java",
-			"rolle": "Konzeption und Umsetzung",
+			"rolle": "Recherche, Machbarkeitsstudien, Konzeption und Umsetzung",
 			
 			"inhalt": "Cameraview, die per OCR (KI) die Zählerstände ermittelt. Die Lösung verwendet Googles Library „Vision“. Die Library lädt die nativen Bestandteile zur Laufzeit nach.",
 			"auftraggeber": "Agentur in Bratislava",
