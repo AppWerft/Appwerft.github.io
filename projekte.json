@@ -493,7 +493,7 @@
 			"auftraggeber": "OpenSource"
 			
 		},{
-			"projekt": "",
+			"projekt": "Ti.MapPlus",
 			"id":36,
 			"technik": "CPP, Android, Titanium, Java",
 			"rolle": "Konzeption und Umsetzung, WiP",
