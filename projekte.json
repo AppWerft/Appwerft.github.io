@@ -507,6 +507,14 @@
 			"inhalt": "Darstellung von 360°-VR-Views in einer Karte",
 			"auftraggeber": "Künstlerunterstützung"
 			
+		},{
+			"projekt": "CriticalMass",
+			"id":38,
+			"technik": "HTML5, Leaflet, Javascript",
+			"rolle": "Konzeption und Umsetzung",
+			"inhalt": "Zeitrafferdarstellung der Protestaktion auf einer OSM-Karte mit Heatmap",
+			"auftraggeber": "Aktivistenunterstützung"
+			
 		}
 	]
 }
