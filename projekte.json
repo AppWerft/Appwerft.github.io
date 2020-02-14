@@ -471,6 +471,13 @@
 			"technik": "Android, Titanium",
 			"rolle": "Entwicklung",
 			"auftraggeber": "OpenSource"
+		},{
+			"id":32,
+			"projekt": "Maratona des Dolomites",
+			"inhalt": "Echtzeitvisualisierung des Radrennens mit max 1000 Teilnehmern",
+			"technik": "HTML5, Javascript",
+			"rolle": "Entwicklung",
+			"auftraggeber": "Agentur in Bruneck"
 		}
 	]
 }
