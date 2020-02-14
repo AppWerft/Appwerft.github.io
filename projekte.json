@@ -522,7 +522,7 @@
 			"id":39,
 			"technik": "HTML5, Leaflet, Javascript",
 			"rolle": "Konzeption und Umsetzung",
-			"inhalt": "ICY-Server, Geofootprint einer Radiostation: Fullscreen-Map-Anwendung holt regelmäßig IP-Nummern detr Clientes vom ICY-Server ab, vollzieht eine lokale Geoauflösung und stellt die aktuellen Zuhörer auf der Karte dar.",
+			"inhalt": "ICY-Server, Geofootprint einer Radiostation: Fullscreen-Map-Anwendung holt regelmäßig IP-Nummern der Clientes vom ICY-Server ab, vollzieht eine lokale Geoauflösung und stellt die aktuellen Zuhörer auf der Karte dar.",
 			"auftraggeber": "Hamburger Privatradio"
 			
 		},{
