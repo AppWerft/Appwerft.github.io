@@ -506,7 +506,7 @@
 			"rolle": "Konzeption und Umsetzung",
 			"inhalt": "Darstellung von 360°-VR-Views in einer Karte",
 			"auftraggeber": "Künstlersponsoring",
-			"shots" : ["vk1.png","vk2.png","vk3.png"]
+			"Shots" : ["vk1.png","vk2.png","vk3.png"]
 			
 		},{
 			"projekt": "CriticalMass",
@@ -515,7 +515,7 @@
 			"rolle": "Konzeption und Umsetzung",
 			"inhalt": "Zeitrafferdarstellung der Protestaktion auf einer OSM-Karte mit Heatmap",
 			"auftraggeber": "Aktivistenunterstützung",
-			"shots" : ["cm1.png"]
+			"Shots" : ["cm1.png"]
 			
 		},{
 			"projekt": "Miba-Piano",
