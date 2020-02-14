@@ -353,7 +353,7 @@
 			
 			"auftraggeber": "Großer deutsche Weißwarenhersteller (NDA)"
 		}, {
-			"projekt": "Medizintechnikkatalog",
+			"projekt": "App eines Medizintechnikkonzerns",
 			"id":25,
 			"inhalt": "Produktkatalog, Vertriebsnetz, Labortools, Labortimer, YoutubeChannel, Augmented Reality zur Darstellung von 3d-Modellen, 360°-Bilder, Kontaktaufnahme, marktabhängiger Newsfeed",
 			"technik": "Titanium, iOS, Android, Java, Javascript",
