@@ -143,7 +143,7 @@
 			"projekt": "OpenScience",
 			"id":9,
 			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank",
-			"technik": "Solr, Java, TYPO3, Javascript, PHP",
+			"technik": "Solr, Java, TYPO3, Javascript, PHP, Leaflet",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Umsetzung, Betreuung von Auftragnehmern",
 			"herausforderungen": [
@@ -480,7 +480,7 @@
 		},{
 			"id":34,
 			"projekt": "CarVita",
-			"inhalt": "Telematik-Intranetlösung: Echtzeitmonitoring der Fahrzeugflotte, optionaler Aufruf der Historie der Fahrzeugbewegungen, Alerts bei kritischen Betriebszuständen",
+			"inhalt": "Telematik-Intranetlösung: Echtzeitmonitoring der Fahrzeugflotte, optionaler Aufruf der Historie der Fahrzeugbewegungen, Alerts bei kritischen Betriebszuständen	",
 			"technik": "HTML5, Javascript",
 			"rolle": "Entwicklung einer WebApp",
 			"auftraggeber": "Prozess Control GmbH"
