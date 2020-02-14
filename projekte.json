@@ -142,7 +142,7 @@
 		},{
 			"projekt": "OpenScience",
 			"id":9,
-			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank",
+			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank. Erstellung eiens Data-Warehouses, das von diversen Repos „erntet“",
 			"technik": "Solr, Java, TYPO3, Javascript, PHP, Leaflet",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption und Umsetzung einer WebApp, Betreuung von Auftragnehmern",
@@ -522,7 +522,7 @@
 			"id":39,
 			"technik": "HTML5, Leaflet, Javascript",
 			"rolle": "Konzeption und Umsetzung",
-			"inhalt": "Geofootprint einer Radiostation: Fullscreen-Map-Anwendung holt regelmäßig IP-Nummern detr Clientes vom ICY-Server ab, vollzieht eine lokale Geoauflösung und stellt die aktuellen Zuhörer auf der Karte dar.",
+			"inhalt": "ICY-Server, Geofootprint einer Radiostation: Fullscreen-Map-Anwendung holt regelmäßig IP-Nummern detr Clientes vom ICY-Server ab, vollzieht eine lokale Geoauflösung und stellt die aktuellen Zuhörer auf der Karte dar.",
 			"auftraggeber": "Hamburger Privatradio"
 			
 		},{
