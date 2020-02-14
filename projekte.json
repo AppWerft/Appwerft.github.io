@@ -479,8 +479,8 @@
 			"auftraggeber": "Solarfirma in Augsburg"
 		},{
 			"id":34,
-			"projekt": "CargoMonitor",
-			"inhalt": "Intranetlösung: Telematik",
+			"projekt": "CarVita",
+			"inhalt": "Telematik-Intranetlösung: Echtzeitmonitoring der Fahrzeugflotte, optionaler Aufruf der Historie",
 			"technik": "HTML5, Javascript",
 			"rolle": "Entwicklung einer WebApp",
 			"auftraggeber": "Logistikfirma in Harburg"
