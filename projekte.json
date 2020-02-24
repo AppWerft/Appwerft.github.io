@@ -533,6 +533,14 @@
 			"inhalt": "Während eines „Wandertages“ mit Fahrrädern von Dresden nach Hamburg sollen die Schüler Punkte, Routen, Bilder, Audioaufnahmen usw. redaktionell in die Fullscreenkartenwebseite einpflegen. Dazu wurden verschiedene TYPO3-Extensions geschaffen. Routendaten von GARMIN- und Magellangeräten können direkt importiert werden.",
 			"auftraggeber": "Reformschule in Winterhude"
 			
+		},{
+			"projekt": "Ti.IVW",
+			"id" : 41,
+			"technik" : "Titanium, ObjectC, Android, Java",
+			"rolle" : "Umsetzung",
+			"inhalt" : "Anpasssung des IVW-SDKs an den Titaniumlayer",
+			"auftraggeber" : "Katholische Kirche Deutschlands"
+			
 		}
 	]
 }
