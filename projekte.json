@@ -3,6 +3,33 @@
 	"avatar" : "./rainer.jpg",
 	"items": [
 		{
+			"id":29,
+			"projekt": "fashion24, discount24, living24 …",
+			"inhalt": "Whitelabel Affiliateportal auf Basis von TYPO3 und Solr als Backend",
+			
+			"technik": "Solr, TYPO3",
+			"rolle": "Eigenverantwortliche Umsetzung",
+			"auftraggeber": "OTTO-Tochter Smatch"
+			
+		},{
+			"projekt": "OpenScience",
+			"id":9,
+			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank. Erstellung eiens Data-Warehouses, das von diversen Repos „erntet“",
+			"technik": "Solr, Java, TYPO3, Javascript, PHP, Leaflet",
+			"layoutdesign": "Kundenvorgabe",
+			"rolle": "Konzeption und Umsetzung einer WebApp, Betreuung von Auftragnehmern",
+			"herausforderungen": [
+				{
+					"c": "One-Page-App (React) in TYPO3 einbinden","s":"DOM-Parser"},{
+					"c": "Datenanreicherung","s":"Einbindung von REST-Sewrvices"},{
+					"c": "Einbindung der Kacheln der Landesbetriebe Hamburg","s":"Cache"},{
+					"c": "DSVGO","s":"Proxy"
+				}
+			],
+			"auftraggeber": "Staats- und Universitätsbibliothek Hamburg",
+			"Shots" : ["os0.png","os1.png","os2.png"]
+		},
+		{
 			"projekt": "Vladi Private Islands",
 			"id":1,
 			"technik": "Cordova, iOS, Android, Javascript",
@@ -139,23 +166,6 @@
 				}
 			],
 			"auftraggeber": "Agentur in Sydney"
-		},{
-			"projekt": "OpenScience",
-			"id":9,
-			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank. Erstellung eiens Data-Warehouses, das von diversen Repos „erntet“",
-			"technik": "Solr, Java, TYPO3, Javascript, PHP, Leaflet",
-			"layoutdesign": "Kundenvorgabe",
-			"rolle": "Konzeption und Umsetzung einer WebApp, Betreuung von Auftragnehmern",
-			"herausforderungen": [
-				{
-					"c": "One-Page-App (React) in TYPO3 einbinden","s":"DOM-Parser"},{
-					"c": "Datenanreicherung","s":"Einbindung von REST-Sewrvices"},{
-					"c": "Einbindung der Kacheln der Landesbetriebe Hamburg","s":"Cache"},{
-					"c": "DSVGO","s":"Proxy"
-				}
-			],
-			"auftraggeber": "Staats- und Universitätsbibliothek Hamburg",
-			"Shots" : ["os0.png","os1.png","os2.png"]
 		},{
 			"id":10,
 			"projekt": "Timetrip Pics",
@@ -421,15 +431,6 @@
 			"technik": "Labwindows, TurboPascal, SPS",
 			"rolle": "Eigenverantwortliche Umsetzung",
 			"auftraggeber": "Herrenknecht AG, Schwanau"
-			
-		},{
-			"id":29,
-			"projekt": "fashion24, discount24, living24 …",
-			"inhalt": "Whitelabel Affiliateportal auf Basis von TYPO3 und Solr als Backend",
-			
-			"technik": "Solr, TYPO3",
-			"rolle": "Eigenverantwortliche Umsetzung",
-			"auftraggeber": "OTTO-Tochter Smatch"
 			
 		},{
 			"id":30,
