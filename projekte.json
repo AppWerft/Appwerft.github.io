@@ -14,7 +14,7 @@
 		},{
 			"projekt": "OpenScience",
 			"id":9,
-			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank. Erstellung eiens Data-Warehouses, das von diversen Repos „erntet“",
+			"inhalt": "Aufbau eines TYPO3 Portals zur Recherche in einer Solr-Datenbank. Erstellung eines Data-Warehouses, das von diversen Repos „erntet“",
 			"technik": "Solr, Java, TYPO3, Javascript, PHP, Leaflet",
 			"layoutdesign": "Kundenvorgabe",
 			"rolle": "Konzeption und Umsetzung einer WebApp, Betreuung von Auftragnehmern",
