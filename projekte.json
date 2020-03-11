@@ -8,7 +8,8 @@
             "inhalt": "Titaium-Module und App zur Nutzung des Feitian-SDK (hochsichere Bluetoothankopplung zum Einlesen der Gesundheitskarte)",
             "technik": "Java, Android, ObjectiveC",
             "rolle": "Eigenverantwortliche Umsetzung",
-            "auftraggeber": "Opensource"
+            "auftraggeber": "Opensource",
+            "Shots": ["feitian.png"]
             
         },{
 			"id":29,
