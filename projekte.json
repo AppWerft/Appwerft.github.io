@@ -2,7 +2,15 @@
 	"title": "Projekte Dipl.-Ing. R. Schleevoigt",
 	"avatar" : "./rainer.jpg",
 	"items": [
-		{
+        {
+            "id":42,
+            "projekt": "Smartcard-Reader",
+            "inhalt": "Module zur Nutzung des Feitian-SDK",
+            "technik": "Java, Android, ObjectiveC",
+            "rolle": "Eigenverantwortliche Umsetzung",
+            "auftraggeber": "Opensource"
+            
+        },{
 			"id":29,
 			"projekt": "fashion24, discount24, living24 …",
 			"inhalt": "Whitelabel Affiliateportal auf Basis von TYPO3 und Solr als Backend",
