@@ -6,7 +6,7 @@
             "id":42,
             "projekt": "Smartcard-Reader",
             "inhalt": "Titanium-Module und App zur Nutzung des Feitian-SDK (hochsichere Bluetoothankopplung zum Einlesen der Deutschen Gesundheitskarte eGK)",
-            "technik": "Bluetooth, Java, Android, ObjectiveC, Titanium",
+            "technik": "Bluetooth, Java, Android,  Titanium",
             "rolle": "Eigenverantwortliche Konzeption und Umsetzung, Kommunikation mit dem Hersteller",
             "auftraggeber": "Geburtshaus Altona",
             "shots": ["feitian.png"]
