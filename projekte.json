@@ -2,6 +2,15 @@
 	"title": "Projekte Dipl.-Ing. R. Schleevoigt",
 	"avatar" : "./rainer.jpg",
 	"items": [
+		{
+			"projekt": "Monitoring Video-Streaming",
+			"id" : 43,
+			"technik" : "Linux",
+			"rolle" : "konzeption und Umsetzung",
+			"inhalt" : "Aufbau eines Monitoringsystems (http, tftp, tomcat, oracle, mySQL, DNS, DHCP, Radius, rtsp) für die Streamingplatform. ",
+			"auftraggeber" : "Hansenet Hamburg (heute O2)"
+			
+		},
         {
             "id":42,
             "projekt": "Smartcard-Reader",
