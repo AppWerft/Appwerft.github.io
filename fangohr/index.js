@@ -8,13 +8,15 @@ function Log(text) {
 
 Log(start);
 window.onload = function () {
-	this.Log('onload');
-	this.Drawer = $('.drawer').drawer();
+	
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 14,
+		minZoom:13,
+		cursor: true,
 		layers: []
 	});
+	
 	L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
@@ -40,6 +42,17 @@ window.onload = function () {
 		lngField: 'lng',
 	});
 	Map.addLayer(heatmapLayer);
+	this.Drawer = $('.drawer').drawer();
+	Map.on('click', function (ev) {
+		var latlng = Map.mouseEventToLatLng(ev.originalEvent);
+		
+		//const msg = UnfallLayer.getNearestUnfall(latlng.lat, latlng.lng);
+		var popup = L.popup()
+			.setLatLng(latlng)
+			.setContent('<p>Hello world!<br />This is a nice popup.</p>');
+		console.log(popup)	
+		Map.openPopup(popup);	
+	});
 	const UnfallLayer = new Unfälle(heatmapLayer);
 	Log('addL')
 
@@ -54,7 +67,7 @@ window.onload = function () {
 	Object.keys(beteiligte).forEach(function (item) {
 		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
 	});
-	setTimeout(function() {
+	setTimeout(function () {
 		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
 		var pie = new d3pie('wochentage', {
 			size: {
@@ -65,7 +78,7 @@ window.onload = function () {
 				content: 'Mo Di Mi Do Fr Sa So'.split(' ').map(function (tag, i) {
 					return {
 						label: tag,
-						value: wochentage[i+1]
+						value: wochentage[i + 1]
 					}
 				})
 			},
@@ -78,9 +91,9 @@ window.onload = function () {
 			}
 		});
 	}, 2000);
-	setTimeout(function() {
+	setTimeout(function () {
 		var monate = UnfallLayer.getTotal('UMONAT');
-		
+
 		var pie = new d3pie('monate', {
 			size: {
 				canvasHeight: 240,
@@ -90,7 +103,32 @@ window.onload = function () {
 				content: 'Jan Feb März Apr Mai Juni Juli Aug Sept Okt Nov Dez'.split(' ').map(function (tag, i) {
 					return {
 						label: tag,
-						value: monate[i+1]
+						value: monate[i + 1]
+					}
+				})
+			},
+			callbacks: {
+				onMouseoverSegment: function (info) {
+					console.log('mouse in', info);
+				},
+				onMouseoutSegment: function (info) {
+				}
+			}
+		});
+	}, 2000);
+	setTimeout(function () {
+		var stunden = UnfallLayer.getTotal('USTUNDE');
+
+		var pie = new d3pie('stunden', {
+			size: {
+				canvasHeight: 240,
+				canvasWidth: 240
+			},
+			data: {
+				content: '0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23'.split(' ').map(function (stunde, i) {
+					return {
+						label: '' + stunde,
+						value: stunden[i + 1]
 					}
 				})
 			},
@@ -104,7 +142,6 @@ window.onload = function () {
 		});
 	}, 2000);
 
-	
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
 		UnfallLayer.setFilter(self.attr('name'), self.is(':checked'))
