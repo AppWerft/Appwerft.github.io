@@ -37,8 +37,22 @@ function renderEvent(e) {
 		res += ('<dd>' + ARTS[parseInt(e.UART)] + '</dd>');
 	} 
 	const LICHT =  'Tageslicht Dämmerung Dunkelheit';
-	res += '<dt>Lichtverhäktnisse:</dt>';
+	res += '<dt>Lichtverhältnisse:</dt>';
 	res += ('<dd>' + LICHT.split(' ')[parseInt(e.ULICHTVERH)] + '</dd>');
+	res += '<dt>Beteiligte:</dt>';
+	const B ={
+		IstRad:'Fahrradbeteiligung',
+		IstPKW:'PKW-Beteiligung',
+		IstFuss:'Fußgängerbeteiligung',
+		IstKrad:'Kraftradbeteiligung',
+		IstGkfz:'Güterkraftfahrzeug',
+		IstSonstige:'Unfall mit Sonstigen'
+	};
+	var beteiligungen = [];
+	Object.keys(B).forEach(function(b){
+		if (e[b]==1) beteiligungen.push(B[b]);
+	})
+	res += ('<dd>' + beteiligungen.join(', ') + '</dd>');
 	res += '<dt>Unfallmonat:</dt>';
 	const MONATE = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember';
 	res += ('<dd>' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] + '</dd>');
