@@ -45,7 +45,7 @@ window.onload = function () {
 	setTimeout(function () {
 		$('.drawer').drawer('open');
 	}, 3000);
-	const beteiligung = { istRad: 'Fahrrad', IstPKW: 'Personenkraftwagen', IstFuss: 'Fußgänger' ,IstKrad:'Kraftrad',IstGkfz:'Güterkraftwagen',IstSonstig: 'Sonstiges'};
+	const beteiligung = { istRad: 'Fahrrad', IstPKW: 'Personenkraftwagen', IstFuss: 'Fußgänger' ,IstKrad:'Kraftrad',IstGkfz:'Lastkraftwagen',IstSonstig: 'Sonstiges'};
 	this.Object.keys(beteiligung).forEach(function (item) {
 		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligung[item] + '</legend></li>')
 	}),
