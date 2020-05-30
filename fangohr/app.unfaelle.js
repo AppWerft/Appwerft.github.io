@@ -22,15 +22,15 @@ const Unfälle = function (heatmapLayer) {
     return this;
 };
 
-Unfälle.prototype.getNearestUnfall = function (lat,lng) {
-    console.log(lat+ ' '+ lng)
-    const myPoint =  L.latLng(lat,lng);
+Unfälle.prototype.getNearestUnfall = function (lat, lng) {
+    console.log(lat + ' ' + lng)
+    const myPoint = L.latLng(lat, lng);
     console.log(myPoint)
-    this.data.forEach(function(d){
-        d.dist = L.latLng(d.YGCSWGS84,d.XGCSWGS84).distanceTo(myPoint)
+    this.data.forEach(function (d) {
+        d.dist = L.latLng(d.YGCSWGS84, d.XGCSWGS84).distanceTo(myPoint)
     });
-    this.data.sort(function(a,b){
-        return a.dist-b.dist;
+    this.data.sort(function (a, b) {
+        return a.dist - b.dist;
     })
     var event = this.data[0]
     return event;
@@ -38,30 +38,26 @@ Unfälle.prototype.getNearestUnfall = function (lat,lng) {
 Unfälle.prototype.getTotal = function (field) {
     var res = {};
     console.log(field)
-    this.data.forEach(function(d,i){
+    this.data.forEach(function (d, i) {
         !i && console.log(d[field])
-        if (!res[d[field]]) res[d[field]]=1;
+        if (!res[d[field]]) res[d[field]] = 1;
         else res[d[field]]++;
     })
     return res;
-};    
+};
 
 Unfälle.prototype.setFilter = function (field, enabled) {
     console.log(field + '  ' + enabled);
-    var filtereddata= [];
+    var filtereddata = [];
     console.log(this.data[0])
-    if (enabled) {
+   
         filtereddata = this.data.filter(function (d) {
-            return d[field] == '1';
+            return enabled ? d[field] == '1' : d[field] == '0';
         })
-    } else {
-        filtereddata = this.data.filter(function (d) {
-            return d[field] == '0';
-        });
-    }
+    
     const heatdata = filtereddata.map(function (d) {
         return {
-            count: d.UKATEGORIE * 50,
+            count: d.UKATEGORIE * 5,
             lat: parseFloat(d.YGCSWGS84.replace(',', '.')),
             lng: parseFloat(d.XGCSWGS84.replace(',', '.'))
         };
