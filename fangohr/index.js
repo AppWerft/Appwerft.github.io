@@ -12,7 +12,6 @@ window.onload = function () {
 		const csv = $.csv.toObjects(_csv, { separator: ';', }).filter(function(){
 			return (arguments[0].ULAND=='2')
 		})
-		console.log(csv)
 		var data	= csv.map(function (d) {
 				return {
 				count:10,
