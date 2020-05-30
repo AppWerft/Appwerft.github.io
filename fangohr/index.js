@@ -48,44 +48,54 @@ window.onload = function () {
 			$('.drawer').drawer('close');
 		}, 4000);
 	}, 3000);
-	
-	const beteiligung = { istRad: 'Fahrrad', IstPKW: 'Personenkraftwagen', IstFuss: 'Fußgänger' ,IstKrad:'Kraftrad',IstGkfz:'Lastkraftwagen',IstSonstig: 'Sonstiges'};
-	Object.keys(beteiligung).forEach(function (item) {
-		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligung[item] + '</legend></li>')
+
+	const kategorien = { '1': "leicht", '2': "schwer", '3': "Tod" };
+	Object.keys(kategorien).forEach(function (id) {
+		$('#ukategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
 	});
-	'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag'.split(' ').forEach(function (tag,i) {
+
+
+	const beteiligte = { IstRad: 'Fahrrad', IstPKW: 'Personenkraftwagen', IstFuss: 'Fußgänger', IstKrad: 'Kraftrad', IstGkfz: 'Lastkraftwagen', IstSonstig: 'Sonstiges' };
+	Object.keys(beteiligte).forEach(function (item) {
+		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
+	});
+	'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag'.split(' ').forEach(function (tag, i) {
 		$('#wochentage').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + i + '"><span class="slider round"></span></label><legend>' + tag + '</legend></li>')
 	});
-	'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split(' ').forEach(function (tag,i) {
+	'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split(' ').forEach(function (tag, i) {
 		$('#monate').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + i + '"><span class="slider round"></span></label><legend>' + tag + '</legend></li>')
 	});
-	$('#beteiligung input').on('change',function(){
-		const self = $(this);	
-		UnfallLayer.setFilter(self.attr('name'),self.is(':checked'))
+
+
+
+
+	$('#beteiligung input').on('change', function () {
+		const self = $(this);
+		UnfallLayer.setFilter(self.attr('name'), self.is(':checked'))
 	});
-	$('#wochentage input').on('change',function(){
-		const self = $(this);	
-		UnfallLayer.setFilter(self.attr('name'),self.is(':checked'))
+	$('#wochentage input').on('change', function () {
+		const self = $(this);
+		UnfallLayer.setFilter(self.attr('name'), self.is(':checked'))
 	});
 	L.Control.Watermark = L.Control.extend({
-		onAdd: function(map) {
+		onAdd: function (map) {
 			var img = L.DomUtil.create('img');
-			
+
 			img.src = 'https://upload.wikimedia.org/wikipedia/commons/5/52/Hamburg-logo.svg';
 			img.style.width = '320px';
-			
+
 			return img;
 		},
-		
-		onRemove: function(map) {
+
+		onRemove: function (map) {
 			// Nothing to do here
 		}
 	});
 
-	L.control.watermark = function(opts) {
+	L.control.watermark = function (opts) {
 		return new L.Control.Watermark(opts);
 	}
-	
+
 	L.control.watermark({ position: 'bottomleft' }).addTo(Map);
 };
 
