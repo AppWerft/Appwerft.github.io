@@ -53,12 +53,11 @@ function renderEvent(e) {
 		if (e[b]==1) beteiligungen.push(B[b]);
 	})
 	res += ('<dd>' + beteiligungen.join(', ') + '</dd>');
-	res += '<dt>Unfallmonat:</dt>';
 	const MONATE = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember';
-	res += ('<dd>' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] + '</dd>');
-	res += '<dt>Unfallzeit:</dt>';
+	
+	res += '<dt>Unfallzeitpunkt:</dt>';
 	const WD = 'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag';
-	res += ('<dd>' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ', ' + e.USTUNDE + ':00</dd>');
+	res += ('<dd>im ' +  MONATE.split(' ')[parseInt(e.UMONAT) - 1]+' an einem '+WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ' in der ' + e.USTUNDE + '. Stunde</dd>');
 
 	res += '</dl>';
 	return res;
