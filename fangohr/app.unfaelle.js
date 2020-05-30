@@ -23,8 +23,7 @@ const Unfälle = function (heatmapLayer) {
 };
 
 Unfälle.prototype.getNearestUnfall = function (lat,lng) {
-    return 'gefunden'
-
+    return 'gefunden at ' + lat +  ','+lng
 };
 Unfälle.prototype.getTotal = function (field) {
     var res = {};

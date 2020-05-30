@@ -46,10 +46,10 @@ window.onload = function () {
 	Map.on('click', function (ev) {
 		var latlng = Map.mouseEventToLatLng(ev.originalEvent);
 		
-		//const msg = UnfallLayer.getNearestUnfall(latlng.lat, latlng.lng);
+		//const msg = ;
 		var popup = L.popup()
 			.setLatLng(latlng)
-			.setContent('<p>Hello world!<br />This is a nice popup.</p>');
+			.setContent(UnfallLayer.getNearestUnfall(latlng.lat, latlng.lng));
 		console.log(popup)	
 		Map.openPopup(popup);	
 	});
