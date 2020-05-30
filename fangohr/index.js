@@ -6,17 +6,57 @@ function Log(text) {
 	start = now;
 }
 
+function renderEvent(e) {
+	var res = '<dl>';
+	res += '<dt>Position:</dt>';
+	res += ('<dd>' + e.YGCSWGS84 + ', ' + e.XGCSWGS84 + '</dd>');
+	res += '<dt>Unfallkategorie:</dt>';
+	const KATS = ['Unfall mit Getöteten', 
+		'Unfall mit Schwerverletzten', 
+		'Unfall mit Leichtverletzten'];
+	res += ('<dd>' + KATS[parseInt(e.UKATEGORIE) - 1] + '</dd>');
+	res += '<dt>Unfalltyp:</dt>';
+	const TYPES = ['Fahrunfall', 
+		'Abbiegeunfall', 
+		'Einbiegen / Kreuzen-Unfall', 
+		'Überschreiten-Unfall', 
+		'Unfall durch ruhenden Verkehr', 
+		'Unfall im Längsverkehr', 
+		'sonstiger Unfall'];
+	res += ('<dd>' + TYPES[parseInt(e.UTYP1) - 1] + '</dd>');
+	const ARTS = ['Zusammenstoß mit anfahrendem/ anhaltendem/ruhendem Fahrzeug',
+		'Zusammenstoß mit vorausfahrendem / wartendem Fahrzeug',
+		'Zusammenstoß mit seitlich in gleicher Richtung fahrendem Fahrzeug',
+		'Zusammenstoß mit entgegenkommendem Fahrzeug',
+		'Zusammenstoß mit einbiegendem / kreuzendem Fahrzeug',
+		'Zusammenstoß zwischen Fahrzeug und Fußgänger Aufprall auf Fahrbahnhindernis',
+		'Abkommen von Fahrbahn nach rechts Abkommen von Fahrbahn nach links',
+		'Unfall anderer Art']
+	
+	res += '<dt>Unfallart:</dt>';
+	res += ('<dd>' + ARTS[parseInt(e.UART) - 1] + '</dd>');
+	res += '<dt>Unfallmonat:</dt>';
+	const MONATE = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember';
+	res += ('<dd>' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] + '</dd>');
+	res += '<dt>Unfallzeit:</dt>';
+	const WD = 'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag';
+	res += ('<dd>' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ', '+e.USTUNDE +':00</dd>');
+	
+	res += '</dl>';
+	return res;
+}
+
 Log(start);
 window.onload = function () {
-	
+
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 14,
-		minZoom:13,
+		minZoom: 13,
 		cursor: true,
 		layers: []
 	});
-	
+
 	L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
@@ -45,13 +85,14 @@ window.onload = function () {
 	this.Drawer = $('.drawer').drawer();
 	Map.on('click', function (ev) {
 		var latlng = Map.mouseEventToLatLng(ev.originalEvent);
-		
+
 		//const msg = ;
+		const event = UnfallLayer.getNearestUnfall(latlng.lat, latlng.lng);
 		var popup = L.popup()
-			.setLatLng(latlng)
-			.setContent(UnfallLayer.getNearestUnfall(latlng.lat, latlng.lng));
-		console.log(popup)	
-		Map.openPopup(popup);	
+			.setLatLng(L.latLng(event.YGCSWGS84, event.XGCSWGS84))
+			.setContent(renderEvent(event));
+
+		Map.openPopup(popup);
 	});
 	const UnfallLayer = new Unfälle(heatmapLayer);
 	Log('addL')

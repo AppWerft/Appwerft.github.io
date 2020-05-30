@@ -23,7 +23,17 @@ const Unfälle = function (heatmapLayer) {
 };
 
 Unfälle.prototype.getNearestUnfall = function (lat,lng) {
-    return 'gefunden at ' + lat +  ','+lng
+    console.log(lat+ ' '+ lng)
+    const myPoint =  L.latLng(lat,lng);
+    console.log(myPoint)
+    this.data.forEach(function(d){
+        d.dist = L.latLng(d.YGCSWGS84,d.XGCSWGS84).distanceTo(myPoint)
+    });
+    this.data.sort(function(a,b){
+        return a.dist-b.dist;
+    })
+    var event = this.data[0]
+    return event;
 };
 Unfälle.prototype.getTotal = function (field) {
     var res = {};
