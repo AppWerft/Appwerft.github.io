@@ -61,3 +61,7 @@
    } 
 
    legend {display:inline;margin:15px 0 0 5px}
+
+   .drawer-menu {overflow-y:'scroll'}
+
+   .drawer-brand {background-color:#6899CF; color:white!important;font-size:24px}
