@@ -56,7 +56,6 @@ window.onload = function () {
 	});
 	setTimeout(function() {
 		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
-		console.log(wochentage)
 		var pie = new d3pie('wochentage', {
 			size: {
 				canvasHeight: 240,
@@ -79,10 +78,33 @@ window.onload = function () {
 			}
 		});
 	}, 2000);
+	setTimeout(function() {
+		var monate = UnfallLayer.getTotal('UMONAT');
+		
+		var pie = new d3pie('monate', {
+			size: {
+				canvasHeight: 240,
+				canvasWidth: 240
+			},
+			data: {
+				content: 'Jan Feb März Apr Mai Juni Juli Aug Sept Okt Nov Dez'.split(' ').map(function (tag, i) {
+					return {
+						label: tag,
+						value: monate[i+1]
+					}
+				})
+			},
+			callbacks: {
+				onMouseoverSegment: function (info) {
+					console.log('mouse in', info);
+				},
+				onMouseoutSegment: function (info) {
+				}
+			}
+		});
+	}, 2000);
 
-	'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split(' ').forEach(function (tag, i) {
-		$('#monate').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + i + '"><span class="slider round"></span></label><legend>' + tag + '</legend></li>')
-	});
+	
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
 		UnfallLayer.setFilter(self.attr('name'), self.is(':checked'))
