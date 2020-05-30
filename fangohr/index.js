@@ -35,29 +35,29 @@ function renderEvent(e) {
 	if (true) {
 		res += '<dt>Unfallart:</dt>';
 		res += ('<dd>' + ARTS[parseInt(e.UART)] + '</dd>');
-	} 
-	const LICHT =  'Tageslicht Dämmerung Dunkelheit';
+	}
+	const LICHT = 'Tageslicht Dämmerung Dunkelheit';
 	res += '<dt>Lichtverhältnisse:</dt>';
 	res += ('<dd>' + LICHT.split(' ')[parseInt(e.ULICHTVERH)] + '</dd>');
 	res += '<dt>Beteiligte:</dt>';
-	const B ={
-		IstRad:'Fahrradbeteiligung',
-		IstPKW:'PKW-Beteiligung',
-		IstFuss:'Fußgängerbeteiligung',
-		IstKrad:'Kraftradbeteiligung',
-		IstGkfz:'Güterkraftfahrzeug',
-		IstSonstige:'Unfall mit Sonstigen'
+	const B = {
+		IstRad: 'Fahrradbeteiligung',
+		IstPKW: 'PKW-Beteiligung',
+		IstFuss: 'Fußgängerbeteiligung',
+		IstKrad: 'Kraftradbeteiligung',
+		IstGkfz: 'Güterkraftfahrzeug',
+		IstSonstige: 'Unfall mit Sonstigen'
 	};
 	var beteiligungen = [];
-	Object.keys(B).forEach(function(b){
-		if (e[b]==1) beteiligungen.push(B[b]);
+	Object.keys(B).forEach(function (b) {
+		if (e[b] == 1) beteiligungen.push(B[b]);
 	})
 	res += ('<dd>' + beteiligungen.join(', ') + '</dd>');
 	const MONATE = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember';
-	
+
 	res += '<dt>Unfallzeitpunkt:</dt>';
 	const WD = 'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag';
-	res += ('<dd>im ' +  MONATE.split(' ')[parseInt(e.UMONAT) - 1]+' an einem '+WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ' in der ' + e.USTUNDE + '. Stunde</dd>');
+	res += ('<dd>im ' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] + ' an einem ' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ' in der ' + e.USTUNDE + '. Stunde</dd>');
 
 	res += '</dl>';
 	return res;
@@ -75,8 +75,11 @@ window.onload = function () {
 	});
 
 	L.tileLayer.wms(
+		//	https://geodienste.hamburg.de/HH_WMS_Cache_Luftbilder?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&CACHEID=5792402&LAYERS=dop&WIDTH=512&HEIGHT=512&SRS=EPSG%3A25832&STYLES=&BBOX=553882.606682059%2C5939047.929774118%2C556591.9385523532%2C5941757.261644412
+
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
+
 		version: '1.3.',
 		request: 'GetMap',
 		format: 'image/jpeg',
@@ -87,7 +90,7 @@ window.onload = function () {
 		opacity: 0.9,
 		crs: L.CRS.EPSG25832
 	}).addTo(Map);
-
+	L.control.attribution({ prefix: false });
 	var heatmapLayer = new HeatmapOverlay({
 		"radius": 8,
 		max: 10,
