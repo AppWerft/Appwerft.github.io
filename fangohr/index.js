@@ -11,20 +11,20 @@ function renderEvent(e) {
 	res += '<dt>Position:</dt>';
 	res += ('<dd>' + e.YGCSWGS84 + ', ' + e.XGCSWGS84 + '</dd>');
 	res += '<dt>Unfallkategorie:</dt>';
-	const KATS = ['Unfall mit Getöteten', 
-		'Unfall mit Schwerverletzten', 
+	const KATS = ['Unfall mit Getöteten',
+		'Unfall mit Schwerverletzten',
 		'Unfall mit Leichtverletzten'];
 	res += ('<dd>' + KATS[parseInt(e.UKATEGORIE) - 1] + '</dd>');
 	res += '<dt>Unfalltyp:</dt>';
-	const TYPES = ['Fahrunfall', 
-		'Abbiegeunfall', 
-		'Einbiegen / Kreuzen-Unfall', 
-		'Überschreiten-Unfall', 
-		'Unfall durch ruhenden Verkehr', 
-		'Unfall im Längsverkehr', 
+	const TYPES = ['Fahrunfall',
+		'Abbiegeunfall',
+		'Einbiegen / Kreuzen-Unfall',
+		'Überschreiten-Unfall',
+		'Unfall durch ruhenden Verkehr',
+		'Unfall im Längsverkehr',
 		'sonstiger Unfall'];
 	res += ('<dd>' + TYPES[parseInt(e.UTYP1) - 1] + '</dd>');
-	const ARTS = ['Zusammenstoß mit anfahrendem/ anhaltendem/ruhendem Fahrzeug',
+	const ARTS = ['keine Angabe', 'Zusammenstoß mit anfahrendem/ anhaltendem/ruhendem Fahrzeug',
 		'Zusammenstoß mit vorausfahrendem / wartendem Fahrzeug',
 		'Zusammenstoß mit seitlich in gleicher Richtung fahrendem Fahrzeug',
 		'Zusammenstoß mit entgegenkommendem Fahrzeug',
@@ -32,16 +32,20 @@ function renderEvent(e) {
 		'Zusammenstoß zwischen Fahrzeug und Fußgänger Aufprall auf Fahrbahnhindernis',
 		'Abkommen von Fahrbahn nach rechts Abkommen von Fahrbahn nach links',
 		'Unfall anderer Art']
-	
-	res += '<dt>Unfallart:</dt>';
-	res += ('<dd>' + ARTS[parseInt(e.UART) - 1] + '</dd>');
+	if (true) {
+		res += '<dt>Unfallart:</dt>';
+		res += ('<dd>' + ARTS[parseInt(e.UART)] + '</dd>');
+	} 
+	const LICHT =  'Tageslicht Dämmerung Dunkelheit';
+	res += '<dt>Lichtverhäktnisse:</dt>';
+	res += ('<dd>' + LICHT.split(' ')[parseInt(e.ULICHTVERH)] + '</dd>');
 	res += '<dt>Unfallmonat:</dt>';
 	const MONATE = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember';
 	res += ('<dd>' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] + '</dd>');
 	res += '<dt>Unfallzeit:</dt>';
 	const WD = 'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag';
-	res += ('<dd>' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ', '+e.USTUNDE +':00</dd>');
-	
+	res += ('<dd>' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ', ' + e.USTUNDE + ':00</dd>');
+
 	res += '</dl>';
 	return res;
 }
