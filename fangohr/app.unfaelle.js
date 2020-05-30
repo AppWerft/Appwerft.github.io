@@ -22,6 +22,17 @@ const Unfälle = function (heatmapLayer) {
     return this;
 };
 
+Unfälle.prototype.getTotal = function (field) {
+    var res = {};
+    console.log(field)
+    this.data.forEach(function(d,i){
+        !i && console.log(d[field])
+        if (!res[d[field]]) res[d[field]]=1;
+        else res[d[field]]++;
+    })
+    return res;
+};    
+
 Unfälle.prototype.setFilter = function (field, enabled) {
     console.log(field + '  ' + enabled);
     var filtereddata= [];

@@ -27,6 +27,7 @@ html, body, #unfallkarte {
       crossorigin=""></script>
    <script src="leaflet.heat.js"></script>  
    <script src="app.unfaelle.js"></script>
+   <script src="d3.pie.js"></script>
    <script src="index.js"></script>
    </head>
 
@@ -40,6 +41,11 @@ html, body, #unfallkarte {
       </button>
       <nav class="drawer-nav" role="navigation">
         <ul class="drawer-menu">
+         <li><a class="drawer-brand" href="#">Beteiligung</a></li>
+         <div id="beteiligung"></div>
+
+         <li><a class="drawer-brand" href="#">Wochentage</a></li>
+         <div id="wochentage"></div>
           <li><a class="drawer-brand" href="#">Personenschaden</a></li>
           <div id="ukategorie"></div>
           <li><a class="drawer-brand" href="#">Unfalltyp</a></li>
@@ -50,10 +56,8 @@ html, body, #unfallkarte {
           <li><a class="drawer-menu-item" href="#">Unfallart</a></li>
           <li><a class="drawer-menu-item" href="#">Unfalltype</a></li>
          -->
-          <li><a class="drawer-brand" href="#">Beteiligung</a></li>
-          <div id="beteiligung"></div>
-          <li><a class="drawer-brand" href="#">Wochentage</a></li>
-          <div id="wochentage"></div>
+         
+         
           <li><a class="drawer-brand" href="#">Monate</a></li>
           <div id="monate"></div>
           <li><a class="drawer-brand" href="#">Tagesstunden</a></li>          

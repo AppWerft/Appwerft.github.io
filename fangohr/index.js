@@ -42,14 +42,9 @@ window.onload = function () {
 	Map.addLayer(heatmapLayer);
 	const UnfallLayer = new Unfälle(heatmapLayer);
 	Log('addL')
-	setTimeout(function () {
-		$('.drawer').drawer('open');
-		setTimeout(function () {
-			$('.drawer').drawer('close');
-		}, 4000);
-	}, 3000);
 
-	const kategorien = { '1': "leicht", '2': "schwer", '3': "Tod" };
+
+	const kategorien = { '1': "leicht", '2': "schwer", '3': "Tod (endgültig)" };
 	Object.keys(kategorien).forEach(function (id) {
 		$('#ukategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
 	});
@@ -59,16 +54,35 @@ window.onload = function () {
 	Object.keys(beteiligte).forEach(function (item) {
 		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
 	});
-	'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag'.split(' ').forEach(function (tag, i) {
-		$('#wochentage').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + i + '"><span class="slider round"></span></label><legend>' + tag + '</legend></li>')
-	});
+	setTimeout(function() {
+		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
+		console.log(wochentage)
+		var pie = new d3pie('wochentage', {
+			size: {
+				canvasHeight: 240,
+				canvasWidth: 240
+			},
+			data: {
+				content: 'Mo Di Mi Do Fr Sa So'.split(' ').map(function (tag, i) {
+					return {
+						label: tag,
+						value: wochentage[i+1]
+					}
+				})
+			},
+			callbacks: {
+				onMouseoverSegment: function (info) {
+					console.log('mouse in', info);
+				},
+				onMouseoutSegment: function (info) {
+				}
+			}
+		});
+	}, 2000);
+
 	'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split(' ').forEach(function (tag, i) {
 		$('#monate').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + i + '"><span class="slider round"></span></label><legend>' + tag + '</legend></li>')
 	});
-
-
-
-
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
 		UnfallLayer.setFilter(self.attr('name'), self.is(':checked'))
