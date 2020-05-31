@@ -1,3 +1,4 @@
+ 
  .switch {
      position: relative;
      display: inline-block;
@@ -62,11 +63,16 @@
 
    legend {display:block;float:right;margin:5px 0 0 5px}
 
-   .drawer-menu {overflow-y:scroll}
-   .drawer-menu {overflow-x:hidden;-webkit-overflow-scrolling: touch;}
-   .drawer-menu 
-   
-   
-   .drawer-nav {opacity:.86}
+    .scroller {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 100%; 
+      -webkit-overflow-scrolling: touch;
+    }
+ 
+   .drawer-nav {
+     opacity:.85;
+     height: 100vw;
+    }
    .drawer-brand {background-color:#6899CF; color:white!important;font-size:24px}
    .drawer-hamburger {background-color:#fff!important; border-radius: 8px;}

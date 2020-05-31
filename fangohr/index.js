@@ -1,15 +1,20 @@
 var start = new Date().getTime();
-
+const KEY = 'FMGaWW73F9BBqOZ4GlXlCpvM0aHK46Ud';
 function Log(text) {
 	var now = new Date().getTime();
 	console.log((now - start) + ' ' + text);
 	start = now;
 }
 
-function renderEvent(e) {
+
+
+
+const renderEvent = function(e) {
 	var res = '<dl>';
-	res += '<dt>Position:</dt>';
-	res += ('<dd>' + e.YGCSWGS84 + ', ' + e.XGCSWGS84 + '</dd>');
+	const url = 'http://www.mapquestapi.com/geocoding/v1/reverse?key=' + KEY + '&location=' + e.YGCSWGS84 + ',' + e.XGCSWGS84 + '&callback=reverseGeocodeResult';
+	$.ajax({ url: url, dataType: "jsonp" });
+	res += '<dt>Nächste Adresse:</dt>';
+	res += ('<dd><!--ADDRESS--></dd>');
 	res += '<dt>Unfallkategorie:</dt>';
 	const KATS = ['Unfall mit Getöteten',
 		'Unfall mit Schwerverletzten',
@@ -60,12 +65,26 @@ function renderEvent(e) {
 	res += ('<dd>im ' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] + ' an einem ' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ' in der ' + e.USTUNDE + '. Stunde</dd>');
 
 	res += '</dl>';
+	popup=res;
 	return res;
 }
 
-
-window.onload = function () {
-	const Map = new L.Map('unfallkarte', {
+var popup;
+var Map;
+const onLoad = function (address) {
+	
+	
+	if (typeof address != 'object')  {
+		console.log(address)
+		console.log(popup)
+		console.log(Map)
+		if (popup && Map) {
+			console.log(popup.getContent())
+			popup.setContent(popup.getContent().replace('<!--ADDRESS-->',address));
+		}
+		return;
+	} 
+	Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 13,
 		minZoom: 12,
@@ -106,14 +125,14 @@ window.onload = function () {
 		},
 		showOverlay: true
 	});
+
+	this.Drawer.on('drawer.opened', function () {
+		Map.closePopup(popup);
+	});
+	this.Drawer.on('drawer.closed', function () {
+		Map.closePopup(popup);
+	});
 	
-	this.Drawer.on('drawer.opened', function(){
-		Map.closePopup(popup);
-	});
-	this.Drawer.on('drawer.closed', function(){
-		Map.closePopup(popup);
-	});
-	var popup;
 	Map.on('click', function (ev) {
 		var latlng = Map.mouseEventToLatLng(ev.originalEvent);
 
@@ -242,4 +261,11 @@ window.onload = function () {
 	L.control.watermark({ position: 'bottomleft' }).addTo(Map);
 };
 
+window.onload = onLoad;
+const reverseGeocodeResult= function(res) {
+	console.log('reverseGeocodeResult')
+	
+	const address = res.results[0].locations[0].street;
+	onLoad(address)
 
+}
