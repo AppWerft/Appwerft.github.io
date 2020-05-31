@@ -64,15 +64,14 @@
    legend {display:block;float:right;margin:5px 0 0 5px}
 
     .scroller {
-      overflow-y: scroll;
-      overflow-x: hidden;
+      overflow-y: auto;
       width: 100%; 
       -webkit-overflow-scrolling: touch;
     }
  
    .drawer-nav {
      opacity:.85;
-     height: 100vw;
-    }
-   .drawer-brand {background-color:#6899CF; color:white!important;font-size:24px}
+   }
+   
+    .drawer-brand {background-color:#6899CF; color:white!important;font-size:24px}
    .drawer-hamburger {background-color:#fff!important; border-radius: 8px;}

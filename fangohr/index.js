@@ -6,7 +6,19 @@ function Log(text) {
 	start = now;
 }
 
-
+function filterme(value) {
+	value = parseInt(value, 10); // Convert to an integer
+	if (value === 1) {
+	  $('#RangeFilter').removeClass('rangeAll', 'rangePassive').addClass('rangeActive');
+	  $('#uart span').text('Unfall mit Leichtverletzten');
+	} else if (value === 2) {
+	  $('#RangeFilter').removeClass('rangeActive', 'rangePassive').addClass('rangeAll');
+	  $('#uart span').text('Unfall mit Schwerverletzten');
+	} else if (value === 3) {
+	  $('#RangeFilter').removeClass('rangeAll', 'rangeActive').addClass('rangePassive');
+	  $('#uart span').text('Unfall mit Getöteten');
+	}
+  }
 
 
 const renderEvent = function(e) {
