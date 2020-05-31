@@ -71,15 +71,10 @@ const renderEvent = function(e) {
 
 var popup;
 var Map;
+
 const onLoad = function (address) {
-	
-	
 	if (typeof address != 'object')  {
-		console.log(address)
-		console.log(popup)
-		console.log(Map)
 		if (popup && Map) {
-			console.log(popup.getContent())
 			popup.setContent(popup.getContent().replace('<!--ADDRESS-->',address));
 		}
 		return;
@@ -153,8 +148,9 @@ const onLoad = function (address) {
 
 
 	const beteiligte = { IstRad: 'Fahrrad', IstPKW: 'Personenkraftwagen', IstFuss: 'Fußgänger', IstKrad: 'Kraftrad', IstGkfz: 'Lastkraftwagen', IstSonstig: 'Sonstiges' };
+	var filter = UnfallLayer.getFilter();
 	Object.keys(beteiligte).forEach(function (item) {
-		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
+		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input '+ (filter[item]?'checked':'') + ' type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
 	});
 	setTimeout(function () {
 		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
