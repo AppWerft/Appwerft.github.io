@@ -72,6 +72,7 @@ window.onload = function () {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 14,
 		minZoom: 13,
+		zoomControl:false,
 		cursor: true,
 		layers: []
 	});
