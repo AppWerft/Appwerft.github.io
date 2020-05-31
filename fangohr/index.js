@@ -77,7 +77,6 @@ function hideAddressBar() {
 //hideAddressBar();
 
 window.onload = function () {
-
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 13,
@@ -91,7 +90,6 @@ window.onload = function () {
 	L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
-
 		version: '1.3.',
 		request: 'GetMap',
 		format: 'image/jpeg',
@@ -103,16 +101,16 @@ window.onload = function () {
 		crs: L.CRS.EPSG25832
 	}).addTo(Map);
 
-	L.control.attribution({ prefix: false });
+	
 	var heatmapLayer = new HeatmapOverlay({
 		"radius": 8,
-		max: 10,
+		"max": 10,
 		"maxOpacity": 1,
 		"scaleRadius": false,
 		"useLocalExtrema": true,
-		valueField: 'count',
-		latField: 'lat',
-		lngField: 'lng',
+		"valueField": 'count',
+		"latField": 'lat',
+		"lngField": 'lng',
 	});
 	Map.addLayer(heatmapLayer);
 	this.Drawer = $('.drawer').drawer({
@@ -136,8 +134,6 @@ window.onload = function () {
 		Map.openPopup(popup);
 	});
 	const UnfallLayer = new Unfälle(heatmapLayer);
-	Log('addL')
-
 
 	const kategorien = { '1': "leicht", '2': "schwer", '3': "Tod (endgültig)" };
 	Object.keys(kategorien).forEach(function (id) {
