@@ -65,7 +65,7 @@ function renderEvent(e) {
 
 Log(start);
 window.onload = function () {
-	setTimeout(function(){
+	setTimeout(function() {
         window.scrollTo(0, 1);
     }, 0);
 	const Map = new L.Map('unfallkarte', {
