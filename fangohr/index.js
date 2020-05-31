@@ -70,9 +70,10 @@ window.onload = function () {
     }, 0);
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
-		zoom: 14,
-		minZoom: 13,
+		zoom: 13,
+		minZoom: 12,
 		zoomControl:false,
+		attributionControl:false,
 		cursor: true,
 		layers: []
 	});
