@@ -128,15 +128,15 @@ window.onload = function () {
 		lngField: 'lng',
 	});
 	Map.addLayer(heatmapLayer);
-	this.Drawer = $('.drawer').drawer({iscroll: {
-		// Configuring the iScroll
-		// https://github.com/cubiq/iscroll#configuring-the-iscroll
-		mouseWheel: true,
-		preventDefault: false
-	  },
-	  showOverlay: true});
-	this.Drawer.on('open',Map.closePopup);
-	
+	this.Drawer = $('.drawer').drawer({
+		iscroll: {
+			mouseWheel: true,
+			preventDefault: false
+		},
+		showOverlay: true
+	});
+	this.Drawer.on('drawer.opened', Map.closePopup);
+
 	Map.on('click', function (ev) {
 		var latlng = Map.mouseEventToLatLng(ev.originalEvent);
 
