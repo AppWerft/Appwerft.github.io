@@ -38,7 +38,7 @@ Unfälle.prototype.getNearestUnfall = function (lat, lng) {
 };
 Unfälle.prototype.getTotal = function (field) {
     var res = {};
-   
+
     this.data.forEach(function (d, i) {
         !i && console.log(d[field])
         if (!res[d[field]]) res[d[field]] = 1;
@@ -50,11 +50,17 @@ Unfälle.prototype.getTotal = function (field) {
 Unfälle.prototype.setFilter = function (field, enabled) {
     if (field)
         this.filter[field] = enabled ? true : false;
+    var myfilters = [];
+    Object.keys(this.filter).forEach(function (field) {
+        if (this.filter[field] == true) myfilters.push(field);
+    }.bind(this));
+    console.log(myfilters);
     this.filtereddata = [];
     console.log(this.data[0])
+    console.log(this.filter)
     this.data.forEach(function (unfall, ndx) {
         var found = true;
-        Object.keys(this.filter).forEach(function (field) {
+        myfilters.forEach(function (field) {
             if (this.filter[field] == true) {
                 if (ndx == 0) {
                     console.log(unfall[field] + '   ' + field)
@@ -62,7 +68,7 @@ Unfälle.prototype.setFilter = function (field, enabled) {
                 if (unfall[field] != 1) found = false;
             }
         }.bind(this));
-        if (found) this.filtereddata.push(unfall);
+        if (found && myfilters.length > 0) this.filtereddata.push(unfall);
     }.bind(this))
     const heatdata = this.filtereddata.map(function (d) {
         return {
