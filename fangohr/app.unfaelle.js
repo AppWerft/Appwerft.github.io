@@ -20,7 +20,7 @@ const Unfälle = function (heatmapLayer) {
             return (arguments[0].ULAND == '2')
         })
         Log('csv loaded ...')
-        this.setFilter();
+        this.updateView();
     }.bind(this));
     return this;
 };
@@ -51,9 +51,13 @@ Unfälle.prototype.getTotal = function (field) {
     return res;
 };
 
-Unfälle.prototype.setFilter = function (field, enabled) {
+Unfälle.prototype.setIst = function (field, enabled) {
     if (field)
         this.filter.ist[field] = enabled ? true : false;
+    
+    Unfälle.updateView()
+}
+Unfälle.prototype.updateView = function () {
     var myfilters = [];
     Object.keys(this.filter.ist).forEach(function (field) {
         if (this.filter.ist[field] == true) myfilters.push(field);

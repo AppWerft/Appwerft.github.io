@@ -241,7 +241,7 @@ const onLoad = function (address) {
 
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
-		UnfallLayer.setFilter(self.attr('name'), self.is(':checked'))
+		UnfallLayer.setIst(self.attr('name'), self.is(':checked'))
 	});
 	$('#wochentage input').on('change', function () {
 		const self = $(this);
