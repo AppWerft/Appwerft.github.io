@@ -51,12 +51,7 @@ Unfälle.prototype.getTotal = function (field) {
     return res;
 };
 
-Unfälle.prototype.setIst = function (field, enabled) {
-    if (field)
-        this.filter.ist[field] = enabled ? true : false;
-    
-    Unfälle.updateView()
-}
+
 Unfälle.prototype.updateView = function () {
     var myfilters = [];
     Object.keys(this.filter.ist).forEach(function (field) {
@@ -86,4 +81,11 @@ Unfälle.prototype.updateView = function () {
         };
     });
     this.heatmapLayer.setData({ data: heatdata });
+}
+
+
+Unfälle.prototype.setIst = function (field, enabled) {
+    if (field)
+        this.filter.ist[field] = enabled ? true : false;
+    this.updateView();
 }
