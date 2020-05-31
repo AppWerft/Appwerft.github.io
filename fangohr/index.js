@@ -87,7 +87,7 @@ const hideAddressBar = function () {
 	return this;
 }
 
-hideAddressBar();
+//hideAddressBar();
 
 window.onload = function () {
 
