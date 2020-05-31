@@ -62,8 +62,10 @@
 
    legend {display:block;float:right;margin:5px 0 0 5px}
 
-   .drawer-menu {overflow-y:'scroll'}
-   .drawer-menu {overflow-x:'hidden'}
+   .drawer-menu {overflow-y:scroll}
+   .drawer-menu {overflow-x:hidden;-webkit-overflow-scrolling: touch;}
+   .drawer-menu 
+   
    
    .drawer-nav {opacity:.86}
    .drawer-brand {background-color:#6899CF; color:white!important;font-size:24px}
