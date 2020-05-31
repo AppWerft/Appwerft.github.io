@@ -65,7 +65,9 @@ function renderEvent(e) {
 
 Log(start);
 window.onload = function () {
-
+	setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 14,
