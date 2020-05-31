@@ -65,7 +65,6 @@ function renderEvent(e) {
 
 
 window.onload = function () {
-	
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 13,
@@ -89,8 +88,6 @@ window.onload = function () {
 		opacity: 1,
 		crs: L.CRS.EPSG25832
 	}).addTo(Map);
-
-	
 	var heatmapLayer = new HeatmapOverlay({
 		"radius": 8,
 		"max": 10,
@@ -109,14 +106,20 @@ window.onload = function () {
 		},
 		showOverlay: true
 	});
-	this.Drawer.on('drawer.opened', Map.closePopup);
-
+	
+	this.Drawer.on('drawer.opened', function(){
+		Map.closePopup(popup);
+	});
+	this.Drawer.on('drawer.closed', function(){
+		Map.closePopup(popup);
+	});
+	var popup;
 	Map.on('click', function (ev) {
 		var latlng = Map.mouseEventToLatLng(ev.originalEvent);
 
 		//const msg = ;
 		const event = UnfallLayer.getNearestUnfall(latlng.lat, latlng.lng);
-		var popup = L.popup()
+		popup = L.popup()
 			.setLatLng(L.latLng(event.YGCSWGS84, event.XGCSWGS84))
 			.setContent(renderEvent(event));
 
