@@ -62,48 +62,41 @@ function renderEvent(e) {
 	res += '</dl>';
 	return res;
 }
-(function( win ){
-	var doc = win.document;
-	
-	// If there's a hash, or addEventListener is undefined, stop here
-	if( !location.hash && win.addEventListener ){
-		
-		//scroll to 1
-		window.scrollTo( 0, 1 );
-		var scrollTop = 1,
-			getScrollTop = function(){
-				return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
-			},
-		
-			//reset to 0 on bodyready, if needed
-			bodycheck = setInterval(function(){
-				if( doc.body ){
-					clearInterval( bodycheck );
-					scrollTop = getScrollTop();
-					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-				}	
-			}, 15 );
-		
-		win.addEventListener( "load", function(){
-			setTimeout(function(){
-				//at load, if user hasn't scrolled more than 20 or so...
-				if( getScrollTop() < 20 ){
-					//reset to hide addr bar at onload
-					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-				}
-			}, 0);
-		} );
+
+const hideAddressBar = function () {
+	if (navigator.userAgent.match(/Android/i)) {
+		window.scrollTo(0, 0); // reset in case prev not scrolled
+		var nPageH = $(document).height();
+		var nViewH = window.outerHeight;
+		if (nViewH > nPageH) {
+			nViewH = nViewH / window.devicePixelRatio;
+			$('BODY').css('height', nViewH + 'px');
+		}
+		window.scrollTo(0, 1);
+	} else {
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+			setTimeout(hideURLbar, 500);
+		}, false);
 	}
-})( this );
+	function hideURLbar() {
+		if (!pageYOffset) {
+			window.scrollTo(0, 1);
+		}
+	}
+	return this;
+}
+
+hideAddressBar();
 Log(start);
 window.onload = function () {
-	
+
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 13,
 		minZoom: 12,
-		zoomControl:false,
-		attributionControl:false,
+		zoomControl: false,
+		attributionControl: false,
 		cursor: true,
 		layers: []
 	});
@@ -122,7 +115,7 @@ window.onload = function () {
 		opacity: 1,
 		crs: L.CRS.EPSG25832
 	}).addTo(Map);
-	
+
 	L.control.attribution({ prefix: false });
 	var heatmapLayer = new HeatmapOverlay({
 		"radius": 8,
