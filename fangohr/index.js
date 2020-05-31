@@ -23,7 +23,7 @@ function filterme(value) {
 
 const renderEvent = function(e) {
 	var res = '<dl>';
-	const url = 'http://www.mapquestapi.com/geocoding/v1/reverse?key=' + KEY + '&location=' + e.YGCSWGS84 + ',' + e.XGCSWGS84 + '&callback=reverseGeocodeResult';
+	const url = 'https://www.mapquestapi.com/geocoding/v1/reverse?key=' + KEY + '&location=' + e.YGCSWGS84 + ',' + e.XGCSWGS84 + '&callback=reverseGeocodeResult';
 	$.ajax({ url: url, dataType: "jsonp" });
 	res += '<dt>Nächste Adresse:</dt>';
 	res += ('<dd><!--ADDRESS--></dd>');
