@@ -2,14 +2,18 @@ const Unfälle = function (heatmapLayer) {
     this.heatmapLayer = heatmapLayer;
     this.data = null;
     this.filtereddata = [];
+
     this.filter = {
-        IstRad: true,
-        IstPKW: false,
-        IstFuss: false,
-        IstKrad: false,
-        IstGkfz: false,
-        IstSonstig: false
-    }
+        ist: {
+            IstRad: true,
+            IstPKW: false,
+            IstFuss: false,
+            IstKrad: false,
+            IstGkfz: false,
+         IstSonstig: false
+        },
+        kategorie : 2
+    };
     $.get('./unfaelle.csv?1', function (_csv) {
         Log('csv loaded ...')
         this.data = $.csv.toObjects(_csv, { separator: ';', }).filter(function () {
@@ -21,7 +25,7 @@ const Unfälle = function (heatmapLayer) {
     return this;
 };
 Unfälle.prototype.getFilter = function () {
-    return this.filter;
+    return this.filter.ist;
 }
 Unfälle.prototype.getNearestUnfall = function (lat, lng) {
     console.log(lat + ' ' + lng)
@@ -49,19 +53,19 @@ Unfälle.prototype.getTotal = function (field) {
 
 Unfälle.prototype.setFilter = function (field, enabled) {
     if (field)
-        this.filter[field] = enabled ? true : false;
+        this.filter.ist[field] = enabled ? true : false;
     var myfilters = [];
-    Object.keys(this.filter).forEach(function (field) {
-        if (this.filter[field] == true) myfilters.push(field);
+    Object.keys(this.filter.ist).forEach(function (field) {
+        if (this.filter.ist[field] == true) myfilters.push(field);
     }.bind(this));
     console.log(myfilters);
     this.filtereddata = [];
     console.log(this.data[0])
-    console.log(this.filter)
+    console.log(this.filter.ist)
     this.data.forEach(function (unfall, ndx) {
         var found = true;
         myfilters.forEach(function (field) {
-            if (this.filter[field] == true) {
+            if (this.filter.ist[field] == true) {
                 if (ndx == 0) {
                     console.log(unfall[field] + '   ' + field)
                 }
