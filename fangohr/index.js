@@ -75,8 +75,6 @@ window.onload = function () {
 	});
 
 	L.tileLayer.wms(
-		//	https://geodienste.hamburg.de/HH_WMS_Cache_Luftbilder?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&CACHEID=5792402&LAYERS=dop&WIDTH=512&HEIGHT=512&SRS=EPSG%3A25832&STYLES=&BBOX=553882.606682059%2C5939047.929774118%2C556591.9385523532%2C5941757.261644412
-
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
 
@@ -87,9 +85,10 @@ window.onload = function () {
 		layers: 1,
 		width: 512,
 		height: 512,
-		opacity: 0.9,
+		opacity: 1,
 		crs: L.CRS.EPSG25832
 	}).addTo(Map);
+	
 	L.control.attribution({ prefix: false });
 	var heatmapLayer = new HeatmapOverlay({
 		"radius": 8,

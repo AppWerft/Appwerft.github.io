@@ -60,7 +60,7 @@
      border-radius: 50%;
    } 
 
-   legend {display:inline;margin:15px 0 0 5px}
+   legend {display:block;float:right;margin:5px 0 0 5px}
 
    .drawer-menu {overflow-y:'scroll'}
    .drawer-nav {opacity:.86}
