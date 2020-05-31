@@ -88,7 +88,7 @@ const hideAddressBar = function () {
 }
 
 hideAddressBar();
-Log(start);
+
 window.onload = function () {
 
 	const Map = new L.Map('unfallkarte', {
