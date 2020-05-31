@@ -74,7 +74,7 @@ function hideAddressBar() {
 	}
   }
 
-//hideAddressBar();
+hideAddressBar();
 
 window.onload = function () {
 	const Map = new L.Map('unfallkarte', {
