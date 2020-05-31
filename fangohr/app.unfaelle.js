@@ -16,16 +16,7 @@ const Unfälle = function (heatmapLayer) {
             return (arguments[0].ULAND == '2')
         })
         Log('csv loaded ...')
-        const heatdata = this.data.map(function (d) {
-            return {
-                count: d.UKATEGORIE * 50,
-                lat: parseFloat(d.YGCSWGS84.replace(',', '.')),
-                lng: parseFloat(d.XGCSWGS84.replace(',', '.'))
-            };
-        });
-        this.heatmapLayer.setData({ data: heatdata });
-        Log('csv set')
-
+        this.setFilter();
     }.bind(this));
     return this;
 };
@@ -47,7 +38,7 @@ Unfälle.prototype.getNearestUnfall = function (lat, lng) {
 };
 Unfälle.prototype.getTotal = function (field) {
     var res = {};
-    console.log(field)
+   
     this.data.forEach(function (d, i) {
         !i && console.log(d[field])
         if (!res[d[field]]) res[d[field]] = 1;
@@ -57,22 +48,22 @@ Unfälle.prototype.getTotal = function (field) {
 };
 
 Unfälle.prototype.setFilter = function (field, enabled) {
-    this.filter[field] = enabled ? true : false;
+    if (field)
+        this.filter[field] = enabled ? true : false;
     this.filtereddata = [];
     console.log(this.data[0])
     this.data.forEach(function (unfall, ndx) {
-        var found = false;
+        var found = true;
         Object.keys(this.filter).forEach(function (field) {
             if (this.filter[field] == true) {
                 if (ndx == 0) {
                     console.log(unfall[field] + '   ' + field)
                 }
-                if (unfall[field] == 1) found = true;
+                if (unfall[field] != 1) found = false;
             }
         }.bind(this));
         if (found) this.filtereddata.push(unfall);
     }.bind(this))
-    console.log(this.filtereddata.length);
     const heatdata = this.filtereddata.map(function (d) {
         return {
             count: d.UKATEGORIE * 5,
