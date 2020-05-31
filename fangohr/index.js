@@ -63,20 +63,9 @@ function renderEvent(e) {
 	return res;
 }
 
-function hideAddressBar() {
-	if(!window.location.hash) {
-	  if(document.height < window.outerHeight)
-		document.body.style.height = (window.outerHeight + 50) + 'px';
-	  setTimeout( function(){ 
-		  window.scrollTo(0, 1); 
-		  document.body.style.height = 'auto'; 
-		}, 50 );
-	}
-  }
-
-hideAddressBar();
 
 window.onload = function () {
+	
 	const Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(53.5562788, 9.985348),
 		zoom: 13,
