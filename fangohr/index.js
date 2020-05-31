@@ -63,29 +63,16 @@ function renderEvent(e) {
 	return res;
 }
 
-const hideAddressBar = function () {
-	if (navigator.userAgent.match(/Android/i)) {
-		window.scrollTo(0, 0); // reset in case prev not scrolled
-		var nPageH = $(document).height();
-		var nViewH = window.outerHeight;
-		if (nViewH > nPageH) {
-			nViewH = nViewH / window.devicePixelRatio;
-			$('BODY').css('height', nViewH + 'px');
-		}
-		window.scrollTo(0, 1);
-	} else {
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-			setTimeout(hideURLbar, 500);
-		}, false);
+function hideAddressBar() {
+	if(!window.location.hash) {
+	  if(document.height < window.outerHeight)
+		document.body.style.height = (window.outerHeight + 50) + 'px';
+	  setTimeout( function(){ 
+		  window.scrollTo(0, 1); 
+		  document.body.style.height = 'auto'; 
+		}, 50 );
 	}
-	function hideURLbar() {
-		if (!pageYOffset) {
-			window.scrollTo(0, 1);
-		}
-	}
-	return this;
-}
+  }
 
 //hideAddressBar();
 
