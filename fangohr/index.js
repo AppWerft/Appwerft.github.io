@@ -262,10 +262,9 @@ const onLoad = function (address) {
 	}
 
 	L.control.watermark({ position: 'bottomleft' }).addTo(Map);
-	var hammertime = new Hammer(document.getElementsByClassName('drawer-nav')[0], {});
-
+	var hammertime = new Hammer(document.getElementsByClassName('drawer-menu')[0], {});
+	hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 	hammertime.on('swipe', function (ev) {
-		alert('')
 		$('.drawer').drawer('close');
 	});
 
