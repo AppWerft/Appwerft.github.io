@@ -265,7 +265,7 @@ const onLoad = function (address) {
 	var hammertime = new Hammer(document.getElementsByClassName('drawer-nav')[0], {});
 
 hammertime.on('swipe', function(ev) {
-	console.log(ev);
+	$('.drawer').drawer('close');
 });
 
 };
