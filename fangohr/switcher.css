@@ -63,12 +63,10 @@
 
    legend {display:block;float:right;margin:5px 0 0 5px}
 
-    .scroller {
+  .scroller {
       overflow-y: scroll;
       width: 100%; 
-     
-    
-    }
+   }
  
 
     @media screen and (max-width: 500px) {
@@ -76,7 +74,7 @@
    }
 
    .drawer-nav {
-      opacity:.9;
+      opacity:.92;
    }
   
    .drawer-brand {background-color:#6899CF; color:white!important;font-size:24px}
