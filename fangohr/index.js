@@ -264,9 +264,10 @@ const onLoad = function (address) {
 	L.control.watermark({ position: 'bottomleft' }).addTo(Map);
 	var hammertime = new Hammer(document.getElementsByClassName('drawer-nav')[0], {});
 
-hammertime.on('swipe', function(ev) {
-	$('.drawer').drawer('close');
-});
+	hammertime.on('swipe', function (ev) {
+		alert('')
+		$('.drawer').drawer('close');
+	});
 
 };
 
