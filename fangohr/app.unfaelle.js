@@ -105,3 +105,11 @@ Unfälle.prototype.setKategorie = function (field, enabled) {
         this.filter.kategorie[field] = enabled;
     this.updateView();
 }
+Unfälle.prototype.hide = function () {
+    this.heatmapLayer.setData({ data: [] });
+    
+}
+Unfälle.prototype.show = function () {
+   
+    this.updateView();
+}

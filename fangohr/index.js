@@ -138,8 +138,14 @@ const onLoad = function (address) {
 
 		Map.openPopup(popup);
 	});
+	
 	const UnfallLayer = new Unfälle(heatmapLayer);
-
+	Map.on('zoomstart',function(){
+		UnfallLayer.hide();
+	})
+	Map.on('zoomend',function(){
+		UnfallLayer.show();
+	})
 	const kategorien = { '1': "Getötete",'2': "Schwerverletzte", '3': "Leichtverletzte" };
 	Object.keys(kategorien).forEach(function (id) {
 		$('#kategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
