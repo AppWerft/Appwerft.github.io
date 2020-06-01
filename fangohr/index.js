@@ -262,6 +262,12 @@ const onLoad = function (address) {
 	}
 
 	L.control.watermark({ position: 'bottomleft' }).addTo(Map);
+	var hammertime = new Hammer(document.getElementsByClassName('drawer-nav')[0], {});
+
+hammertime.on('swipe', function(ev) {
+	console.log(ev);
+});
+
 };
 
 window.onload = onLoad;
