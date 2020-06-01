@@ -10,16 +10,18 @@ const Unfälle = function (heatmapLayer) {
             IstFuss: false,
             IstKrad: false,
             IstGkfz: false,
-         IstSonstig: false
+            IstSonstig: false
         },
-        kategorie : 2
+        kategorie: {
+            1: true,
+            2: true,
+            3: true
+        }
     };
     $.get('./unfaelle.csv?1', function (_csv) {
-        Log('csv loaded ...')
         this.data = $.csv.toObjects(_csv, { separator: ';', }).filter(function () {
             return (arguments[0].ULAND == '2')
         })
-        Log('csv loaded ...')
         this.updateView();
     }.bind(this));
     return this;
@@ -53,17 +55,20 @@ Unfälle.prototype.getTotal = function (field) {
 
 
 Unfälle.prototype.updateView = function () {
-    var myfilters = [];
+    var myfilters = { ist: [], kategorie: [] };
     Object.keys(this.filter.ist).forEach(function (field) {
-        if (this.filter.ist[field] == true) myfilters.push(field);
+        if (this.filter.ist[field] == true) myfilters.ist.push(field);
+    }.bind(this));
+    Object.keys(this.filter.kategorie).forEach(function (field) {
+        if (this.filter.kategorie[field] == true) myfilters.kategorie.push(field);
     }.bind(this));
     console.log(myfilters);
     this.filtereddata = [];
     console.log(this.data[0])
-    console.log(this.filter.ist)
+    
     this.data.forEach(function (unfall, ndx) {
         var found = true;
-        myfilters.forEach(function (field) {
+        myfilters.ist.forEach(function (field) {
             if (this.filter.ist[field] == true) {
                 if (ndx == 0) {
                     console.log(unfall[field] + '   ' + field)
@@ -71,7 +76,13 @@ Unfälle.prototype.updateView = function () {
                 if (unfall[field] != 1) found = false;
             }
         }.bind(this));
-        if (found && myfilters.length > 0) this.filtereddata.push(unfall);
+        if (found && myfilters.ist.length > 0) this.filtereddata.push(unfall);
+        var selectedcategories = myfilters.kategorie;
+        this.filtereddata = this.filtereddata.filter(function(u){
+            var kategorie = u.UKATEGORIE;
+            return (selectedcategories.indexOf(kategorie)>-1);
+        });
+        
     }.bind(this))
     const heatdata = this.filtereddata.map(function (d) {
         return {
@@ -87,5 +98,10 @@ Unfälle.prototype.updateView = function () {
 Unfälle.prototype.setIst = function (field, enabled) {
     if (field)
         this.filter.ist[field] = enabled ? true : false;
+    this.updateView();
+}
+Unfälle.prototype.setKategorie = function (field, enabled) {
+    if (field)
+        this.filter.kategorie[field] = enabled;
     this.updateView();
 }

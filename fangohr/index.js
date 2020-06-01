@@ -6,19 +6,6 @@ function Log(text) {
 	start = now;
 }
 
-function filterme(value) {
-	value = parseInt(value, 10); // Convert to an integer
-	if (value === 1) {
-	  $('#RangeFilter').removeClass('rangeAll', 'rangePassive').addClass('rangeActive');
-	  $('#uart span').text('Unfall mit Leichtverletzten');
-	} else if (value === 2) {
-	  $('#RangeFilter').removeClass('rangeActive', 'rangePassive').addClass('rangeAll');
-	  $('#uart span').text('Unfall mit Schwerverletzten');
-	} else if (value === 3) {
-	  $('#RangeFilter').removeClass('rangeAll', 'rangeActive').addClass('rangePassive');
-	  $('#uart span').text('Unfall mit Getöteten');
-	}
-  }
 
 
 const renderEvent = function(e) {
@@ -153,9 +140,9 @@ const onLoad = function (address) {
 	});
 	const UnfallLayer = new Unfälle(heatmapLayer);
 
-	const kategorien = { '1': "leicht", '2': "schwer", '3': "Tod (endgültig)" };
+	const kategorien = { '1': "Getötete",'2': "Schwerverletzte", '3': "Leichtverletzte" };
 	Object.keys(kategorien).forEach(function (id) {
-		$('#ukategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
+		$('#kategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
 	});
 
 
@@ -243,14 +230,13 @@ const onLoad = function (address) {
 		const self = $(this);
 		UnfallLayer.setIst(self.attr('name'), self.is(':checked'))
 	});
-	$('#wochentage input').on('change', function () {
+	$('#kategorie input').on('change', function () {
 		const self = $(this);
-		UnfallLayer.setFilter(self.attr('name'), self.is(':checked'))
+		UnfallLayer.setKategorie(self.attr('name'), self.is(':checked'))
 	});
 	L.Control.Watermark = L.Control.extend({
 		onAdd: function (map) {
 			var img = L.DomUtil.create('img');
-
 			img.src = 'https://upload.wikimedia.org/wikipedia/commons/5/52/Hamburg-logo.svg';
 			img.style.width = '320px';
 
