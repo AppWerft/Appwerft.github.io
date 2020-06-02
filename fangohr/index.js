@@ -50,13 +50,15 @@ const renderEvent = function (e) {
 		IstFuss: 'Fußgängerbeteiligung',
 		IstKrad: 'Kraftradbeteiligung',
 		IstGkfz: 'Güterkraftfahrzeug',
-		IstSonstige: 'Unfall mit Sonstigen'
+		IstSonstig: 'Unfall mit Sonstigen'
 	};
 	var beteiligungen = [];
 	Object.keys(B).forEach(function (b) {
 		if (e[b] == 1) beteiligungen.push(B[b]);
 	})
 	res += ('<dd>' + beteiligungen.join(', ') + '</dd>');
+
+
 	const MONATE = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember';
 
 	res += '<dt>Unfallzeitpunkt:</dt>';

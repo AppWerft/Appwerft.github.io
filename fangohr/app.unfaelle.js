@@ -24,6 +24,13 @@ const Unfälle = function (heatmapLayer) {
         })
         this.updateView();
     }.bind(this));
+    
+    /*$.getJSON('./unfaelle.json',function(_csv,status) {
+        console.log(status)
+        console.log(_csv)
+        this.data = _csv;
+        this.updateView();
+    }.bind(this));*/
     return this;
 };
 Unfälle.prototype.getFilter = function () {
@@ -65,7 +72,7 @@ Unfälle.prototype.updateView = function () {
     console.log(myfilters);
     this.filtereddata = [];
     console.log(this.data[0])
-    
+
     this.data.forEach(function (unfall, ndx) {
         var found = true;
         myfilters.ist.forEach(function (field) {
@@ -78,11 +85,11 @@ Unfälle.prototype.updateView = function () {
         }.bind(this));
         if (found && myfilters.ist.length > 0) this.filtereddata.push(unfall);
         var selectedcategories = myfilters.kategorie;
-        this.filtereddata = this.filtereddata.filter(function(u){
+        this.filtereddata = this.filtereddata.filter(function (u) {
             var kategorie = u.UKATEGORIE;
-            return (selectedcategories.indexOf(kategorie)>-1);
+            return (selectedcategories.indexOf(kategorie) > -1);
         });
-        
+
     }.bind(this))
     const heatdata = this.filtereddata.map(function (d) {
         return {
@@ -107,9 +114,9 @@ Unfälle.prototype.setKategorie = function (field, enabled) {
 }
 Unfälle.prototype.hide = function () {
     this.heatmapLayer.setData({ data: [] });
-    
+
 }
 Unfälle.prototype.show = function () {
-   
+
     this.updateView();
 }
