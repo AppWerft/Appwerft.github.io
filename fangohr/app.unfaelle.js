@@ -18,7 +18,7 @@ const Unfälle = function (heatmapLayer) {
             3: true
         }
     };
-    $.get('./unfaelle.csv?1', function (_csv) {
+    $.get('./unfaelle.csv?2', function (_csv) {
         this.data = $.csv.toObjects(_csv, { separator: ';', }).filter(function () {
             return (arguments[0].ULAND == '2')
         })
