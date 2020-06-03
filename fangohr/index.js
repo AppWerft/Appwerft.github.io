@@ -63,7 +63,7 @@ const renderEvent = function (e) {
 
 	res += '<dt>Unfallzeitpunkt:</dt>';
 	const WD = 'Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag';
-	res += ('<dd>im ' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] + ' an einem ' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ' in der ' + e.USTUNDE + '. Stunde</dd>');
+	res += ('<dd>im ' + MONATE.split(' ')[parseInt(e.UMONAT) - 1] +' '+ e.UJAHR +' an einem ' + WD.split(' ')[parseInt(e.UWOCHENTAG) - 1] + ' in der ' + e.USTUNDE + '. Stunde</dd>');
 
 	res += '</dl>';
 	popup = res;
@@ -81,7 +81,7 @@ const onLoad = function (address) {
 		return;
 	}
 	Map = new L.Map('unfallkarte', {
-		center: new L.LatLng(53.5562788, 9.985348),
+		center: new L.LatLng(53.5562788, 9.995348),
 		zoom: 14,
 		minZoom: 12,
 		zoomControl: false,
