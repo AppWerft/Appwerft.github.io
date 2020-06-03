@@ -2,7 +2,7 @@ var start = new Date().getTime();
 const KEY = 'FMGaWW73F9BBqOZ4GlXlCpvM0aHK46Ud';
 function Log(text) {
 	var now = new Date().getTime();
-	console.log((now - start) + ' ' + text);
+	text && console.log((now - start) + ' ' + text);
 	start = now;
 }
 

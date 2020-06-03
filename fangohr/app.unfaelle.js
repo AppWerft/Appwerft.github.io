@@ -63,6 +63,7 @@ Unfälle.prototype.getTotal = function (field) {
 
 Unfälle.prototype.updateView = function () {
     var myfilters = { ist: [], kategorie: [] };
+    Log("updateView start")
     Object.keys(this.filter.ist).forEach(function (field) {
         if (this.filter.ist[field] == true) myfilters.ist.push(field);
     }.bind(this));
@@ -72,7 +73,7 @@ Unfälle.prototype.updateView = function () {
     console.log(myfilters);
     this.filtereddata = [];
     console.log(this.data[0])
-
+    Log("start filterloop")
     this.data.forEach(function (unfall, ndx) {
         var found = true;
         myfilters.ist.forEach(function (field) {
@@ -84,13 +85,15 @@ Unfälle.prototype.updateView = function () {
             }
         }.bind(this));
         if (found && myfilters.ist.length > 0) this.filtereddata.push(unfall);
-        var selectedcategories = myfilters.kategorie;
-        this.filtereddata = this.filtereddata.filter(function (u) {
-            var kategorie = u.UKATEGORIE;
-            return (selectedcategories.indexOf(kategorie) > -1);
-        });
+       
 
-    }.bind(this))
+    }.bind(this));
+    Log('end filterloop')
+    var selectedcategories = myfilters.kategorie;
+    this.filtereddata = this.filtereddata.filter(function (u) {
+        var kategorie = u.UKATEGORIE;
+        return (selectedcategories.indexOf(kategorie) > -1);
+    });
     const heatdata = this.filtereddata.map(function (d) {
         return {
             count: d.UKATEGORIE * 5,
