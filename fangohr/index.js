@@ -236,7 +236,7 @@ const onLoad = function (address) {
 			}
 		});
 	}, 2000);
-
+    
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
 		UnfallLayer.setIst(self.attr('name'), self.is(':checked'))

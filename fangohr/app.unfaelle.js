@@ -1,6 +1,6 @@
 const Unfälle = function (heatmapLayer) {
     this.heatmapLayer = heatmapLayer;
-    this.data = null;
+    this.data = [];
     this.filtereddata = [];
 
     this.filter = {
@@ -18,28 +18,31 @@ const Unfälle = function (heatmapLayer) {
             3: true
         }
     };
-    $.get('./unfaelle.csv?2017', function (_csv) {
-        this.data = $.csv.toObjects(_csv, { separator: ';', }).filter(function () {
-            return (arguments[0].ULAND == '2')
-        })
-        this.updateView();
-    }.bind(this));
-    
-    /*$.getJSON('./unfaelle.json',function(_csv,status) {
-        console.log(status)
-        console.log(_csv)
-        this.data = _csv;
-        this.updateView();
-    }.bind(this));*/
-    return this;
-};
+    for (var i = 2018; i < 2019; i++) {
+        const url = './unfaelle_' + i + '.csv';
+        $.ajax({
+            url: url,
+            success: function(_csv) {
+                console.log(url)    
+                const newlist = $.csv.toObjects(_csv, { separator: ';', }).filter(function () {
+                    return (arguments[0].ULAND == '2')
+                });
+                newlist.forEach(function(unfall){
+                   
+                    this.data.push(unfall)
+                }.bind(this))
+                this.updateView();
+
+            }.bind(this)
+        });
+        return this;
+    };
+}
 Unfälle.prototype.getFilter = function () {
     return this.filter.ist;
 }
 Unfälle.prototype.getNearestUnfall = function (lat, lng) {
-    console.log(lat + ' ' + lng)
     const myPoint = L.latLng(lat, lng);
-    console.log(myPoint)
     this.filtereddata.forEach(function (d) {
         d.dist = L.latLng(d.YGCSWGS84, d.XGCSWGS84).distanceTo(myPoint)
     });
@@ -51,9 +54,7 @@ Unfälle.prototype.getNearestUnfall = function (lat, lng) {
 };
 Unfälle.prototype.getTotal = function (field) {
     var res = {};
-
     this.data.forEach(function (d, i) {
-        !i && console.log(d[field])
         if (!res[d[field]]) res[d[field]] = 1;
         else res[d[field]]++;
     })
@@ -85,7 +86,7 @@ Unfälle.prototype.updateView = function () {
             }
         }.bind(this));
         if (found && myfilters.ist.length > 0) this.filtereddata.push(unfall);
-       
+
 
     }.bind(this));
     Log('end filterloop')
@@ -101,6 +102,8 @@ Unfälle.prototype.updateView = function () {
             lng: parseFloat(d.XGCSWGS84.replace(',', '.'))
         };
     });
+    console.log(heatdata[0])
+    console.log(heatdata.length)
     this.heatmapLayer.setData({ data: heatdata });
 }
 
