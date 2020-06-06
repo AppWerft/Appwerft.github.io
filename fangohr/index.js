@@ -102,9 +102,8 @@ const onLoad = function (address) {
 	Object.keys(beteiligte).forEach(function (item) {
 		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input ' + (filter[item] ? 'checked' : '') + ' type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
 	});
-	setTimeout(function () {
-		new UnfallDiagramm();
-	},2000);
+	
+	/*
 	setTimeout(function () {
 		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
 		var pie = new d3pie('wochentage', {
@@ -154,7 +153,7 @@ const onLoad = function (address) {
 			}
 		});
 	}, 200);
-    
+    */
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
 		UnfallLayer.setIst(self.attr('name'), self.is(':checked'))

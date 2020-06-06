@@ -32,9 +32,10 @@ const Unfälle = function (heatmapLayer) {
                     this.data.push(unfall)
                 }.bind(this))
                 this.updateView();
-
+                new UnfallDiagramm(this.data);
             }.bind(this)
         });
+
         return this;
     };
 }
