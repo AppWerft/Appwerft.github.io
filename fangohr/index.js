@@ -18,18 +18,8 @@ const onLoad = function (address) {
 		}
 		return;
 	}
-	Map = new L.Map('unfallkarte', {
-		center: new L.LatLng(53.5562788, 9.995348),
-		zoom: 14,
-		minZoom: 12,
-		zoomControl: false,
-		attributionControl: false,
-		cursor: true,
-		
-		layers: []
-	});
-	//Map.isFullscreen()  || Map.toggleFullscreen();
-	L.tileLayer.wms('https://geodienste.hamburg.de/HH_WMS_Geobasiskarten_GB?', {
+	
+	const grayLayer = L.tileLayer.wms('https://geodienste.hamburg.de/HH_WMS_Geobasiskarten_GB?', {
 		layers: '6,10,18,26,2,14,22,30',
 	
 		crs: L.CRS.EPSG25832,
@@ -42,8 +32,8 @@ const onLoad = function (address) {
 		version: '1.3.0',
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
-	}).addTo(Map);
-	L.tileLayer.wms(
+	}),
+	photoLayer = L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
 		version: '1.3.',
@@ -55,7 +45,7 @@ const onLoad = function (address) {
 		height: 512,
 		opacity: 0.5,
 		crs: L.CRS.EPSG25832
-	}).addTo(Map);
+	});
 	var heatmapLayer = new HeatmapOverlay({
 		"radius": 8,
 		"max": 10,
@@ -65,6 +55,15 @@ const onLoad = function (address) {
 		"valueField": 'count',
 		"latField": 'lat',
 		"lngField": 'lng',
+	});
+	Map = new L.Map('unfallkarte', {
+		center: new L.LatLng(53.5562788, 9.995348),
+		zoom: 14,
+		minZoom: 12,
+		zoomControl: false,
+		attributionControl: false,
+		cursor: true,
+		layers: [grayLayer,photoLayer]
 	});
 	Map.addLayer(heatmapLayer);
 	this.Drawer = $('.drawer').drawer({
