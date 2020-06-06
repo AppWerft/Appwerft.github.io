@@ -104,7 +104,7 @@ const onLoad = function (address) {
 	});
 	setTimeout(function () {
 		new UnfallDiagramm()
-	},1000);
+	},2000);
 	setTimeout(function () {
 		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
 		var pie = new d3pie('wochentage', {
