@@ -66,6 +66,12 @@ const onLoad = function (address) {
 		layers: [grayLayer,photoLayer]
 	});
 	Map.addLayer(heatmapLayer);
+	
+	L.control.layers({
+		"Graublaukarte": graysLayer,
+		"Photo": photoLayer
+	}).addTo(Map);
+
 	this.Drawer = $('.drawer').drawer({
 		iscroll: {
 			mouseWheel: true,
