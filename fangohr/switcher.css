@@ -77,5 +77,5 @@
       opacity:.92;
    }
   
-   .drawer-brand {background-color:#6899CF; color:white!important;font-size:24px}
+   .drawer-brand {background-color:#6899CF; color:white!important;font-size:22px;padding:3px;line-height:1em!important}
    .drawer-hamburger {background-color:#fff!important; border-radius: 8px;}
