@@ -263,7 +263,7 @@ const onLoad = function (address) {
 		return new L.Control.Watermark(opts);
 	}
 
-	L.control.watermark({ position: 'bottomleft' }).addTo(Map);
+	L.control.watermark({ position: 'bottomright' }).addTo(Map);
 	var hammertime = new Hammer(document.getElementsByClassName('drawer-menu')[0], {});
 	hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 	hammertime.on('swipe', function (ev) {
