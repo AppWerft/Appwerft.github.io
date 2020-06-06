@@ -155,31 +155,6 @@ const onLoad = function (address) {
 			}
 		});
 	}, 2000);
-	setTimeout(function () {
-		var stunden = UnfallLayer.getTotal('USTUNDE');
-
-		var pie = new d3pie('stunden', {
-			size: {
-				canvasHeight: 240,
-				canvasWidth: 240
-			},
-			data: {
-				content: '0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23'.split(' ').map(function (stunde, i) {
-					return {
-						label: '' + stunde,
-						value: stunden[i + 1]
-					}
-				})
-			},
-			callbacks: {
-				onMouseoverSegment: function (info) {
-					console.log('mouse in', info);
-				},
-				onMouseoutSegment: function (info) {
-				}
-			}
-		});
-	}, 2000);
     
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
