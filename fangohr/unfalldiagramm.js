@@ -27,11 +27,11 @@ var data = [
   { year: "2016", redDelicious: "19", mcintosh: "17", oranges: "5", pears: "7" },
 ];
 
-var parse = d3.timeFormat("%Y").parse;
+var parse = d3.time.format("%Y").parse;
 
 
 // Transpose the data into layers
-var dataset = d3.stack()(["redDelicious", "mcintosh", "oranges", "pears"].map(function(fruit) {
+var dataset = d3.layout.stack()(["redDelicious", "mcintosh", "oranges", "pears"].map(function(fruit) {
   return data.map(function(d) {
     return {x: parse(d.year), y: +d[fruit]};
   });
@@ -61,7 +61,7 @@ var yAxis = d3.svg.axis()
 var xAxis = d3.svg.axis()
   .scale(x)
   .orient("bottom")
-  .tickFormat(d3.timeFormat("%Y"));
+  .tickFormat(d3.time.format("%Y"));
 
 svg.append("g")
   .attr("class", "y axis")
