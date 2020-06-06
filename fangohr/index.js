@@ -42,7 +42,7 @@ const onLoad = function (address) {
 		version: '1.3.0',
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
-	}).addToMap();
+	}).addTo(Map);
 	L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
