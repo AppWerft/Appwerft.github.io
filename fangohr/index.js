@@ -67,11 +67,11 @@ const onLoad = function (address) {
 	});
 	Map.addLayer(heatmapLayer);
 	
-	L.control.layers({
+	/*L.control.layers({
 		"Graublaukarte": graysLayer,
 		"Photo": photoLayer
 	}).addTo(Map);
-
+*/
 	this.Drawer = $('.drawer').drawer({
 		iscroll: {
 			mouseWheel: true,
