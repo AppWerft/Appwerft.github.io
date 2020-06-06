@@ -25,6 +25,9 @@ const onLoad = function (address) {
 		zoomControl: false,
 		attributionControl: false,
 		cursor: true,
+		fullscreenControl: {
+			pseudoFullscreen: false // if true, fullscreen to page width and height
+		},
 		layers: []
 	});
 	//Map.isFullscreen()  || Map.toggleFullscreen();
