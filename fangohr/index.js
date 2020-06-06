@@ -27,13 +27,8 @@ const onLoad = function (address) {
 		cursor: true,
 		layers: []
 	});
-	Map.isFullscreen()  || Map.toggleFullscreen();
-	Map.addControl(new L.Control.Fullscreen({
-		title: {
-			'false': 'View Fullscreen',
-			'true': 'Exit Fullscreen'
-		}
-	}));
+	//Map.isFullscreen()  || Map.toggleFullscreen();
+	
 	L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
@@ -188,6 +183,12 @@ const onLoad = function (address) {
 	hammertime.on('swipe', function (ev) {
 		$('.drawer').drawer('close');
 	});
+	Map.addControl(new L.Control.Fullscreen({
+		title: {
+			'false': 'View Fullscreen',
+			'true': 'Exit Fullscreen'
+		}
+	}));
 
 };
 
