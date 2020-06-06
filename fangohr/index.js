@@ -53,7 +53,7 @@ const onLoad = function (address) {
 		layers: 1,
 		width: 512,
 		height: 512,
-		opacity: 0.1,
+		opacity: 0.5,
 		crs: L.CRS.EPSG25832
 	}).addTo(Map);
 	var heatmapLayer = new HeatmapOverlay({
