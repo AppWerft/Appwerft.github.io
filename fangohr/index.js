@@ -103,6 +103,9 @@ const onLoad = function (address) {
 		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input ' + (filter[item] ? 'checked' : '') + ' type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
 	});
 	setTimeout(function () {
+		new UnfallDiagramm()
+	},1000);
+	setTimeout(function () {
 		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
 		var pie = new d3pie('wochentage', {
 			size: {
@@ -119,13 +122,13 @@ const onLoad = function (address) {
 			},
 			callbacks: {
 				onMouseoverSegment: function (info) {
-					console.log('mouse in', info);
+					
 				},
 				onMouseoutSegment: function (info) {
 				}
 			}
 		});
-	}, 2000);
+	}, 200);
 	setTimeout(function () {
 		var monate = UnfallLayer.getTotal('UMONAT');
 
@@ -150,7 +153,7 @@ const onLoad = function (address) {
 				}
 			}
 		});
-	}, 2000);
+	}, 200);
     
 	$('#beteiligung input').on('change', function () {
 		const self = $(this);
