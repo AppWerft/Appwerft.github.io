@@ -22,7 +22,6 @@ const onLoad = function (address) {
 		center: new L.LatLng(53.5562788, 9.995348),
 		zoom: 14,
 		minZoom: 12,
-		fullscreenControl: true,
 		zoomControl: false,
 		attributionControl: false,
 		cursor: true,
