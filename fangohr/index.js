@@ -103,7 +103,7 @@ const onLoad = function (address) {
 		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input ' + (filter[item] ? 'checked' : '') + ' type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
 	});
 	setTimeout(function () {
-		new UnfallDiagramm()
+		new UnfallDiagramm();
 	},2000);
 	setTimeout(function () {
 		var wochentage = UnfallLayer.getTotal('UWOCHENTAG');
