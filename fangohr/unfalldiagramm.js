@@ -27,7 +27,7 @@ var data = [
   { year: "2016", redDelicious: "19", mcintosh: "17", oranges: "5", pears: "7" },
 ];
 
-var parse = d3.time.format("%Y").parse;
+var parse = d3.timeFormat("%Y").parse;
 
 
 // Transpose the data into layers
@@ -61,7 +61,7 @@ var yAxis = d3.svg.axis()
 var xAxis = d3.svg.axis()
   .scale(x)
   .orient("bottom")
-  .tickFormat(d3.time.format("%Y"));
+  .tickFormat(d3.timeFormat("%Y"));
 
 svg.append("g")
   .attr("class", "y axis")
