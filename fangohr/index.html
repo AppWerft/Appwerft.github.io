@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
    <meta charset="utf-8" />
    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
@@ -20,9 +21,28 @@
          height: 100%;
          width: 100vw;
       }
-	  * {font-family: 'Roboto', sans-serif;}
+      * {
+         font-family: 'Roboto', sans-serif;
+      }
+      svg {
+         font: 10px sans-serif;
+         shape-rendering: crispEdges;
+      }
+      .axis path,
+      .axis line {
+         fill: none;
+         stroke: #000;
+      }
+      path.domain {
+         stroke: none;
+      }
+      .y .tick line {
+         stroke: #ddd;
+      }
    </style>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet"> 
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
       integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
       crossorigin="" />
@@ -45,6 +65,7 @@
    <script src="app.unfaelle.js"></script>
    <script src="d3.pie.js"></script>
    <script src="renderevent.js?_1"></script>
+   <script src="unfalldiagramm.js?_1"></script>
    <script src="index.js?_1s"></script>
 </head>
 
@@ -63,7 +84,7 @@
             <div id="beteiligung"></div>
             <li><a class="drawer-brand" href="#">Kategorie</a></li>
             <div id="kategorie"></div>
-           
+
             <div id="wochentage"></div>
             <div id="monate"></div>
             <div id="stunden"></div>
