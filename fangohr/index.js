@@ -249,7 +249,7 @@ const onLoad = function (address) {
 		onAdd: function (map) {
 			var img = L.DomUtil.create('img');
 			img.src = 'https://upload.wikimedia.org/wikipedia/commons/5/52/Hamburg-logo.svg';
-			img.style.width = '320px';
+			img.style.width = '240px';
 
 			return img;
 		},
