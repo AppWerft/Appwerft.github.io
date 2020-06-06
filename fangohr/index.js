@@ -29,7 +29,20 @@ const onLoad = function (address) {
 		layers: []
 	});
 	//Map.isFullscreen()  || Map.toggleFullscreen();
+	L.tileLayer.wms('https://geodienste.hamburg.de/HH_WMS_Geobasiskarten_GB?', {
+		layers: '6,10,18,26,2,14,22,30',
 	
+		crs: L.CRS.EPSG25832,
+		format: 'image/png',
+		transparent: 'true',
+		service: 'wms',
+		maxZoom: 18,
+		minZoom: 10,
+		cacheid : new Date().getTime(),
+		version: '1.3.0',
+		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
+
+	}).addToMap();
 	L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
