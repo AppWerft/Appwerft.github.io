@@ -144,5 +144,5 @@ const UnfallDiagramm = function () {
         .style("text-anchor", "middle")
         .attr("font-size", "12px")
         .attr("font-weight", "bold");
-    return this; ‚
+    return this; 
 };
