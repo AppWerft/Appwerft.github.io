@@ -28,7 +28,12 @@ const onLoad = function (address) {
 		cursor: true,
 		layers: []
 	});
-
+	Map.addControl(new L.Control.Fullscreen({
+		title: {
+			'false': 'View Fullscreen',
+			'true': 'Exit Fullscreen'
+		}
+	}));
 	L.tileLayer.wms(
 		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
 		service: 'WMS',
