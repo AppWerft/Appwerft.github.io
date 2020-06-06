@@ -1,8 +1,8 @@
 const UnfallDiagramm = function () {
-    var margin = { top: 20, right: 160, bottom: 35, left: 30 };
+    var margin = { top: 10, right: 160, bottom: 15, left: 10 };
 
-    var width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+    var width = 240 - margin.left - margin.right,
+        height = 320 - margin.top - margin.bottom;
 
     var svg = d3.select("#stunden")
         .append("svg")
