@@ -27,6 +27,7 @@ const onLoad = function (address) {
 		cursor: true,
 		layers: []
 	});
+	Map.toggleFullscreen()
 	Map.addControl(new L.Control.Fullscreen({
 		title: {
 			'false': 'View Fullscreen',
