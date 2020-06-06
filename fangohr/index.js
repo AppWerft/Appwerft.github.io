@@ -68,7 +68,7 @@ const onLoad = function (address) {
 	Map.addLayer(heatmapLayer);
 	
 	L.control.layers({
-		"Graublaukarte": graysLayer,
+		"Graublaukarte": grayLayer,
 		"Photo": photoLayer
 	}).addTo(Map);
 
