@@ -101,6 +101,8 @@ const onLoad = function () {
             grid.render();
           });
     })
+    $('.ui-tabs li:first').css('margin-left','32px')
+    $('.ui-tabs li:first').prepend('<img src="./images/kolibri.png" width="30" />')
 
 };
 
