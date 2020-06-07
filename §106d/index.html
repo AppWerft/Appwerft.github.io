@@ -2,20 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png"  href="favicon.png?_" />
     <title>§106d</title>
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="index.js"></script>
+  
+
+
+<link rel="stylesheet" href="./vendor/slick.grid.css" type="text/css"/>
+  <link rel="stylesheet" href="./vendor/css/smoothness/jquery-ui.css" type="text/css"/>
+<script src="./vendor/lib/firebugx.js"></script>
+
+<script src="./vendor/lib/jquery-1.12.4.min.js"></script>
+<script src="./vendor/lib/jquery-ui.min.js"></script>
+<script src="./vendor/lib/jquery.event.drag-2.3.0.js"></script>
+
+<script src="./vendor/slick.core.js"></script>
+<script src="./vendor/plugins/slick.cellrangedecorator.js"></script>
+<script src="./vendor/plugins/slick.cellrangeselector.js"></script>
+<script src="./vendor/plugins/slick.cellselectionmodel.js"></script>
+<script src="./vendor/slick.formatters.js"></script>
+<script src="./vendor/slick.editors.js"></script>
+<script src="./vendor/slick.grid.js"></script>
+<script src="./index.js"></script>
+
 <style>
   * {font-family:Roboto}
-  body {margin:0!important;padding:0!important}
-  tabs {margin:0!important;padding:0!important}
-  #tabs li {background-color:steelblue} 
-</style>
-
+  body {margin:0!important;padding:0!important;height:100%!important;position:relative}
+  #tabs {margin:0!important;padding:0!important;;height:100%!important;;position:relative}
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:hidden
+  }
+  #Absatz4 {border:1px dotted green;}
+    </style>
   </head>
 
 
@@ -39,8 +63,10 @@
     <div id="fragment-3">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     </div>
-    <div id="fragment-4">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    <div id="fragment-4" style="padding:0">
+      <div id="Absatz4" style="height:100%!important;width:100%;position:absolute">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      </div>
     </div>
     <div id="fragment-5">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
