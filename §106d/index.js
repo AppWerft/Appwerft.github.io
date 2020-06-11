@@ -53,13 +53,14 @@ const onLoad = function () {
     var grid;
     var data = [];
     var columns = [
-        { id: "title", name: "Titel", field: "title", width: 120, cssClass: "cell-title", editor: Slick.Editors.Text, validator: requiredFieldValidator ,sortable: true },
+        { id: "title", name: "Titel", field: "title", width: 120, cssClass: "cell-title", editor: Slick.Editors.Text, validator: requiredFieldValidator, sortable: true },
         { id: "desc", name: "Beschreibung", field: "description", width: 200, editor: Slick.Editors.LongText },
-        { id: "duration", name: "Duration", field: "duration", editor: Slick.Editors.Text,sortable: true  },
-        { id: "%", name: "% Complete", field: "percentComplete", width: 180, resizable: false, formatter: Slick.Formatters.PercentCompleteBar, editor: Slick.Editors.PercentComplete ,sortable: true },
+        { id: "duration", name: "Laufzeit", field: "duration", editor: Slick.Editors.Text, sortable: true },
+        { id: "%", name: "% fertig", field: "percentComplete", width: 180, resizable: false, formatter: Slick.Formatters.PercentCompleteBar, editor: Slick.Editors.PercentComplete, sortable: true },
         { id: "start", name: "Start", field: "start", minWidth: 160, editor: Slick.Editors.Date },
         { id: "finish", name: "Finish", field: "finish", minWidth: 160, editor: Slick.Editors.Date },
-        { id: "effort-driven", name: "Effort Driven", width: 180, minWidth: 20, maxWidth: 80, cssClass: "cell-effort-driven", field: "effortDriven", formatter: Slick.Formatters.Checkmark, editor: Slick.Editors.Checkbox }
+        { id: "effort-driven", name: "Erledigt", width: 180, minWidth: 20, maxWidth: 80, cssClass: "cell-effort-driven", 
+        field: "effortDriven", formatter: Slick.Formatters.Checkmark, editor: Slick.Editors.Checkbox }
     ];
     var options = {
         editable: true,
@@ -99,10 +100,10 @@ const onLoad = function () {
             isAsc = args.sortAsc;
             grid.invalidateAllRows();
             grid.render();
-          });
+        });
     })
-    $('.ui-tabs li:first').css('margin-left','32px')
-    $('.ui-tabs li:first').prepend('<img src="./images/kolibri.png" width="30" />')
+    $('.ui-tabs li:first').css('margin-left', '48px')
+   
 
 };
 

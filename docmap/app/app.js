@@ -40,8 +40,8 @@ function onReady() {
 		$('#searchtypeselector').on('change', function () {
 			D.selector.show();
 			Map.suchSchlund.reset();
-			Map.setTypeTo($(this).val());
-
+			Map.suchSchlund.setTypeTo($(this).val());
+			console.log('setType')
 			Map.aerzteOverlay.render();
 		});
 
