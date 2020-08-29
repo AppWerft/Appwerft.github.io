@@ -73,7 +73,7 @@ const onLoad = function (address) {
 		});
 	}
 
-	$.getJSON('werke.json', onWerkeLoad);
+	$.getJSON('werke.json?444', onWerkeLoad);
 
 	var hammertime = new Hammer(document.getElementsByClassName('drawer-menu')[0], {});
 	hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
