@@ -14,11 +14,11 @@ var Map;
 const onLoad = function (address) {
 	const topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		format: 'image/png',
-		opacity:0.5,
+		opacity: 0.5,
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
 	});
-	
+
 	Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(50, 55),
 		zoom: 4,
@@ -29,7 +29,7 @@ const onLoad = function (address) {
 		cursor: false,
 		layers: [topoLayer]
 	});
-	
+
 	this.Drawer = $('.drawer').drawer({
 		iscroll: {
 			mouseWheel: true,
@@ -45,30 +45,31 @@ const onLoad = function (address) {
 		Map.closePopup(popup);
 	});
 
-	
+
 	const kategorien = { '1': "Aquarelle", '2': "Kreidezeichnungen", '3': "Kohlezeichnungen" };
 	Object.keys(kategorien).forEach(function (id) {
 		$('#kategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
 	});
 	function onWerkeLoad(data) {
-		data.forEach(function(w){
+		data.forEach(function (w) {
 			var latlng = w.gps.split(',');
-			var ahicon = L.icon({
-				iconUrl: './ah.png',
-				iconSize: [25, 20],
-				iconAnchor: [0,0],
-				popupAnchor: [0, 0]
-			});
-			
-			var content = '<p><b>'+w.name+'</b></p><img width="300" src="tx_userahwerke/'+w.img+'" />';
-			console.log(latlng)
-			L.marker(latlng,{icon: ahicon}).addTo(Map).bindPopup(content);	
-    		
+			if (latlng) {
+				var ahicon = L.icon({
+					iconUrl: './ah.png',
+					iconSize: [25, 18],
+					iconAnchor: [12, 0],
+					popupAnchor: [12, 0]
+				});
+
+				var content = '<p><b>' + w.name + '</b></p><img width="300" src="tx_userahwerke/' + w.img + '" />';
+				console.log(latlng)
+				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content);
+			}
 		});
 	}
 
-	$.getJSON('werke.json',onWerkeLoad);
-	
+	$.getJSON('werke.json', onWerkeLoad);
+
 	var hammertime = new Hammer(document.getElementsByClassName('drawer-menu')[0], {});
 	hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 	hammertime.on('swipe', function (ev) {

@@ -8,13 +8,55 @@
         "name": "Samakov",
         "gps": "42.3308946,23.521958",
         "img": "15__Samokov__01.JPG"
-    },{
-        "name" : "Litoměřice",
-        "gps" : "50.5420635,14.0679787",
-        "img" : "23__Litomerice__01.JPG"
-    },{
+    },
+    {
+        "name": "Litoměřice",
+        "gps": "50.5420635,14.0679787",
+        "img": "23__Litomerice__01.JPG"
+    },
+    {
         "name": "Arnouville bei Gewitter",
-        "gps" : "48.9867352,2.3992369",
-        "img" : "Arnouville_bei_Gewitter__Aquarell_.JPG"
+        "gps": "48.9867352,2.3992369",
+        "img": "Arnouville_bei_Gewitter__Aquarell_.JPG"
+    },
+    {
+        "name": "Gehöft in Ückeritz",
+        "gps": "54.0078608,13.9984889",
+        "img": "21__Gehöft_in_Ückeritz_.JPG"
+    },
+    {
+        "name": "Venedig",
+        "img": "24_13_Venedig.JPG",
+        "gps": "45.4042007,12.1071381"
+    },
+    {
+        "name": "Notre Dame",
+        "img": "062_Notre_Dame_02.JPG",
+        "gps": "48.8529682,2.3477134"
+    },
+    {
+        "name": "Ovidplatz in Konstanza",
+        "img": "073_Ovidplatz_in_Konstanza_02.JPG",
+        "gps": "44.1741611,28.6562661"
+    },
+    {
+        "name": "",
+        "img": "",
+        "gps": ""
+    },
+    {
+        "name": "",
+        "img": "",
+        "gps": ""
+    },
+    {
+        "name": "",
+        "img": "",
+        "gps": ""
+    },
+    {
+        "name": "",
+        "img": "",
+        "gps": ""
     }
 ]
