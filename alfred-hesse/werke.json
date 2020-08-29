@@ -1,8 +1,20 @@
-[{
-
-"name" : "Karlsbrücke in Prag",
-"gps" : "50.0864771,14.4092479,",
-"img":"033_Karlsbrücke_in_Prag_02.JPG" 
-
-
-}]
+[
+    {
+        "name": "Karlsbrücke in Prag",
+        "gps": "50.0864771,14.4092479",
+        "img": "033_Karlsbrücke_in_Prag_02.JPG"
+    },
+    {
+        "name": "Samakov",
+        "gps": "42.3308946,23.521958",
+        "img": "15__Samokov__01.JPG"
+    },{
+        "name" : "Litoměřice",
+        "gps" : "50.5420635,14.0679787",
+        "img" : "23__Litomerice__01.JPG"
+    },{
+        "name": "Arnouville bei Gewitter",
+        "gps" : "48.9867352,2.3992369",
+        "img" : "Arnouville_bei_Gewitter__Aquarell_"
+    }
+]
