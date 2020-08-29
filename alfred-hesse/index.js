@@ -67,8 +67,8 @@ const onLoad = function (address) {
 				});
 				var text = w.text || '';
 				var content = '<b>' + w.name + '</b><br/>'+text+'</br><img src="tx_userahwerke/' + encodeURI(w.img) + '" />';
-				console.log(latlng)
-				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content);
+				
+				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content).bindTooltip(w.name);
 			}
 		});
 	}
