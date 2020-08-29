@@ -19,58 +19,23 @@ const onLoad = function (address) {
 		return;
 	}
 	
-	const grayLayer = L.tileLayer.wms('https://geodienste.hamburg.de/HH_WMS_Geobasiskarten_GB?', {
-		layers: '6,10,18,26,2,14,22,30',
-	
-		crs: L.CRS.EPSG25832,
+	const topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		format: 'image/png',
-		transparent: 'true',
-		service: 'wms',
-		maxZoom: 18,
-		minZoom: 10,
-		cacheid : new Date().getTime(),
-		version: '1.3.0',
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
-	}),
-	photoLayer = L.tileLayer.wms(
-		'https://geodienste.hamburg.de/HH_WMS_DOP?', {
-		service: 'WMS',
-		version: '1.3.',
-		request: 'GetMap',
-		format: 'image/jpeg',
-		transparent: 'true',
-		layers: 1,
-		width: 512,
-		height: 512,
-		opacity: 1,
-		crs: L.CRS.EPSG25832
 	});
-	var heatmapLayer = new HeatmapOverlay({
-		"radius": 8,
-		"max": 10,
-		"maxOpacity": 1,
-		"scaleRadius": false,
-		"useLocalExtrema": true,
-		"valueField": 'count',
-		"latField": 'lat',
-		"lngField": 'lng',
-	});
+	
 	Map = new L.Map('unfallkarte', {
-		center: new L.LatLng(53.5562788, 9.995348),
-		zoom: 14,
-		minZoom: 12,
+		center: new L.LatLng(50, 55),
+		zoom: 4,
+		minZoom: 2,
 		zoomControl: false,
 		attributionControl: false,
 		cursor: true,
-		layers: [grayLayer,photoLayer]
+		layers: [topoLayer]
 	});
-	Map.addLayer(heatmapLayer);
+	Map.addLayer(Layer);
 	
-	L.control.layers({
-		"Graublaukarte": grayLayer,
-		"Photo": photoLayer
-	}).addTo(Map);
 
 	this.Drawer = $('.drawer').drawer({
 		iscroll: {
