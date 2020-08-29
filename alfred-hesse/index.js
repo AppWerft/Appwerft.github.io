@@ -28,15 +28,14 @@ const onLoad = function (address) {
 	Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(50, 55),
 		zoom: 4,
-		minZoom: 2,
+		minZoom: 3,
+		maxZoom: 8,
 		zoomControl: false,
 		attributionControl: false,
 		cursor: true,
 		layers: [topoLayer]
 	});
-	Map.addLayer(Layer);
 	
-
 	this.Drawer = $('.drawer').drawer({
 		iscroll: {
 			mouseWheel: true,
@@ -63,9 +62,7 @@ const onLoad = function (address) {
 
 		Map.openPopup(popup);
 	});
-
-	const UnfallLayer = new Unfälle(heatmapLayer);
-
+/*
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 		Map.on('zoomstart', function () {
 			UnfallLayer.hide();
@@ -74,17 +71,13 @@ const onLoad = function (address) {
 			UnfallLayer.show();
 		})
 	}
-	const kategorien = { '1': "Getötete", '2': "Schwerverletzte", '3': "Leichtverletzte" };
+*/
+	const kategorien = { '1': "Aquarelle", '2': "Kreidezeichnungen", '3': "Kohlezeichnungen" };
 	Object.keys(kategorien).forEach(function (id) {
 		$('#kategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
 	});
 
 
-	const beteiligte = { IstRad: 'Fahrrad', IstPKW: 'Personenkraftwagen', IstFuss: 'Fußgänger', IstKrad: 'Kraftrad', IstGkfz: 'Lastkraftwagen', IstSonstig: 'Sonstiges' };
-	var filter = UnfallLayer.getFilter();
-	Object.keys(beteiligte).forEach(function (item) {
-		$('#beteiligung').append('<li class="drawer-menu-item"><label class="switch"><input ' + (filter[item] ? 'checked' : '') + ' type="checkbox" name="' + item + '"><span class="slider round"></span></label><legend>' + beteiligte[item] + '</legend></li>')
-	});
 	
 	/*
 	setTimeout(function () {
