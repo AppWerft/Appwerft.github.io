@@ -66,6 +66,26 @@
         "gps": "44.4377401,25.9545507"
     },
     {
+        "name": "Château Chantilly",
+        "img": "Chateau_Chantilly.JPG",
+        "gps": "49.1938467,2.4830147"
+    },
+    {
+        "name": "Dresden Laubegast (Mühlengehöft)",
+        "img": "Dresden_Laubegast_Mueller_Hesse_farb_Arb_Papier_Muehlengehoeft_im_Gelderland.jpg",
+        "gps": "51.0240822,13.8159589"
+    },
+    {
+        "name": "",
+        "img": "",
+        "gps": ""
+    },
+    {
+        "name": "",
+        "img": "",
+        "gps": ""
+    },
+    {
         "name": "",
         "img": "",
         "gps": ""
