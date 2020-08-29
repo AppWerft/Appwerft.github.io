@@ -54,12 +54,14 @@ const onLoad = function (address) {
 	});
 	function onWerkeLoad(data) {
 		data.forEach(function(w){
-			var marker = L.circle(w.gps.split(','),{
-				color:'red',
-				fillColor: '#f03',
-				fillOpacity: 0.5,	
-				radius: 40000
-			}).addTo(Map).bindPopup('<p><b>'+w.name+'</b></p><img width="300" src="tx_userahwerke/'+w.img+'" />');	
+			var icon = L.icon({
+				iconUrl: 'ah.png',
+				iconSize: [38, 95],
+				iconAnchor: [22, 94],
+				popupAnchor: [-3, -76]
+			
+			});
+			var marker = L.Marker(w.gps.split(','),{icon: icon}).addTo(Map).bindPopup('<p><b>'+w.name+'</b></p><img width="300" src="tx_userahwerke/'+w.img+'" />');	
     		
 		});
 	}
@@ -74,7 +76,7 @@ const onLoad = function (address) {
 	L.Control.Watermark = L.Control.extend({
 		onAdd: function (map) {
 			var img = L.DomUtil.create('img');
-			img.src = 'ah.png';
+			img.src = '07-vita.jpg';
 			img.style.width = '360px';
 
 			return img;
