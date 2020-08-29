@@ -12,13 +12,12 @@ var popup;
 var Map;
 
 const onLoad = function (address) {
-	const topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	const topoLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 		format: 'image/png',
-		opacity: 0.6,
+		opacity: 0.99,
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
 	});
-
 	Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(50, 55),
 		zoom: 4,
@@ -29,7 +28,6 @@ const onLoad = function (address) {
 		cursor: false,
 		layers: [topoLayer]
 	});
-
 	this.Drawer = $('.drawer').drawer({
 		iscroll: {
 			mouseWheel: true,
@@ -37,7 +35,6 @@ const onLoad = function (address) {
 		},
 		showOverlay: true
 	});
-
 	this.Drawer.on('drawer.opened', function () {
 		Map.closePopup(popup);
 	});
@@ -49,7 +46,6 @@ const onLoad = function (address) {
 		px.y -= e.target._popup._container.clientHeight*0.5; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
 		Map.panTo(Map.unproject(px),{animate: true}); // pan to new center
 	});
-
 	const kategorien = { '1': "Aquarelle", '2': "Kreidezeichnungen", '3': "Kohlezeichnungen" };
 	Object.keys(kategorien).forEach(function (id) {
 		$('#kategorie').append('<li class="drawer-menu-item"><label class="switch"><input checked="1" type="checkbox" name="' + id + '"><span class="slider round"></span></label><legend>' + kategorien[id] + '</legend></li>')
@@ -71,9 +67,7 @@ const onLoad = function (address) {
 			}
 		});
 	}
-
 	$.getJSON('werke.json?445', onWerkeLoad);
-
 	var hammertime = new Hammer(document.getElementsByClassName('drawer-menu')[0], {});
 	hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 	hammertime.on('swipe', function (ev) {
