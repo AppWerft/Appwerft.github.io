@@ -44,7 +44,11 @@ const onLoad = function (address) {
 	this.Drawer.on('drawer.closed', function () {
 		Map.closePopup(popup);
 	});
-
+	Map.on('popupopen', function(e) {
+		var px = Map.project(e.target._popup._latlng); // find the pixel location on the map where the popup anchor is
+		px.y -= e.target._popup._container.clientHeight*0.5; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+		Map.panTo(Map.unproject(px),{animate: true}); // pan to new center
+	});
 
 	const kategorien = { '1': "Aquarelle", '2': "Kreidezeichnungen", '3': "Kohlezeichnungen" };
 	Object.keys(kategorien).forEach(function (id) {
@@ -52,8 +56,9 @@ const onLoad = function (address) {
 	});
 	function onWerkeLoad(data) {
 		data.forEach(function (w) {
+			if (w.name) {
 			var latlng = w.gps.split(',');
-			if (latlng) {
+			
 				var ahicon = L.icon({
 					iconUrl: './ah.png',
 					iconSize: [25, 18],
