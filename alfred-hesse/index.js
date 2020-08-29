@@ -62,11 +62,11 @@ const onLoad = function (address) {
 				var ahicon = L.icon({
 					iconUrl: './ah.png',
 					iconSize: [25, 18],
-					iconAnchor: [12, 0],
-					popupAnchor: [12, 0]
+					iconAnchor: [12,9],
+					popupAnchor: [12, 9]
 				});
 
-				var content = '<p><b>' + w.name + '</b></p><img width="300" src="tx_userahwerke/' + w.img + '" />';
+				var content = '<p><b>' + w.name + '</b></p><img width="300" src="tx_userahwerke/' + encodeURI(w.img) + '" />';
 				console.log(latlng)
 				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content);
 			}
