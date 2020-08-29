@@ -12,8 +12,6 @@ var popup;
 var Map;
 
 const onLoad = function (address) {
-	
-	
 	const topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		format: 'image/png',
 		opacity:0.5,
@@ -54,14 +52,17 @@ const onLoad = function (address) {
 	});
 	function onWerkeLoad(data) {
 		data.forEach(function(w){
-			var icon = L.icon({
-				iconUrl: 'ah.png',
-				iconSize: [38, 95],
-				iconAnchor: [22, 94],
-				popupAnchor: [-3, -76]
-			
+			var latlng = w.gps.split(',');
+			var ahicon = L.icon({
+				iconUrl: './ah.png',
+				iconSize: [25, 20],
+				iconAnchor: [0,0],
+				popupAnchor: [0, 0]
 			});
-			var marker = L.Marker(w.gps.split(','),{icon: icon}).addTo(Map).bindPopup('<p><b>'+w.name+'</b></p><img width="300" src="tx_userahwerke/'+w.img+'" />');	
+			
+			var content = '<p><b>'+w.name+'</b></p><img width="300" src="tx_userahwerke/'+w.img+'" />';
+			console.log(latlng)
+			L.marker(latlng,{icon: ahicon}).addTo(Map).bindPopup(content);	
     		
 		});
 	}
@@ -77,8 +78,7 @@ const onLoad = function (address) {
 		onAdd: function (map) {
 			var img = L.DomUtil.create('img');
 			img.src = '07-vita.jpg';
-			img.style.width = '360px';
-
+			img.style.width = '240px';
 			return img;
 		},
 
