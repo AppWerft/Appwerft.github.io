@@ -56,8 +56,8 @@ const onLoad = function (address) {
 			var latlng = w.gps.split(',');
 				var ahicon = L.icon({
 					iconUrl: './ah.png',
-					iconSize: [25, 18],
-					iconAnchor: [12,9],
+					iconSize: [33, 22],
+					iconAnchor: [16,11],
 					popupAnchor: [0, 0]
 				});
 				var img = 'tx_userahwerke/' + encodeURI(w.img)
