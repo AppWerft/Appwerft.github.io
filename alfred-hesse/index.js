@@ -58,16 +58,15 @@ const onLoad = function (address) {
 		data.forEach(function (w) {
 			if (w.name) {
 			var latlng = w.gps.split(',');
-				
 				var ahicon = L.icon({
 					iconUrl: './ah.png',
 					iconSize: [25, 18],
 					iconAnchor: [12,9],
-					popupAnchor: [12, 9]
+					popupAnchor: [0, 0]
 				});
+				var img = 'tx_userahwerke/' + encodeURI(w.img)
 				var text = w.text || '';
-				var content = '<b>' + w.name + '</b><br/>'+text+'</br><img src="tx_userahwerke/' + encodeURI(w.img) + '" />';
-				
+				var content = '<b>' + w.name + '</b><br/>'+text+'</br><a data-fancybox="gallery" href="'+img+'"><img src="'+img+'" /></a>';
 				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content).bindTooltip(w.name);
 			}
 		});
