@@ -14,7 +14,7 @@ var Map;
 const onLoad = function (address) {
 	const topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		format: 'image/png',
-		opacity: 0.5,
+		opacity: 0.6,
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
 	});
@@ -58,15 +58,15 @@ const onLoad = function (address) {
 		data.forEach(function (w) {
 			if (w.name) {
 			var latlng = w.gps.split(',');
-			
+				
 				var ahicon = L.icon({
 					iconUrl: './ah.png',
 					iconSize: [25, 18],
 					iconAnchor: [12,9],
 					popupAnchor: [12, 9]
 				});
-
-				var content = '<p><b>' + w.name + '</b></p><img width="300" src="tx_userahwerke/' + encodeURI(w.img) + '" />';
+				var text = w.text || '';
+				var content = '<b>' + w.name + '</b><br/>'+text+'</br><img src="tx_userahwerke/' + encodeURI(w.img) + '" />';
 				console.log(latlng)
 				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content);
 			}
