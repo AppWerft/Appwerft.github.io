@@ -12,15 +12,11 @@ var popup;
 var Map;
 
 const onLoad = function (address) {
-	if (typeof address != 'object') {
-		if (popup && Map) {
-			popup.setContent(popup.getContent().replace('<!--ADDRESS-->', address));
-		}
-		return;
-	}
+	
 	
 	const topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		format: 'image/png',
+		opacity:0.5,
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
 	});
@@ -32,7 +28,7 @@ const onLoad = function (address) {
 		maxZoom: 8,
 		zoomControl: false,
 		attributionControl: false,
-		cursor: true,
+		cursor: false,
 		layers: [topoLayer]
 	});
 	
