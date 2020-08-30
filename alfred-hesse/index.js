@@ -14,14 +14,14 @@ var Map;
 const onLoad = function (address) {
 	const topoLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 		format: 'image/png',
-		opacity: 0.99,
+		opacity: 0.89,
 		attribution: 'Kartenkacheln von Landesbetrieb für Geoinformation und Vermessung der Freien und Hansestadt Hamburg',
 
 	});
 	Map = new L.Map('unfallkarte', {
-		center: new L.LatLng(50, 55),
-		zoom: 3,
-		minZoom: 3,
+		center: new L.LatLng(50, 15),
+		zoom: 6,
+		minZoom: 4,
 		maxZoom: 8,
 		zoomControl: false,
 		attributionControl: false,
@@ -60,15 +60,15 @@ const onLoad = function (address) {
 			if (w.name) {
 			var latlng = w.gps.split(',');
 				var ahicon = L.icon({
-					iconUrl: 'tx_userahwerke/' + (encodeURI(w.img)).replace('.JPG','.png'),
-					iconSize: [30, 30],
-					iconAnchor: [16,11],
+					iconUrl: 'pin.png',//'tx_userahwerke/' + (encodeURI(w.img)).replace('.JPG','.png'),
+					iconSize: [15, 26],
+					iconAnchor: [7.5,13],
 					popupAnchor: [0, 0]
 				});
 				var img = 'tx_userahwerke/' + encodeURI(w.img)
 				var text = w.text || '';
 				var content = '<b>' + w.name + '</b><br/>'+text+'</br><a data-fancybox="gallery" href="'+img+'"><img src="'+img+'" /></a>';
-				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content).bindTooltip(w.name);
+				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content).bindTooltip(w.name, {className: 'ahtt'});
 			}
 		});
 	}
@@ -81,8 +81,8 @@ const onLoad = function (address) {
 	L.Control.Watermark = L.Control.extend({
 		onAdd: function (map) {
 			var img = L.DomUtil.create('img');
-			img.src = '07-vita.jpg';
-			img.style.width = '240px';
+			img.src = 'u.png';
+			img.style.width = '44vw';
 			return img;
 		},
 		onRemove: function (map) {}
@@ -90,7 +90,7 @@ const onLoad = function (address) {
 	L.control.watermark = function (opts) {
 		return new L.Control.Watermark(opts);
 	}
-	L.control.watermark({ position: 'bottomright' }).addTo(Map);
+	L.control.watermark({ position: 'topright' }).addTo(Map);
 };
 
 window.onload = onLoad;
