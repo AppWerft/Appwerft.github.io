@@ -67,7 +67,7 @@ const onLoad = function (address) {
 				});
 				var img = 'tx_userahwerke/' + encodeURI(w.img)
 				var text = w.text || '';
-				var content = '<b>' + w.name + '</b><br/>'+text+'</br><a data-fancybox="gallery" href="'+img+'"><img src="'+img+'" /></a>';
+				var content = '<b>' + w.name + '</b><br/>'+text+'</br><a data-fancybox="gallery" href="'+img+'"><img src="'+img+'" /></a><br><i>Copyright: Alfred-Hesse-Archiv';
 				L.marker(latlng, { icon: ahicon }).addTo(Map).bindPopup(content).bindTooltip(w.name, {className: 'ahtt'});
 			}
 		});
