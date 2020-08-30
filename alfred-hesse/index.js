@@ -20,7 +20,7 @@ const onLoad = function (address) {
 	});
 	Map = new L.Map('unfallkarte', {
 		center: new L.LatLng(50, 55),
-		zoom: 4,
+		zoom: 3,
 		minZoom: 3,
 		maxZoom: 8,
 		zoomControl: false,
