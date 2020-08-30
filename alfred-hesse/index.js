@@ -82,7 +82,7 @@ const onLoad = function (address) {
 		onAdd: function (map) {
 			var img = L.DomUtil.create('img');
 			img.src = 'u.png';
-			img.style.width = '56vw';
+			img.style.width = '52vw';
 			return img;
 		},
 		onRemove: function (map) {}
