@@ -1,5 +1,0 @@
-My Application’s Keys
-Consumer Key 	3VNeiLAsT6GQ55PNgGozR9xGzcNNqd2J
-Consumer Secret 	GFeV1bv7dtD1XFZe
-Key Issued 	Thu, 05/07/2020 - 01:57
-Key Expires 	Never 
